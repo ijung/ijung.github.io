@@ -1,9 +1,9 @@
 ---
-title: jekyll chirpy 테마에 utterances comments(댓글) 창 추가
+title: github.io(github pages) jekyll chirpy 테마에 utterances comments(댓글) 창 추가 하기
 author: June
 date: 2022-06-11 19:21:00 +0900
 categories: [Tips]
-tags: [tip, jekyll, chirpy, comments, utterances]
+tags: [tip, github, github pages, github.io, jekyll, chirpy, comments, utterances, 댓글, 댓글창]
 toc: true
 toc: true
 math: true

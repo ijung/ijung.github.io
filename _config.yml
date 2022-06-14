@@ -23,7 +23,7 @@ timezone: Asia/Seoul
 
 title: June's Blog                          # the main title
 
-tagline: 반갑습니다.</br>질문이나 요청 사항은</br>댓글이나</br>메일로 부탁드립니다.   # it will display as the sub-title
+tagline: 반갑습니다.<br/>질문이나 요청 사항은<br/>댓글이나<br/>메일로 부탁드립니다.   # it will display as the sub-title
 
 description: developer, kotlin, java, c#, algorithm                        # used by seo meta and the atom feed
 

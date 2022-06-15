@@ -12,7 +12,7 @@ comments: true
 ---
 # 문제
 ## [17478 재귀함수가 뭔가요?](https://www.acmicpc.net/problem/17478)
-## ![screencapture](../coding-practice/baekjoon/screencapture-acmicpc-net-problem-17478.png)
+## ![screencapture](/posts/coding-practice/baekjoon/screencapture-acmicpc-net-problem-17478.png)
 
 # 답
 ## kotlin code

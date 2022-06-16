@@ -14,6 +14,7 @@ comments: true
 - kotlin의 제곱 함수는 kotlin.math package에 Float와 Doble에 대한 확장 함수로 선언되어 있다.
 - 확장 함수로 형태만 변경 되었을 뿐, 내부적으로는 자바의 java.lang package의 Math.pow 함수를 그대로 사용한다.
 > - code: kotlin.math.pow
+> 
 > ```kotlin
 > /**
 >  * Raises this value to the power [x].
@@ -73,21 +74,23 @@ comments: true
 <th width='50%'><center>JAVA</center></th>
 <th width='50%'><center>Kotlin</center></th>
 <tr><!-- 첫번째 줄 시작 -->
-<td>
-      
+<td markdown="block">
+
 ```java
 import java.lang.Math;
 
 double result = Math.pow(5.0, 2.0);
 ```
+
 </td>
-<td>
+<td markdown="block">
 
 ```kotlin
 import kotlin.math.pow
 
 val result = 5.0.pow(2.0)
 ```
+
 </td>
 </tr>
 </table>

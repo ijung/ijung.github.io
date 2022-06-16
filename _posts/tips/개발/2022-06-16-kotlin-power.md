@@ -1,5 +1,5 @@
 ---
-title: kotlin 제곱
+title: kotlin 제곱 사용법
 author: June
 date: 2022-06-16 12:47:00 +0900
 categories: [Tips, 개발]

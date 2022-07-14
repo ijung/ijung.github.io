@@ -173,17 +173,16 @@ result: Person(name=alsoExample, age=30)
 
 <table data-layout="default">
     <colgroup>
-        <col style="width: 85.0px;" />
-        <col style="width: 134.2px;" />
-        <col style="width: 134.2px;" />
-        <col style="width: 134.2px;" />
-        <col style="width: 134.2px;" />
-        <col style="width: 134.2px;" />
+        <col style="width: 85.0px;"></col>
+        <col style="width: 134.2px;"></col>
+        <col style="width: 134.2px;"></col>
+        <col style="width: 134.2px;"></col>
+        <col style="width: 134.2px;"></col>
+        <col style="width: 134.2px;"></col>
     </colgroup>
     <tbody>
         <tr>
             <th>
-                <p style="text-align: center;" />
             </th>
             <th>
                 <p style="text-align: center;"><strong>let</strong></p>
@@ -328,15 +327,14 @@ fun <T> T.also(block: (T) -> Unit): T
 
 <table data-layout="default">
     <colgroup>
-        <col style="width: 65.0px;" />
-        <col style="width: 231.67px;" />
-        <col style="width: 231.67px;" />
-        <col style="width: 231.67px;" />
+        <col style="width: 65.0px;"></col>
+        <col style="width: 231.67px;"></col>
+        <col style="width: 231.67px;"></col>
+        <col style="width: 231.67px;"></col>
     </colgroup>
     <tbody>
         <tr>
             <th>
-                <p style="text-align: center;" />
             </th>
             <th>
                 <p style="text-align: center;"><strong>무공변</strong></p>
@@ -397,7 +395,6 @@ fun <T> T.also(block: (T) -> Unit): T
                 <p style="text-align: center;"><strong>키워드</strong></p>
             </th>
             <td>
-                <p style="text-align: center;" />
             </td>
             <td>
                 <p style="text-align: center;">extends (upper bound)</p>
@@ -415,7 +412,6 @@ fun <T> T.also(block: (T) -> Unit): T
                 <p style="text-align: center;"><strong>속성</strong></p>
             </th>
             <td>
-                <p style="text-align: center;" />
             </td>
             <td>
                 <p style="text-align: center;">out 키워드를 사용한 공변에서는 Box 안의 값을 꺼내서 읽을 때(read)는 문제가 없지만, Box에 값을 넣으려고 할 때(write) 컴파일 오류가 발생한다.</p>

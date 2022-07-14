@@ -80,14 +80,13 @@ comments: true
 
 <table data-layout="default">
     <colgroup>
-        <col style="width: 71.0px;" />
-        <col style="width: 344.5px;" />
-        <col style="width: 344.5px;" />
+        <col style="width: 71.0px;"></col>
+        <col style="width: 344.5px;"></col>
+        <col style="width: 344.5px;"></col>
     </colgroup>
     <tbody>
         <tr>
             <th>
-                <p style="text-align: center;" />
             </th>
             <th>
                 <p style="text-align: center;"><strong>lazy evaluation</strong></p>

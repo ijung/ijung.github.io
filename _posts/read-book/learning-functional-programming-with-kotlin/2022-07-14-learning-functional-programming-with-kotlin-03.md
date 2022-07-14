@@ -40,7 +40,7 @@ comments: true
 - 멱집합이란 어떤 집합의 모든 부분 집합의 잡합이다.
 
 # 연습 문제
-## 3.1
+## 3-1
 
 ```
 명제: fibo(n)은 자연수 n에 대하여 n번째 피보나치 수열의 수를 올바르게 계산한다.
@@ -52,7 +52,7 @@ k+1에 대해 n=k+1일때
  즉, fibo(n)은 자연수 n에 대하여 n번째 피보나치 수열의 수를 올바르게 계산한다.
 ```
 
-## 3.2
+## 3-2
 
 ```kotlin
 fun power(x: Double, n: Int): Double = when(n) {
@@ -61,7 +61,7 @@ fun power(x: Double, n: Int): Double = when(n) {
 }
 ```
 
-## 3.3
+## 3-3
 
 ```kotlin
 fun factorial(n: Int): Int = when(n) {
@@ -70,7 +70,7 @@ fun factorial(n: Int): Int = when(n) {
 }
 ```
 
-## 3.4
+## 3-4
 
 ```korlin
 fun toBinary(n: Int): String = when(n) {
@@ -79,7 +79,7 @@ fun toBinary(n: Int): String = when(n) {
 }
 ```
 
-## 3.5
+## 3-5
 
 ```kotlin
 fun replicate(n: Int, element: Int): List<Int> = when(n) {
@@ -88,7 +88,7 @@ fun replicate(n: Int, element: Int): List<Int> = when(n) {
 }
 ```
 
-## 3.6
+## 3-6
 
 ```kotlin
 private fun <E> Collection<E>.head() = first()
@@ -100,7 +100,7 @@ fun elem(num:Int, list:List<Int>):Boolean = when {
 }
 ```
 
-## 3.7
+## 3-7
 
 ```kotlin
 fun takeSequence(n: Int, sequence: Sequence<Int>): List<Int> = when {
@@ -136,7 +136,7 @@ fun repeat(n: Int): Sequence<Int> = sequenceOf(n) + { repeat(n) }
 [3, 3, 3, 3, 3]
 ```
 
-## 3.8
+## 3-8
 
 ```kotlin
 // 쿽 소트 설명을 보고 내가 짠 코드
@@ -233,7 +233,7 @@ private fun swap(array: IntArray, index1: Int, index2: Int) {
 }
 ```
 
-## 3.9
+## 3-9
 
 ```kotlin
 // 유클리드 호제법 이용.[https://ko.wikipedia.org/wiki/%EC%9C%A0%ED%81%B4%EB%A6%AC%EB%93%9C_%ED%98%B8%EC%A0%9C%EB%B2%95]
@@ -243,7 +243,7 @@ fun gcd(m: Int, n: Int): Int = when {
 }
 ```
 
-## 3.10
+## 3-10
 
 ```kotlin
 val memo = Array(20) {-1}
@@ -257,7 +257,7 @@ fun factorialWithMemoization(n: Int): Int = when {
 }
 ```
 
-## 3.11
+## 3-11
 
 ```kotlin
 fun factorial2(n: Int, acc:Int): Int = when(n) {
@@ -266,7 +266,7 @@ fun factorial2(n: Int, acc:Int): Int = when(n) {
 }
 ```
 
-## 3.12
+## 3-12
 
 ```kotlin
 // 3-11에서 푼 코드는 꼬리 재귀는 맞지만 tailrec 키워드를 사용 안 해 최적화가 안 됨.
@@ -309,7 +309,7 @@ public static final int factorialWithTailRec(int n, int acc) {
 }
 ```
 
-## 3.13
+## 3-13
 
 ```kotlin
 tailrec fun powerWithTailRec(x: Double, n: Int, acc: Double): Double = when(n) {
@@ -334,7 +334,7 @@ public static final int factorialWithTailRec(int n, int acc) {
 }
 ```
 
-## 3.14
+## 3-14
 
 ```kotlin
 tailrec fun toBinaryWithTailRec(n: Int, acc: String): String = when(n) {
@@ -362,7 +362,7 @@ public static final String toBinaryWithTailRec(int n, @NotNull String acc) {
 }
 ```
 
-## 3.15
+## 3-15
 
 ```kotlin
 tailrec fun replicateWithTailRec(n: Int, element: Int, acc: List<Int>): List<Int> = when(n) {
@@ -389,7 +389,7 @@ public static final List replicateWithTailRec(int n, int element, @NotNull List 
 }
 ```
 
-## 3.16
+## 3-16
 
 ```kotlin
 tailrec fun elemWithTailRec(num:Int, list:List<Int>):Boolean = when {
@@ -420,7 +420,7 @@ public static final boolean elemWithTailRec(int num, @NotNull List list) {
 }
 ```
 
-## 3.17
+## 3-17
 
 ```kotlin
 fun sqrt(n: Double): Double = when {
@@ -434,7 +434,7 @@ fun divideByTwo(n: Double): Double = when {
 }
 ```
 
-## 3.18
+## 3-18
 
 ```kotlin
 sealed class Bounce<T>
@@ -508,7 +508,7 @@ public static final Bounce divideByTwoWithTrampoline(final double n) {
 }
 ```
 
-## 3.19
+## 3-19
 
 ```kotlin
 sealed class Bounce<T>

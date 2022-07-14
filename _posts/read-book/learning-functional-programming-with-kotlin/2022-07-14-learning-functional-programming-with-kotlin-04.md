@@ -10,11 +10,11 @@ math: true
 mermaid: true
 comments: true
 ---
-# 요약
-- 고차 함수, 부분 함수, 부분 적용 함수, 커링, 합성 함수는 함수형 프로그래밍을 하는데 기본적인 개념들이다.
-
 # 범위
 - 4장 고차 함수
+
+# 요약
+- 고차 함수, 부분 함수, 부분 적용 함수, 커링, 합성 함수는 함수형 프로그래밍을 하는데 기본적인 개념들이다.
 
 # 개념 정리
 - 고차 함수(higher order function): 함수형 프로그래밍에서 다음 두 가지 조건 중 하나 이상을 만족하는 함수.
@@ -32,7 +32,7 @@ comments: true
 - 고차 함수, 부분 함수, 부분 적용 함수, 커링, 합성 함수는 함수형 프로그래밍을 하는데 기본적인 개념들이다.
 
 # 연습 문제
-## 4.1
+## 4-1
 
 ```kotlin
 fun invokeOrElse(p: P, default: R): R = when {
@@ -57,7 +57,7 @@ fun main() {
 }
 ```
 
-## 4.2
+## 4-2
 
 ```kotlin
 fun <P1, P2, P3, R>((P1, P2, P3) -> R).partial1(p1: P1): (P2, P3) -> R {
@@ -86,7 +86,7 @@ fun main() {
 }
 ```
 
-## 4.3
+## 4-3
 
 ```kotlin
 fun max(a: Int) = { b: Int -> if(a>=b) a else b }
@@ -96,7 +96,7 @@ fun main() {
 }
 ```
 
-## 4.4
+## 4-4
 
 ```korlin
 val min = { a: Int, b: Int -> if(a <= b) a else b }
@@ -109,7 +109,7 @@ fun main() {
 }
 ```
 
-## 4.5
+## 4-5
 
 ```kotlin
 fun power(a: Int): Int = a * a
@@ -132,7 +132,7 @@ fun main() {
 }
 ```
 
-## 4.6
+## 4-6
 
 ```kotlin
 fun power(a: Int): Int = a * a
@@ -167,7 +167,7 @@ fun main() {
 }
 ```
 
-## 4.7
+## 4-7
 
 ```kotlin
 tailrec fun <P> takeWhile(func: (P) -> Boolean, list: List<P>, acc: List<P> = listOf()): List<P> = when {
@@ -183,7 +183,7 @@ fun main() {
 }
 ```
 
-## 4.8
+## 4-8
 
 ```kotlin
 tailrec fun <P> takeWhile2(func: (P) -> Boolean, sequence: Sequence<P>, acc: List<P> = listOf()): List<P> = when {

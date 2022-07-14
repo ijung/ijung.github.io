@@ -424,7 +424,7 @@ fun <T> T.also(block: (T) -> Unit): T
 </table>
 
 # 연습 문제
-## 2.1
+## 2-1
 
 ```kotlin
 fun String.helloThis() = "Hello, $this"

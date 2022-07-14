@@ -173,12 +173,12 @@ result: Person(name=alsoExample, age=30)
 
 <table data-layout="default">
     <colgroup>
-        <col style="width: 85.0px;"></col>
-        <col style="width: 134.2px;"></col>
-        <col style="width: 134.2px;"></col>
-        <col style="width: 134.2px;"></col>
-        <col style="width: 134.2px;"></col>
-        <col style="width: 134.2px;"></col>
+        <col style="width: 85.0px;" />
+        <col style="width: 134.2px;" />
+        <col style="width: 134.2px;" />
+        <col style="width: 134.2px;" />
+        <col style="width: 134.2px;" />
+        <col style="width: 134.2px;" />
     </colgroup>
     <tbody>
         <tr>
@@ -327,10 +327,10 @@ fun <T> T.also(block: (T) -> Unit): T
 
 <table data-layout="default">
     <colgroup>
-        <col style="width: 65.0px;"></col>
-        <col style="width: 231.67px;"></col>
-        <col style="width: 231.67px;"></col>
-        <col style="width: 231.67px;"></col>
+        <col style="width: 65.0px;" />
+        <col style="width: 231.67px;" />
+        <col style="width: 231.67px;" />
+        <col style="width: 231.67px;" />
     </colgroup>
     <tbody>
         <tr>

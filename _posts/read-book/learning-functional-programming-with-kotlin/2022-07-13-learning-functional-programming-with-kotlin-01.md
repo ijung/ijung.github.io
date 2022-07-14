@@ -80,9 +80,9 @@ comments: true
 
 <table data-layout="default">
     <colgroup>
-        <col style="width: 71.0px;"></col>
-        <col style="width: 344.5px;"></col>
-        <col style="width: 344.5px;"></col>
+        <col style="width: 71.0px;" />
+        <col style="width: 344.5px;" />
+        <col style="width: 344.5px;" />
     </colgroup>
     <tbody>
         <tr>

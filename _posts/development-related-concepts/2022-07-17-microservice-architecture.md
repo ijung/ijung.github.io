@@ -1,5 +1,5 @@
 ---
-title: MSA (microservice architecture, 마이크로서비스 아키텍처)
+title: MSA(microservice architecture, 마이크로서비스 아키텍처)의 특징
 author: June
 date: 2022-07-17 14:08:00 +0900
 categories: [개발관련 개념들 정리]

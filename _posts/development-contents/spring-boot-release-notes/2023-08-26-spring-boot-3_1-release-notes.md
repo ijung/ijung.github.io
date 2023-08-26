@@ -160,17 +160,29 @@ static GenericContainer redis = new GenericContainer(DockerImageName.parse("redi
 
 #### Image Created Date and Time
 
+이제 `spring-boot:build-image` Maven 목표 및 `bootBuildImage` Gradle 작업에 생성된 이미지의 메타데이터에서 `Created` 필드 값을 사용자가 지정한 날짜로 설정하거나 현재 날짜와 시간을 사용하도록 `now`로 설정하는 데 사용할 수 있는 `createdDate` 구성 옵션이 있습니다. 자세한 내용은 [Gradle](https://docs.spring.io/spring-boot/docs/3.1.0/gradle-plugin/reference/htmlsingle/#build-image.customization) 및 [Maven](https://docs.spring.io/spring-boot/docs/3.1.0/maven-plugin/reference/htmlsingle/#build-image.customization) 플러그인 설명서를 참조하세요.
+
 #### Image Application Directory
+
+이제 `spring-boot:build-image` Maven 목표 및 `bootBuildImage` Gradle 작업에 빌드팩이 사용할 애플리케이션 콘텐츠를 업로드할 빌더 이미지의 위치를 설정하는 데 사용할 수 있는 `applicationDirectory` 구성 옵션이 있습니다. 이 위치는 생성된 이미지에서 애플리케이션 콘텐츠의 위치이기도 합니다. 자세한 내용은 [Gradle](https://docs.spring.io/spring-boot/docs/3.1.0/gradle-plugin/reference/htmlsingle/#build-image.customization) 및 [Maven](https://docs.spring.io/spring-boot/docs/3.1.0/maven-plugin/reference/htmlsingle/#build-image.customization) 플러그인 설명서를 참조하세요.
 
 ### Spring for GraphQL
 
 #### Exception Handling
 
+컨트롤러 또는 `@ControllerAdvice`에 선언된 `@GraphQlExceptionHandler` 메서드는 이제 컨트롤러 메서드 호출을 위해 Spring for GraphQL에서 기본적으로 지원됩니다. 또한 Spring Boot는 `GraphQlSource` 구성을 통해 `QueryDslDataFetcher`, `QueryByExampleDataFetcher` 등과 같은 기타(컨트롤러가 아닌) `DataFetcher` 구현에 대한 `@ControllerAdvice` 예외 처리를 자동 구성합니다.
+
 #### Pagination and Sorting
+
+Spring 데이터가 클래스 경로에 있는 경우, 이제 GraphQL용 Spring이 페이지 매김 및 정렬을 지원하도록 자동 구성됩니다.
 
 #### Improved Schema Type Generation
 
+`GraphQlSource`는 이제 `ConnectionTypeDefinitionConfigurer`로 자동 구성됩니다. [GraphQL 커서 연결 사양](https://relay.dev/graphql/connections.htm)에서 `연결 유형(Connection Type)`으로 간주되는 유형 정의 이름이 "Connection"으로 끝나는 필드를 찾아서 "연결(Connection)" 유형을 생성하고, 필요한 유형 정의가 아직 없는 경우 추가합니다.
+
 ### Support for Exporting Traces Using OTLP
+
+클래스 경로에 `io .opentelemetry:opentelemetry-exporter-otlp`가 있으면 `OtlpHttpSpanExporter`가 자동으로 구성됩니다. 내보내기 구성은 `management.otlp.tracing.*` 구성 속성을 사용하여 사용자 지정할 수 있습니다.
 
 ### Wavefront Span Tag Customization
 

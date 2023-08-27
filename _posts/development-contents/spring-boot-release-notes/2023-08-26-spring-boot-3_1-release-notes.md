@@ -186,14 +186,87 @@ Spring 데이터가 클래스 경로에 있는 경우, 이제 GraphQL용 Spring�
 
 ### Wavefront Span Tag Customization
 
+Wavefront를 사용 중이고 R[ED 지표에 대한 스팬 태그를 사용자 지정](https://docs.wavefront.com/tracing_customize_spans_and_alerts.html)하려는 경우, 이제 이 작업을 수행할 수 있는 `management.wavefront.trace-derived-custom-tag-keys`라는 새로운 속성이 있습니다. 자세한 내용은 [#34194](https://github.com/spring-projects/spring-boot/issues/34194)를 참조하세요.
+
 ### Different log levels for file and console
+
+Logback 또는 Log4j2를 사용하는 경우 이제 콘솔 로그와 파일 로그에 대해 서로 다른 로그 수준을 설정할 수 있는 옵션이 있습니다. 이 옵션은 구성 속성 `logging.threshold.console` 및 `logging.threshold.file`을 사용하여 설정할 수 있습니다.
 
 ### Maximum HTTP Response Header Size
 
+이제 Tomcat 또는 Jetty를 사용하는 경우 최대 HTTP 응답 헤더 크기를 제한할 수 있습니다. Tomcat의 경우 `server.tomcat. max-http-response-header-size` 속성을, Jetty의 경우 `server.jetty.max-http-response-header-size` 속성을 사용할 수 있습니다. 기본적으로 응답 헤더는 `8kb`로 제한되어 있습니다.
+
 ### ActiveMQ Support
+
+Spring Boot 3.0에서 제거되었던 ActiveMQ 클라이언트의 자동 구성에 대한 지원이 복원되었습니다. 임베디드 ActiveMQ 브로커에 대한 지원은 ActiveMQ의 브로커가 아직 JMS 3.0을 지원하지 않으므로 복원되지 않았습니다.
 
 ### Dependency Upgrades
 
+Spring Boot 3.1.0은 여러 Spring 프로젝트의 새 버전으로 이동합니다:
+
+- [Spring Authorization Server 1.1.0](https://github.com/spring-projects/spring-authorization-server/releases/tag/1.1.0)
+- [Spring Batch 5.0.2](https://github.com/spring-projects/spring-batch/releases/tag/v5.0.2)
+- [Spring Data 2023.0.0](https://github.com/spring-projects/spring-data-commons/wiki/Spring-Data-2023.0-%28Ullman%29-Release-Notes)
+- [Spring Framework 6.0.9](https://github.com/spring-projects/spring-framework/releases/tag/v6.0.9)
+- [Spring GraphQL 1.2.0](https://github.com/spring-projects/spring-graphql/releases/tag/v1.2.0)
+- [Spring HATEOAS 2.1.0](https://github.com/spring-projects/spring-hateoas/releases/tag/2.1.0)
+- [Spring Integration 6.1.0](https://github.com/spring-projects/spring-integration/releases/tag/v6.1.0)
+- [Spring Kafka 3.0.7](https://github.com/spring-projects/spring-kafka/releases/tag/v3.0.7)
+- [Spring LDAP 3.1.0](https://github.com/spring-projects/spring-ldap/releases/tag/3.1.0-RC1)
+- [Spring Security 6.1.0](https://github.com/spring-projects/spring-security/releases/tag/6.1.0)
+- [Spring Session 3.1.0](https://github.com/spring-projects/spring-session/releases/tag/3.1.0)
+- [Spring Web Services 4.0.4](https://github.com/spring-projects/spring-ws/releases/tag/v4.0.4)
+
+수많은 타사 종속성도 업데이트되었는데, 그 중 주목할 만한 몇 가지를 소개하면 다음과 같습니다:
+
+- [Couchbase Java Client 3.4.6](https://docs.couchbase.com/java-sdk/current/project-docs/sdk-release-notes.html#version-3-4-6-4-may-2023)
+- [Elasticsearch Client 8.7](https://www.elastic.co/guide/en/elasticsearch/client/java-api-client/current/release-highlights.html#_version_8_7)
+- [Hibernate 6.2](https://in.relation.to/2023/03/30/orm-62-final/)
+- [GraphQL Java 20.1](https://github.com/graphql-java/graphql-java/releases/tag/v20.1)
+- [Jackson 2.15.0](https://github.com/FasterXML/jackson/wiki/Jackson-Release-2.15#changes-compatibility)
+- [Kafka 3.4.0](https://downloads.apache.org/kafka/3.4.0/RELEASE_NOTES.html)
+- [Kotlin 1.8.21](https://github.com/JetBrains/kotlin/releases/tag/v1.8.21)
+- [Liquibase 4.20](https://forum.liquibase.org/t/liquibase-4-20-released/7874)
+- [Micrometer 1.11.0](https://github.com/micrometer-metrics/micrometer/releases/tag/v1.11.0)
+- [Micrometer Tracing 1.1.1](https://github.com/micrometer-metrics/tracing/releases/tag/v1.1.1)
+- [Mockito 5.3](https://github.com/mockito/mockito/releases/tag/v5.3.0)
+- [Native Build Tools 0.9.22](https://github.com/graalvm/native-build-tools/releases/tag/0.9.22)
+- [Neo4j Java Driver 5.8.0](https://github.com/neo4j/neo4j-java-driver/releases/tag/5.8.0)
+- [OpenTelemetry 1.24.0](https://github.com/open-telemetry/opentelemetry-java/releases/tag/v1.24.0)
+- [Rabbit AMQP Client 5.17.0](https://github.com/rabbitmq/rabbitmq-java-client/releases/tag/v5.17.0)
+- [Reactor BOM 2022.0.7](https://github.com/reactor/reactor/releases/tag/2022.0.7)
+- [Testcontainers 1.18](https://github.com/testcontainers/testcontainers-java/releases/tag/1.18.0)
+- Undertow 2.3.6.Final
+
 ### Miscellaneous
 
+- 스프링 카프카 `ContainerCustomizer` 빈이 이제 자동 구성된 `KafkaListenerContainerFactory`에 적용됩니다.
+- OTLP 레지스트리로 헤더 전송을 지원하기 위해 `management.otlp.metrics.export.headers` 프로퍼티가 추가되었습니다.
+- 이제 `JoranConfigurators` 빈을 AOT 처리에 사용할 수 있습니다.
+- `spring.kafka.admin`에 `close-timeout`, `operation-timeout`, `auto-startup` 및 `auto-create` 프로퍼티가 추가되었습니다.
+- 이제 자동 구성된 `ConcurrentKafkaListenerContainerFactory`에 `BatchInterceptor` 빈이 적용됩니다.
+- 인식되는 `CloudPlaform` 값 목록에 Nomad가 추가되었습니다.
+- 이제 `spring.jmx`에 대한 `registration-policy` 속성을 지정할 수 있습니다.
+- `SanitizableData`에 `withSanitizedValue` 유틸리티 메서드가 추가되었습니다.
+- `RabbitTemplateCustomizer`가 도입되었습니다. 이 유형의 빈은 자동 구성된 `RabbitTemplate`를 사용자 정의합니다.
+- CNB 플랫폼 API 0.11이 지원됩니다.
+- `spring-boot-starter-parent`는 `maven.compiler.release`를 구성된 Java 버전으로 설정합니다.
+- 이제 `-Dspring-boot.build-info.skip`을 설정하여 `build-info` 목표를 건너뛸 수 있습니다.
+- 마이크로미터의 `OtlpMeterRegistry`에 대한 집계 임시성 구성 지원.
+- Log4j2 및 Logback에서 추가 색상 지원.
+- R2DBC MySQL 드라이버(`io.asyncer:r2dbc-mysql`)에 대한 종속성 관리가 추가되었습니다.
+- R2DBC MariaDB 드라이버(`org.mariadb:r2dbc-mariadb`)에 대한 종속성 관리가 추가되었습니다.
+- OpenTelemetry 사용 시 자동 구성된 `SdkTracerProvider`를 생성하는 데 사용되는 `SdkTracerProviderBuilder`를 `SdkTracerProviderBuilderCustomizer` 빈을 정의하여 사용자 지정할 수 있습니다.
+- `MockServerRestTemplateCustomizer`는 이제 새로운 `setBufferContent` 메서드를 통해 콘텐츠 버퍼링 활성화를 지원합니다.
+- 스프링 배치가 자동 구성될 때 사용하는 변환 서비스는 이제 `BatchConversionServiceCustomizer` 빈을 정의하여 사용자 지정할 수 있습니다.
+- JWK Set URI에 대한 JTW 디코더를 생성하는 데 사용되는 빌더는 `JwkSetUriReactiveJwtDecoderBuilderCustomizer` 또는 `JwkSetUriJwtDecoderBuilderCustomizer` 빈을 정의하여 커스터마이즈할 수 있습니다.
+- `io.r2dbc:r2dbc-mssql`에 대한 종속성 관리가 복원되었습니다.
+- 로그백의 루트 로그 레벨이 가능한 한 빨리 `INFO`로 기본 설정됩니다.
+- 기본적으로 Docker Compose는 이제 `down`이 아닌 `stop`을 사용하여 중지됩니다.
+
 ## Deprecations in Spring Boot 3.1.0
+
+- `spring.kafka.streams.cache-max-size-buffering`은 `spring.kafka.streams.state-store-cache-max-size`를 위해 더 이상 사용되지 않습니다.
+- 표준 몽고 클라이언트 설정 빌더 커스텀라이저를 대신하여 `MongoPropertiesClientSettingsBuilderCustomizer`가 사용되지 않습니다.
+- `org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2ClientPropertiesRegistrationAdapter`를 `org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2ClientPropertiesMapper`로 변경합니다.
+- SSL 번들을 위해 `org.springframework.boot.web.server.SslStoreProvider`가 더 이상 사용되지 않습니다.

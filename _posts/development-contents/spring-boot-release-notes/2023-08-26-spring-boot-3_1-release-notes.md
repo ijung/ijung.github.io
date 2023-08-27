@@ -240,6 +240,8 @@ Spring Boot 3.1.0은 여러 Spring 프로젝트의 새 버전으로 이동합니
 
 ### Miscellaneous
 
+위에 나열된 변경 사항 외에도 다음과 같은 많은 사소한 조정과 개선이 이루어졌습니다:
+
 - 스프링 카프카 `ContainerCustomizer` 빈이 이제 자동 구성된 `KafkaListenerContainerFactory`에 적용됩니다.
 - OTLP 레지스트리로 헤더 전송을 지원하기 위해 `management.otlp.metrics.export.headers` 프로퍼티가 추가되었습니다.
 - 이제 `JoranConfigurators` 빈을 AOT 처리에 사용할 수 있습니다.
@@ -249,7 +251,7 @@ Spring Boot 3.1.0은 여러 Spring 프로젝트의 새 버전으로 이동합니
 - 이제 `spring.jmx`에 대한 `registration-policy` 속성을 지정할 수 있습니다.
 - `SanitizableData`에 `withSanitizedValue` 유틸리티 메서드가 추가되었습니다.
 - `RabbitTemplateCustomizer`가 도입되었습니다. 이 유형의 빈은 자동 구성된 `RabbitTemplate`를 사용자 정의합니다.
-- CNB 플랫폼 API 0.11이 지원됩니다.
+- CNB Platform API 0.11이 지원됩니다.
 - `spring-boot-starter-parent`는 `maven.compiler.release`를 구성된 Java 버전으로 설정합니다.
 - 이제 `-Dspring-boot.build-info.skip`을 설정하여 `build-info` 목표를 건너뛸 수 있습니다.
 - 마이크로미터의 `OtlpMeterRegistry`에 대한 집계 임시성 구성 지원.
@@ -267,6 +269,6 @@ Spring Boot 3.1.0은 여러 Spring 프로젝트의 새 버전으로 이동합니
 ## Deprecations in Spring Boot 3.1.0
 
 - `spring.kafka.streams.cache-max-size-buffering`은 `spring.kafka.streams.state-store-cache-max-size`를 위해 더 이상 사용되지 않습니다.
-- 표준 몽고 클라이언트 설정 빌더 커스텀라이저를 대신하여 `MongoPropertiesClientSettingsBuilderCustomizer`가 사용되지 않습니다.
+- `MongoPropertiesClientSettingsBuilderCustomizer`를 `StandardMongoClientSettingsBuilderCustomizer`로 변경합니다.
 - `org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2ClientPropertiesRegistrationAdapter`를 `org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2ClientPropertiesMapper`로 변경합니다.
 - SSL 번들을 위해 `org.springframework.boot.web.server.SslStoreProvider`가 더 이상 사용되지 않습니다.

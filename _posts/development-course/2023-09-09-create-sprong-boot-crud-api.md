@@ -11,9 +11,9 @@ comments: true
 ---
 
 1. MySql 설치 및 실행
-    - [도커를 이용해 mysql 설치 및 실행하기](/posts/development-course/install-mysql-using-docker/)
+    - [도커를 이용해 mysql 설치 및 실행하기]
 1. 스프링 부트 프로젝트 만들기
-    - [스프링 부트 프로젝트 만들기](/posts/development-course/create-spring-boot-project/)
+    - [스프링 부트 프로젝트 만들기]
 1. 스프링 부트 프로젝트에 MySql 연동하기
     - gradle.build.kts에 의존성 추가
         - `spring-boot-starter-data-jpa`와 `mysql-connector-j` 의존성을 추가한다.

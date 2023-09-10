@@ -1,5 +1,5 @@
 ---
-title: 도커를 이용해 mysql 설치하기
+title: 도커를 이용해 MySql 설치 및 실행하기
 author: June
 date: 2023-09-09 14:30:00 +0900
 categories: [강좌]
@@ -88,6 +88,16 @@ comments: true
     ```
 
     ![docker exec](/posts/development-cource/docker-exec.png)
+
+1. Database 만들기
+
+    ```powershell
+    CREATE DATABASE <database 이름> default CHARACTER SET UTF8; 
+    ```
+
+    - 데이터 베이스를 생성하고 한글을 사용할 수 있도록 UTF8로 문자열을 저장하게 설정(default CHARACTER SET UTF8)
+
+    ![create database](/posts/development-cource/create-database.png)
 
 1. Docker 컨테이너 시작/중지/재시작/삭제
 

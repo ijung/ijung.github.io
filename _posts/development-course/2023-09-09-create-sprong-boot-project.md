@@ -11,7 +11,7 @@ comments: true
 ---
 
 1. 프로젝트 생성
-    - [spring initializr](https://start.spring.io)에 접속해 프로젝트픞 생성한다.
+    - [spring initializr](https://start.spring.io)에 접속해 프로젝트를 생성한다.
         - Project
             - 빌드 시스템을 선택한다.
             - 추천: gradle

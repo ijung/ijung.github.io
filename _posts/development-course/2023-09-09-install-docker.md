@@ -37,7 +37,7 @@ comments: true
 [도커 홈페이지](https://www.docker.com)의 [Get Docker](https://docs.docker.com/get-docker/)를 통해 도커를 설치한다.
 
     ![Get Docker](/posts/development-cource/screencapture-docs-docker-get-docker.png)
-  
+
     - windows나 mac의 경우 docker desktop을 설치하면 된다.
     - 설치 후 재부팅을 해야 할 수도 있다.
     - windows의 경우 wsl kenel update를 요구하는 경우도 있다.

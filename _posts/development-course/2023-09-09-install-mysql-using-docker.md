@@ -11,25 +11,7 @@ comments: true
 ---
 
 1. 도커 설치
-[도커 홈페이지](https://www.docker.com)의 [Get Docker](https://docs.docker.com/get-docker/)를 통해 도커를 설치한다.
-
-    ![Get Docker](/posts/development-cource/screencapture-docs-docker-get-docker.png)
-  
-    - windows나 mac의 경우 docker desktop을 설치하면 된다.
-    - 설치 후 재부팅을 해야 할 수도 있다.
-    - windows의 경우 wsl kenel update를 요구하는 경우도 있다.
-        - 이 경우 cmd 혹은 PowerShell에서 `wsl --update`를 입력한다.
-    - 이 후 모든 명령은 따로 언급이 없다면 windows의 경우 cmd 혹은 PowerShell에서(반드시 `관리 권한으로 실행`해야 한다.) mac이나 linux는 terminal에서 실행한다.
-
-1. 도커가 정상적으로 설치되었는지 확인 한다.
-
-    ```powershell
-    docker --version
-    ```
-
-    - 버전이 출력되면 정상적으로 설치된 것이다.
-
-    ![docker version](/posts/development-cource/docker-version.png)
+    - [도커 설치]({% post_url 2023-09-09-install-docker %})
 
 1. mysql 이미지를 pull한다.
 
@@ -39,7 +21,7 @@ comments: true
 
     - 버전을 명시해 주지 않으면 lastest 버전을 받는다.
     - 특정 버전을 받기를 원할 경우 `docker pull mysql:8.0.22`와 같이 실행한다.
-    - pull 이미지는 [docker hub](https://hub.docker.com)에서 확인이 간능하다.
+    - pull 이미지는 [docker hub](https://hub.docker.com)에서 확인이 가능하다.
         - [docker hub: mysql](https://hub.docker.com/_/mysql)
 
     ![docker pull mysql](/posts/development-cource/docker-pull-mysql.png)

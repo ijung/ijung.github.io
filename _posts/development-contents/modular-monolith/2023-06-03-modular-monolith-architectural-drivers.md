@@ -235,7 +235,7 @@ Simon Brown은 '[Software Architecture for Developers](https://softwarearchitect
 
 ## Additional Resources
 
-1. [Architectural Drivers - chapter from Designing Software Architectures: A Practical Approach book - Humberto Cervantes, Rick Kazman.](http://www.informit.com/articles/article.aspx?p=2738304&seqNum=4)
+1. [Architectural Drivers - chapter from Designing Software Architectures: A Practical Approach book - Humberto Cervantes, Rick Kazman.](https://www.informit.com/articles/article.aspx?p=2738304&seqNum=4)
 1. [Software Architecture for Developers book - Simon Brown.](https://softwarearchitecturefordevelopers.com/)
 1. [Design It! book - Michael Keeling.](https://www.oreilly.com/library/view/design-it/9781680502923/)
 1. [Collection of articles about Monolith and Microservices architectures named “When microservices fail…“.](https://docs.google.com/spreadsheets/d/1vjnjAII_8TZBv2XhFHra7kEQzQpOHSZpFIWDjynYYf0/edit#gid=0)

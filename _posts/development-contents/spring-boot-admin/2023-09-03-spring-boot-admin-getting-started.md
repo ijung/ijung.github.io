@@ -11,7 +11,7 @@ comments: true
 ---
 ## 들어가며
 
-이 글은 [Spring Boot Admin Docs - Getting started(3.1.6)](http://docs.spring-boot-admin.com/current/getting-started.html)를 번역 및 이해를 위한 일부 내용을 덧 붙인 글입니다.
+이 글은 [Spring Boot Admin Docs - Getting started(3.1.6)](https://docs.spring-boot-admin.com/current/getting-started.html)를 번역 및 이해를 위한 일부 내용을 덧 붙인 글입니다.
 
 ## Overview
 
@@ -23,7 +23,7 @@ Spring Boot Admin은 스프링 부트 액추에이터(Spring Boot Actuators)가 
 
 ## Quick Start
 
-Spring Boot Admin은 Spring Boot에 의존하므로 먼저 Spring Boot 애플리케이션을 설정해야 합니다. [http://start.spring.io](http://start.spring.io)을 사용하여 이 작업을 수행하는 것이 좋습니다. Spring Boot 관리 서버는 서블릿 또는 웹플럭스 애플리케이션으로 실행할 수 있으므로 이를 결정하고 해당 Spring Boot 스타터를 추가해야 합니다. 이 예에서는 서블릿 웹 스타터를 사용합니다.
+Spring Boot Admin은 Spring Boot에 의존하므로 먼저 Spring Boot 애플리케이션을 설정해야 합니다. [https://start.spring.io](https://start.spring.io)을 사용하여 이 작업을 수행하는 것이 좋습니다. Spring Boot 관리 서버는 서블릿 또는 웹플럭스 애플리케이션으로 실행할 수 있으므로 이를 결정하고 해당 Spring Boot 스타터를 추가해야 합니다. 이 예에서는 서블릿 웹 스타터를 사용합니다.
 
 1. 종속 요소에 Spring Boot Admin Server starter를 추가하세요:
 
@@ -72,7 +72,7 @@ Spring Boot Admin은 Spring Boot에 의존하므로 먼저 Spring Boot 애플리
 
 ## Registering Client Applications
 
-SBA Server에 애플리케이션을 등록하려면 SBA Client를 포함하거나 [Spring Cloud Discovery](https://spring.io/projects/spring-cloud)(예: Eureka, Consul, ...)를 사용할 수 있습니다. [SBA Server side에서 정적 구성을 사용하는 간단한 옵션도 있습니다](http://docs.spring-boot-admin.com/current/server.html#spring-cloud-discovery-static-config).
+SBA Server에 애플리케이션을 등록하려면 SBA Client를 포함하거나 [Spring Cloud Discovery](https://spring.io/projects/spring-cloud)(예: Eureka, Consul, ...)를 사용할 수 있습니다. [SBA Server side에서 정적 구성을 사용하는 간단한 옵션도 있습니다](https://docs.spring-boot-admin.com/current/server.html#spring-cloud-discovery-static-config).
 
 ### Spring Boot Admin Client
 
@@ -119,15 +119,15 @@ SBA Server에 애플리케이션을 등록하려면 SBA Client를 포함하거�
     }
     ```
 
-    1 간결함을 위해 지금은 보안을 비활성화합니다. 보안 엔드포인트를 처리하는 방법은 [보안 섹션](http://docs.spring-boot-admin.com/current/security.html#securing-spring-boot-admin)을 참조하세요.
+    1 간결함을 위해 지금은 보안을 비활성화합니다. 보안 엔드포인트를 처리하는 방법은 [보안 섹션](https://docs.spring-boot-admin.com/current/security.html#securing-spring-boot-admin)을 참조하세요.
 
 ### Spring Cloud Discovery
 
 애플리케이션에 이미 Spring Cloud Discovery를 사용하고 있다면 SBA Client가 필요하지 않습니다. Spring Boot Admin Server에 DiscoveryClient를 추가하기만 하면 나머지는 AutoConfiguration에 의해 수행됩니다.
 
-다음 단계에서는 Eureka를 사용하지만 다른 Spring Cloud Discovery 구현도 지원됩니다. [Consul](https://github.com/codecentric/spring-boot-admin/tree/master/spring-boot-admin-samples/spring-boot-admin-sample-consul/)과 [Zookeeper](http://projects.spring.io/spring-cloud/spring-cloud.html)를 사용하는 예제는 링크를 참고하세요.
+다음 단계에서는 Eureka를 사용하지만 다른 Spring Cloud Discovery 구현도 지원됩니다. [Consul](https://github.com/codecentric/spring-boot-admin/tree/master/spring-boot-admin-samples/spring-boot-admin-sample-consul/)과 [Zookeeper](https://github.com/codecentric/spring-boot-admin/tree/master/spring-boot-admin-samples/spring-boot-admin-sample-zookeeper/)를 사용하는 예제는 링크를 참고하세요.
 
-또한 [Spring Cloud documentation](http://projects.spring.io/spring-cloud/spring-cloud.html)를 참조하세요.
+또한 [Spring Cloud documentation](https://spring.io/projects/spring-cloud)를 참조하세요.
 
 1. 스프링 클라우드 스타터 유레카를 종속 요소에 추가하세요:
 

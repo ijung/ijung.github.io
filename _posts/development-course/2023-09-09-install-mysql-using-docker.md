@@ -11,7 +11,7 @@ comments: true
 ---
 
 1. 도커 설치
-
+    - [도커의 핵심 개념 및 설치, 실행하기]({% post_url 2023-09-09-install-docker %})
 
 1. mysql 이미지를 pull한다.
 

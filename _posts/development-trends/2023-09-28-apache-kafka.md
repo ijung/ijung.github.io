@@ -100,7 +100,7 @@ comments: true
         - KRaft
           - 기능: KRaft는 아파치 카프카의 메타데이터 관리를 직접 처리할 수 있도록 설계된 합의 프로토콜입니다.
           - 작동 원리
-              - KRaft는 Raft 합의 알고리즘의 이벤트 기반 변형을 사용하며, 새로운 quorum 컨트롤러를 도입하여 메타데이터가 정확하게 복제되도록 합니다.
+              - KRaft는 Raft 합의 알고리즘의 이벤트 기반 변형을 사용하며, 새로운 quorum controller를 도입하여 메타데이터가 정확하게 복제되도록 합니다.
           - 특징
               - KRaft는 Kafka Improvement Proposal (KIP) 500에서 처음 제안되었으며, 주키퍼를 대체하기 위해 개발되었습니다.
               - KRaft 모드는 Kafka 2.8 버전에서 부터 early access로 도입이 되었으며, 3.0 버전에서는 preview로 제공이 되었습니다. 3.3.1에서는 production ready로 표시되었습니다. 3.4에서는 주키퍼를 더 이상 사용하지 않도록 할 예정이고, 4.0에서는 주키퍼를 완전히 제거할 예정입니다.[^2]
@@ -109,12 +109,39 @@ comments: true
               - 클러스터를 설정하고 운영하는 과정이 단순화되며, 주키퍼를 사용하지 않아도 되므로, 관리 비용이 절감됩니다.
 
 3. 카프카의 핵심 특징
-    - 고가용성 (High Availability)
+    - 높은 처리량(High Throughput)
+        - 높은 처리량은 시스템이 단위 시간당 처리할 수 있는 데이터의 양을 의미합니다. 카프카는 분산 처리, 배치 처리, 로그 기반 아키텍처 등을 통해 높은 처리량을 제공합니다.
+        - 분산 처리(Distributed Processing)
+            - 카프카는 분산 처리를 통해 높은 처리량을 제공합니다. 카프카는 클러스너 내 브로커를 여러 개 두어 데이터를 병렬로 처리할 수 있습니다.
+                > 분산 처리는 여러 독립적인 컴퓨터 시스템(혹은 노드)을 연결하여 하나의 시스템처럼 동작하게 하고, 데이터와 작업을 여러 노드에 분산시켜 동시에 처리하는 컴퓨팅 모델입니다.
+                > 분산처리는 확장성(Scalaibility)과 내결함성(Fault-tolerance), 성능(Performance) 등의 특징을 가집니다.
+        - 배치 처리(Batch Processing)
+            - 카프카는 배치 처리를 통해 높은 처리량을 제공합니다. 카프카는 메시지를 배치로 처리하여 네트워크 호출의 오버헤드를 줄이고, 디스크 I/O를 최소화하여 처리량을 높입니다.
+                > 배치 처리는 데이터나 잡업을 일괄적으로 그룹화하여 처리하는 컴퓨팅 방식입니다.
+                > 배치 처리는 자동화(Automation), 고성능(High Performance), 높은 처리량(High Throughput) 등의 특징을 가집니다.
+        - 로그 기반 아키텍처(log-based architecture)
+            - 카프카는 로그 기반 아키텍처를 사용하여 높은 처리량을 제공하며,  등의 특징을 갖습니다.
+                > 로그 기반 아키텍처는 시스템에서 데이터를 불변의 로그(immutable log) 형태로 저장하고 관리하는 방식을 말합니다.
+                > 로그 기반 아키텍처는 불변성(Immutability), 순서 보장(Ordering), 재생산성(Replayability), 확장성(Scalability) 등의 특징을 가집니다.
+    - 고가용성(High Availability)
+        - 고가용성은 시스템이 장애가 발생하더라도 정상적으로 동작하고, 필요한 경우 복구하는 능력을 의미합니다. 카프카는 Leader-Follower 아키텍처 등을 통해 데이터 복제(Data Replication), 자동 복구(Automatic Recovery) 등을 하여 고가용성을 제공합니다.
+        - Leader-Follower 아키텍처
+            - 각 토픽의 파티션은 리더와 0개 이상의 팔로워로 구성됩니다. 모든 읽기 및 쓰기는 리더를 통해 이루어지며, 팔로워는 리더의 데이터를 복제(Data Replication)하여 데이터를 백업합니다.
+            - 리더 브로커가 실패할 경우, 팔로워 중 하나가 새로운 리더로 선출(Leader Election)합니다. 클라이언트는 읽기 및 쓰기 작업을 위해 새로운 리더로 자동 리디렉션됩니다. 이와같은 방식으로 시스템은 자동 복구(Automatic Recovery)됩니다.
+                > Leafer-Follower 아키텍처는 분산 시스템 설계 패턴 중 하나로, 여러 노드들 중 한 노드가 Leader 역할을 하고, 나머지 노드들이 Follower 역할을 하는 패턴을 말합니다.
+                > Leader-Follower 아키텍처는 고가용성(High Availability), 확장성(Scalability), 데이터 복제(Data Replication), 자동 복구(Automatic Recovery) 등의 특징을 가집니다.
     - 확장성 (Scalability)
+    - 내고장성 (Fault Tolerance)
     - 내구성 (Durability)
+    - 순서 보장 (Ordering Guarantee)
+    - 병렬 처리 (Parallelism)
     - 실시간 처리 (Real-time Processing)
     - 파티셔닝 (Partitioning)
     - 복제 (Replication)
+    - 언어 및 프레임워크 호환성 (Compatibility)
+    - 커넥터와 인터페이스 (Connectors & Interfaces)
+    - 스트림 처리 (Stream Processing)
+    - 보안 (Security)
 
 4. 카프카의 동작 원리
     - 데이터의 흐름: 프로듀서에서 브로커로, 그리고 컨슈머로
@@ -141,7 +168,7 @@ comments: true
     - 모니터링 및 로깅
     - 장애 복구 전략
 
-9. 사례 연구
+9.  사례 연구
     - 카프카를 성공적으로 도입한 기업 및 프로젝트 사례
     - 도입 후 발생한 문제점 및 해결 방법
 

@@ -326,7 +326,7 @@ class MyJobConfiguration extends DefaultBatchConfiguration {
 
 여러 해에 걸쳐 프레임워크의 다양한 영역에서 문자 인코딩과 관련된 여러 문제가 보고되었습니다. 예를 들어, 파일 기반 아이템 리더와 라이터 간의 일관되지 않은 기본 인코딩, 실행 컨텍스트에서 다중 바이트 문자를 처리할 때 직렬화/역직렬화 문제 등이 있습니다.
 
-[JEP 400](https://openjdk.java.net/jeps/400)과 [UTF-8 manifesto](http://utf8everywhere.org/)의 정신에 따라, 우리는 프레임워크의 모든 영역에서 기본 인코딩을 `UTF-8`로 변경하고 적절한 곳에서 이 기본값을 구성 가능하게 만들었습니다.
+[JEP 400](https://openjdk.java.net/jeps/400)과 [UTF-8 manifesto](https://utf8everywhere.org/)의 정신에 따라, 우리는 프레임워크의 모든 영역에서 기본 인코딩을 `UTF-8`로 변경하고 적절한 곳에서 이 기본값을 구성 가능하게 만들었습니다.
 
 #### Java 8 features update: 자바 8 기능 업데이트
 

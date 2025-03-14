@@ -1,5 +1,5 @@
 ---
-title: 소프트웨어 아키텍처 101 - CHAPTER 4 아키텍처 특성 정의
+title: 소프트웨어 아키텍처 101 - CHAPTER 5 아키텍처 특성 식별
 author: June
 date: 2024-12-20 14:09:00 +0900
 categories: [개발 책, 소프트웨어 아키텍처 101]

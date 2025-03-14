@@ -2,8 +2,8 @@
 title: 소프트웨어 아키텍처 101 - 책 소개
 author: June
 date: 2022-10-17 02:27:00 +0900
-categories: [개발 책, 소프트웨어 아키텍처 101]
-tags: [공부, 책, 소프트웨어 아키텍처 101]
+categories: [개발 책, 리팩터링 2판]
+tags: [공부, 책, 리팩터링 2판, 마틴 파울러]
 toc: true
 math: true
 mermaid: true

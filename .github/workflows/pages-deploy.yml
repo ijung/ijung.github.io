@@ -62,7 +62,7 @@ jobs:
           path: "_site${{ steps.pages.outputs.base_path }}"
 
       - name: Upload build output
-        uses: actions/upload-artifact@v3.2.1
+        uses: actions/upload-artifact@v4.6.2
         with:
           name: build-output
           path: ./build

@@ -61,6 +61,12 @@ jobs:
         with:
           path: "_site${{ steps.pages.outputs.base_path }}"
 
+      - name: Upload build output
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-output
+          path: ./build
+
   deploy:
     environment:
       name: github-pages

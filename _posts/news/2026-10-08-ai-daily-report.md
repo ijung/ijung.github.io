@@ -27,8 +27,10 @@ permalink: /posts/ai-daily-report-2026-10-08/
 - 왜 중요한가 — 해석: 질문에 답하는 것을 넘어, 그 자리에서 사용할 인터페이스를 구성하는 방향의 변화다.[7]
 - 주의: 기업 제품 발표다.[7] 계정별 배포 완료는 확인하지 않았다. 자체 시스템 카드에는 GPT-5.6 대응 모델보다 일부 안전성 평가가 후퇴한 결과도 있어, 기능 확대를 모든 안전성 지표의 개선으로 읽으면 안 된다.[11]
 - 출처:
-  - [OpenAI 제품 발표](https://openai.com/index/gpt-6-for-everyone/) — 게시: 2026-10-07 · 시각 미공개.[7]
-  - [OpenAI 시스템 카드](https://cdn.openai.com/pdf/gpt-6-october.pdf) — 게시: 2026-10-07 · 시각 미공개.[11]
+  - 원문: [OpenAI 제품 발표](https://openai.com/index/gpt-6-for-everyone/)
+    - 게시: 2026-10-07 · 시각 미공개.[7]
+  - 원문: [OpenAI 시스템 카드](https://cdn.openai.com/pdf/gpt-6-october.pdf)
+    - 게시: 2026-10-07 · 시각 미공개.[11]
 
 ### 2. Anthropic, Haiku 5.5 공개…GitHub Copilot도 도입
 
@@ -40,8 +42,11 @@ permalink: /posts/ai-daily-report-2026-10-08/
 - 왜 중요한가 — 해석: 소형 모델의 비용 경쟁이 API를 넘어 개발 도구의 빠른 수정·터미널 작업으로 연결되는 사례다.[8][9]
 - 주의: 비용·성능은 공급자 자체 설명이다.[8] 실제 작업별 절감률은 측정하지 않았다. Copilot은 **점진 배포**다.[9]
 - 출처:
-  - [Anthropic 제품 발표](https://www.anthropic.com/claude-haiku-5-5) — 게시: 2026-10-07 · 시각 미공개.[8]
-  - [GitHub 변경 기록](https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot/) — 게시: 2026-10-08 05:12 KST / 수정: 2026-10-08 05:39 KST. 원문 `datePublished`·`dateModified`의 UTC 값으로 변환했다.[9]
+  - 원문: [Anthropic 제품 발표](https://www.anthropic.com/claude-haiku-5-5)
+    - 게시: 2026-10-07 · 시각 미공개.[8]
+  - 원문: [GitHub 변경 기록](https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot/)
+    - 게시: 2026-10-08 05:12 KST.[9]
+    - 수정: 2026-10-08 05:39 KST. 원문 `datePublished`·`dateModified`의 UTC 값으로 변환했다.[9]
 - 관련 대표 미디어: [Copilot 모델 선택 화면 — GitHub 원문 이미지](https://github.blog/wp-content/uploads/2026/10/667862451-51645e23-ca14-47fa-a39b-3a383bdea6d9.png?resize=2064%2C600). Haiku 5.5가 선택 메뉴에 표시되는 제품 화면이다.[9] 재게시 허용 조건을 확인하지 못해 복제·임베드 없이 공식 이미지 링크만 제공한다.
 
 ### 3. NVIDIA·Microsoft, Windows 로컬 에이전트 기반과 DGX Station 미리보기
@@ -52,8 +57,11 @@ permalink: /posts/ai-daily-report-2026-10-08/
   - 같은 행사에서 RTX Spark 노트북 예약 주문과 DGX Station for Windows 미리보기를 발표했다.[10]
 - 왜 중요한가 — 해석: 모델 선택뿐 아니라 로컬 실행 환경과 운영체제 수준의 통제가 에이전트 제품의 비교 항목으로 드러난 사례다.[10]
 - 주의: NVIDIA의 홍보성 발표이며 Microsoft 발표도 이 자료를 통해 확인했다.[10] DGX Station의 실제 공급 완료나 보안 효과를 독립 검증한 것은 아니다.
-- 출처: [NVIDIA 공식 블로그](https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event/) — 게시: 2026-10-08 03:45 KST / 수정: 2026-10-08 06:40 KST.[10]
-  - 최초 게시 메타데이터는 `2026-10-07T18:45:28+00:00`. 행사일은 미국 현지 2026-10-07이다.[10]
+- 출처:
+  - 원문: [NVIDIA 공식 블로그](https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event/)
+    - 게시: 2026-10-08 03:45 KST.[10]
+    - 수정: 2026-10-08 06:40 KST.[10]
+    - 주석: 최초 게시 메타데이터는 `2026-10-07T18:45:28+00:00`. 행사일은 미국 현지 2026-10-07이다.[10]
 
 ## 기타 뉴스
 
@@ -83,9 +91,14 @@ permalink: /posts/ai-daily-report-2026-10-08/
 
 ## Sources
 
-[7] https://openai.com/index/gpt-6-for-everyone
-[8] https://www.anthropic.com/claude-haiku-5-5
-[9] https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot
-[10] https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event
-[11] https://cdn.openai.com/pdf/gpt-6-october.pdf
-[13] https://www.globenewswire.com/news-release/2026/10/07/3376511/0/en/ai-order-to-cash-platform-stuut-raises-52-5m-series-b-after-unlocking-40-more-cash-for-enterprises.html
+[7] <https://openai.com/index/gpt-6-for-everyone>
+
+[8] <https://www.anthropic.com/claude-haiku-5-5>
+
+[9] <https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot>
+
+[10] <https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event>
+
+[11] <https://cdn.openai.com/pdf/gpt-6-october.pdf>
+
+[13] <https://www.globenewswire.com/news-release/2026/10/07/3376511/0/en/ai-order-to-cash-platform-stuut-raises-52-5m-series-b-after-unlocking-40-more-cash-for-enterprises.html>

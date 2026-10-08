@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="540" viewBox="0 0 520 540" role="img" aria-labelledby="title desc">
+<title id="title">Claude Code 훅 실패 시 차단 조건</title>
+<desc id="desc">onFailure를 block으로 설정했을 때, 훅 시작 실패·시간 초과·예상 밖 종료 코드 중 하나가 발생하면 해당 동작을 차단한다. 공식 제품 화면이 아닌 설명용 도식이다.</desc>
+<rect width="520" height="540" rx="20" fill="#f5f7fb"/>
+<g font-family="sans-serif" text-anchor="middle" fill="#172033">
+<text x="260" y="45" font-size="26" font-weight="700">훅 실패 시 동작 차단</text>
+<text x="260" y="78" font-size="20">조건: onFailure: "block" 설정</text>
+<rect x="50" y="108" width="420" height="64" rx="12" fill="#fff" stroke="#69768b"/>
+<text x="260" y="149" font-size="24">훅을 시작하지 못함</text>
+<rect x="50" y="189" width="420" height="64" rx="12" fill="#fff" stroke="#69768b"/>
+<text x="260" y="230" font-size="24">훅 실행 시간 초과</text>
+<rect x="50" y="270" width="420" height="64" rx="12" fill="#fff" stroke="#69768b"/>
+<text x="260" y="311" font-size="24">예상 밖 종료 코드</text>
+<text x="260" y="371" font-size="21">위 조건 중 하나가 발생하면</text>
+<path d="M260 388 V414 M248 404 L260 416 L272 404" fill="none" stroke="#314c83" stroke-width="4"/>
+<rect x="50" y="430" width="420" height="68" rx="12" fill="#314c83"/>
+<text x="260" y="473" font-size="26" font-weight="700" fill="#fff">해당 동작 차단</text>
+<text x="260" y="525" font-size="16">Clark 제작 · 공식 화면 아님</text>
+</g>
+</svg>

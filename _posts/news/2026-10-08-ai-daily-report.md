@@ -8,128 +8,86 @@ comments: false
 permalink: /posts/ai-daily-report-2026-10-08/
 ---
 
-갱신 기준: 2026-10-08 14:01 KST · v5: 원문 재검증·신규 탐색·이용 대상과 제공 상태 구분. 최초 게시 시각은 유지했다.
+갱신 기준: 2026-10-08 14:56 KST
 
-## 요약 3줄
+## 30초 브리핑
 
-- OpenAI는 GPT-6의 **상호작용형 답변 UI**를 ChatGPT에 순차 배포한다.<a href="#source-1">[1]</a> Work·Codex 변경은 아니다.<a href="#source-1">[1]</a>
-- Haiku 5.5는 비용 민감 작업을 겨냥한다.<a href="#source-2">[2]</a> **요청 크기별 가격 조건**과 Copilot의 점진 배포를 구분해야 한다.<a href="#source-2">[2]</a><a href="#source-3">[3]</a>
-- Windows 로컬 에이전트 실행 기반과 OpenDocRouter 문서 파싱 API가 발표됐다.<a href="#source-4">[4]</a><a href="#source-5">[5]</a> **일반 제공·예약 주문·미리보기**를 같은 출시 상태로 읽지 말자.<a href="#source-4">[4]</a>
+- OpenAI가 ChatGPT에 버튼·폼·차트로 답하는 GPT-6·Intelligent UI의 순차 배포를 시작했다.<a href="#source-1">[1]</a>
+- Anthropic이 Haiku 5.5를 공개하고 프롬프트 10만 토큰 이하·초과에 서로 다른 낮은 단가를 적용했다.<a href="#source-2">[2]</a>
+- LlamaIndex가 여러 문서 처리 모델을 하나의 API로 쓰는 OpenDocRouter를 공개했다.<a href="#source-3">[3]</a>
 
 ## 오늘의 주요 AI 뉴스
 
-### 1. OpenAI, GPT-6·Intelligent UI의 ChatGPT 배포 확대
+### 1. OpenAI, ChatGPT 답변에 직접 조작하는 UI 도입
 
-- 핵심: ChatGPT가 텍스트와 함께 버튼·폼·차트 등 직접 조작하는 요소로 답할 수 있게 된다.<a href="#source-1">[1]</a>
-- 주요 내용:
-  - 답변을 생성하는 동안 UI가 점진적으로 나타나도록 구성 요소 라이브러리와 컴파일러를 사용한다.<a href="#source-1">[1]</a>
-  - 변경 범위는 Chat 탭이며 **Work·Codex의 모델은 이번 발표로 바뀌지 않는다.**<a href="#source-1">[1]</a>
-- 이용 대상·상태: 웹·모바일 ChatGPT에서 10월 7일 Plus·Pro·Business·Enterprise부터 글로벌 순차 배포, 10월 8일부터 Free·Go로 확대한다고 발표했다.<a href="#source-1">[1]</a> Enterprise는 관리자 설정에 따른다.<a href="#source-1">[1]</a> 국내 계정별 배포 완료는 미확인이다.
-- 왜 중요한가 — 해석: 답변을 읽는 데서 그치지 않고 대화 안에서 도구를 조작하는 방식으로 인터페이스가 확장된다.<a href="#source-1">[1]</a>
-- 주의: 기업 제품 발표다.<a href="#source-1">[1]</a> 시스템 카드에는 일부 안전성 평가의 **통계적으로 유의한 후퇴**도 보고돼, 모든 안전성 지표가 개선됐다고 읽으면 안 된다.<a href="#source-6">[6]</a>
-- 출처:
-  - 원문: [OpenAI · GPT-6 and Intelligent UI for everyone](https://openai.com/index/gpt-6-for-everyone)
-    - 게시: 2026-10-07 · 시각 미공개.<a href="#source-1">[1]</a>
-  - 원문: [OpenAI · GPT-6 Sol and Luna: October 2026 update](https://cdn.openai.com/pdf/gpt-6-october.pdf)
-    - 게시: 2026-10-07 · 시각 미공개.<a href="#source-6">[6]</a>
+**GPT-6·Intelligent UI로 대화 안에서 버튼을 누르고 폼·차트를 조작할 수 있게 된다.**<a href="#source-1">[1]</a>
 
-### 2. Anthropic, Haiku 5.5 공개…GitHub Copilot에도 도입
+- 텍스트만 읽는 대신 질문에 맞는 도구를 답변 안에서 사용하는 변화다.<a href="#source-1">[1]</a> 이번 변경은 **Chat 탭에 한정되며 Work·Codex 모델은 바뀌지 않는다.**<a href="#source-1">[1]</a>
+- 발표일인 10월 7일 Plus·Pro·Business·Enterprise부터 글로벌 순차 배포를 시작하고, 다음 날 Free·Go로 확대한다고 밝혔다.<a href="#source-1">[1]</a> Enterprise는 관리자 설정에 따른다.<a href="#source-1">[1]</a>
 
-- 핵심: 대량·비용 민감 작업용 Haiku 5.5가 공개됐고 Copilot에서도 제공을 시작했다.<a href="#source-2">[2]</a><a href="#source-3">[3]</a>
-- 주요 내용:
-  - Anthropic은 Haiku 4.5 대비 평균 실행 비용이 약 **75% 낮다**고 설명한다.<a href="#source-2">[2]</a> 토크나이저 변화까지 반영한 자체 계산이다.<a href="#source-2">[2]</a>
-  - 가격 인하율은 프롬프트 10만 토큰 이하 요청에서 **90%**, 이를 초과하면 **50%**다.<a href="#source-2">[2]</a> 모든 요청에 같은 절감률이 적용되는 것은 아니다.<a href="#source-2">[2]</a>
-  - 같은 발표에서 Sonnet 5.5 캐시 읽기 가격도 100만 토큰당 0.20달러에서 **0.10달러**로 낮췄다.<a href="#source-2">[2]</a>
-- 이용 대상·상태: Claude Platform·AWS·Google Cloud·Azure에서 제공한다.<a href="#source-2">[2]</a> Copilot Pro·Pro+·Max·Business·Enterprise에는 **일반 제공·점진 배포**하며, VS Code·CLI·모바일 등에서 모델을 선택한다.<a href="#source-3">[3]</a> 국내 계정별 노출은 미확인이다.
-- 왜 중요한가 — 해석: 소형 모델의 비용 경쟁이 API와 개발 도구의 빠른 수정·서브에이전트 작업에 함께 연결되는 사례다.<a href="#source-2">[2]</a><a href="#source-3">[3]</a>
-- 주의: 비용·성능은 공급자 자체 설명이며 실제 작업별 절감률은 측정하지 않았다. Copilot의 과금은 사용량 기반 공급자 정가이며, 조직 관리자의 모델 정책이 접근을 좌우할 수 있다.<a href="#source-3">[3]</a>
-- 출처:
-  - 원문: [Anthropic · Claude Haiku 5.5](https://www.anthropic.com/claude-haiku-5-5)
-    - 게시: 2026-10-07 · 시각 미공개.<a href="#source-2">[2]</a> 본문 날짜와 `time datetime`를 대조했다.
-  - 원문: [GitHub · Claude Haiku 5.5 in GitHub Copilot](https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot)
-    - 게시: 2026-10-08 05:12 KST.<a href="#source-3">[3]</a>
-    - 수정: 2026-10-08 05:39 KST.<a href="#source-3">[3]</a>
-    - 주석: 본문은 미국 현지 10월 7일이며, `datePublished`·`dateModified`의 시간대를 KST로 변환했다.<a href="#source-3">[3]</a>
+시스템 카드는 일부 모델 안전성 평가에서 통계적으로 유의한 후퇴도 보고했다.<a href="#source-4">[4]</a> 시스템 수준 보호 조치를 제외한 모델 평가이므로, 서비스 전체가 더 안전해졌거나 덜 안전해졌다는 결론으로 일반화할 수 없다.<a href="#source-4">[4]</a>
 
-### 3. NVIDIA·Microsoft, Windows 로컬 에이전트 기반과 DGX Station 미리보기
+<p class="news-source"><a href="https://openai.com/index/gpt-6-for-everyone">OpenAI · GPT-6·Intelligent UI</a><br><span class="source-published">게시: 2026-10-07 · 시각 미공개</span><a href="#source-1">[1]</a></p>
 
-- 핵심: Windows PC에서 에이전트를 실행하는 운영체제 기반과 로컬 AI 하드웨어를 함께 소개했다.<a href="#source-4">[4]</a>
-- 주요 내용:
-  - Microsoft Execution Containers(MXC)는 에이전트를 운영체제 통제 아래 백그라운드에서 지속 실행하는 기반으로 설명된다.<a href="#source-4">[4]</a>
-  - RTX Spark 노트북의 제공 예정일은 10월 16일이라고 밝혔다.<a href="#source-4">[4]</a>
-- 이용 대상·상태: Windows 로컬 AI 개발·기업 업무 대상 발표다.<a href="#source-4">[4]</a> **MXC는 일반 제공 발표, RTX Spark 노트북은 예약 주문, DGX Station은 미리보기**로 구분된다.<a href="#source-4">[4]</a> 국내 판매·지원 조건은 미확인이다.
-- 왜 중요한가 — 해석: 에이전트의 비교 항목이 모델 능력뿐 아니라 실행 환경과 운영체제 수준의 통제로 넓어지는 사례다.<a href="#source-4">[4]</a>
-- 주의: NVIDIA의 홍보성 발표다.<a href="#source-4">[4]</a> Microsoft 내용도 이 자료를 통해 확인했으며, 보안 효과나 실제 공급 완료를 독립 검증한 것은 아니다.
-- 출처:
-  - 원문: [NVIDIA · Windows PCs with RTX Spark and AI Agents](https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event)
-    - 게시: 2026-10-08 03:45 KST.<a href="#source-4">[4]</a>
-    - 수정: 2026-10-08 06:40 KST.<a href="#source-4">[4]</a>
-    - 사건일/주석: 미국 현지 2026-10-07 행사.<a href="#source-4">[4]</a> 최초 게시 메타데이터와 행사일을 구분했다.
+<p class="news-source"><a href="https://cdn.openai.com/pdf/gpt-6-october.pdf">OpenAI · GPT-6 10월 시스템 카드</a><br><span class="source-published">게시: 2026-10-07 · 시각 미공개</span><a href="#source-4">[4]</a></p>
 
-### 4. LlamaIndex, OpenDocRouter 문서 파싱 API 공개
+### 2. Anthropic, Haiku 5.5 출시…짧은 요청과 긴 요청의 단가 분리
 
-- 핵심: 여러 공개·상용 모델로 문서를 Markdown으로 변환하는 작업을 하나의 API로 제공한다.<a href="#source-5">[5]</a>
-- 주요 내용:
-  - PDF·PNG·JPEG를 받으며 모델마다 프롬프트·처리·설정이 담긴 버전별 파싱 레시피를 사용한다.<a href="#source-5">[5]</a>
-  - `layout` 옵션을 켜면 원문 위치를 나타내는 경계 상자와 읽기 순서의 레이아웃 요소를 함께 생성한다.<a href="#source-5">[5]</a>
-  - 토큰 기반 과금이며 크레딧 충전은 **25달러부터**, 레이아웃 옵션은 **100만 토큰당 0.20달러 추가**다.<a href="#source-5">[5]</a> 처리에 실패한 페이지는 과금하지 않는다고 밝혔다.<a href="#source-5">[5]</a> Unite.AI는 크레딧 충전에 **5% 수수료**가 붙는다고 보도했다.<a href="#source-7">[7]</a>
-- 이용 대상·상태: 문서 처리 API 개발자가 가입·API 키 생성 후 사용할 수 있는 **공개 서비스**라고 발표했다.<a href="#source-5">[5]</a> 국내 지원·지역 조건은 미확인이다.
-- 왜 중요한가 — 해석: 문서 처리 모델을 바꿀 때 반복되는 API 연결·설정·비교 작업을 공통 서비스로 묶는 접근이다.<a href="#source-5">[5]</a>
-- 주의: 기업 제품 발표이며, 벤치마크와 페이지당 비용은 공급자 조건에 따른 값이지 독립 성능 검증이 아니다.<a href="#source-5">[5]</a> 공식 글의 최초 게시일은 미확인이지만, 본문 가격 기준일과 출시 보도로 최신성을 보강해 제한적으로 채택했다.<a href="#source-5">[5]</a><a href="#source-7">[7]</a>
-- 출처:
-  - 원문: [LlamaIndex · Introducing OpenDocRouter](https://www.llamaindex.ai/blog/introducing-opendocrouter)
-    - 게시: 게시 일시 확인 필요. 본문·직접 HTML에서 최초 게시 메타데이터를 확인하지 못했다.
-    - 사건일/주석: 본문 가격 기준일은 2026-10-07이다.<a href="#source-5">[5]</a> 이는 최초 게시일이 아니다.
-  - 원문: [Unite.AI · LlamaIndex launches OpenDocRouter](https://www.unite.ai/llamaindex-launches-opendocrouter-a-unified-api-for-document-parsing)
-    - 게시: 2026-10-08 00:14 KST.<a href="#source-7">[7]</a>
-    - 수정: 2026-10-08 00:14 KST.<a href="#source-7">[7]</a> 최초 게시와 동일하다.
-    - 사건일/주석: 2026-10-07 출시로 보도했으며 공식 제품 발표와 기능 설명을 교차 확인했다.<a href="#source-7">[7]</a><a href="#source-5">[5]</a>
+**Haiku 5.5의 비용은 요청 크기에 따라 달라지고, Copilot에도 점진 배포된다.**<a href="#source-2">[2]</a><a href="#source-5">[5]</a>
+
+- **100만 토큰당 일반 입력/출력 가격:** 프롬프트 10만 토큰 이하는 **0.10/0.50달러**, 초과 요청은 **0.50/2.50달러**다.<a href="#source-2">[2]</a> 캐시 읽기·쓰기 가격과는 별개다.<a href="#source-2">[2]</a>
+- Anthropic의 “Haiku 4.5보다 평균 실행 비용 약 75% 감소”는 요청 분포와 새 토크나이저를 반영한 자체 계산이다.<a href="#source-2">[2]</a> 모든 요청이 같은 비율로 저렴해진다는 뜻은 아니다.<a href="#source-2">[2]</a>
+- Claude Platform·AWS·Google Cloud·Azure에서 제공한다고 밝혔다.<a href="#source-2">[2]</a> Copilot Pro·Pro+·Max·Business·Enterprise에서는 일반 제공을 시작하되 점진 배포하며, 조직 접근은 관리자 모델 정책에 따른다.<a href="#source-5">[5]</a>
+
+<figure><img src="/assets/img/news/2026-10-08-haiku-5-5-price-conditions.svg" alt="Haiku 5.5 요청 프롬프트 10만 토큰 이하와 초과의 일반 입력·출력 단가 비교. 단위: USD/100만 토큰." loading="lazy" width="440" height="474" style="max-width:100%;height:auto"><figcaption>Clark 제작 설명용 도식 · AI 생성 활용<br>공식 제품 화면이 아니며 확인된 기사 내용을 이해하기 쉽게 표현했습니다.<br>코드 기반 SVG · 근거: <a href="https://www.anthropic.com/claude-haiku-5-5">Anthropic 공식 가격표</a><a href="#source-2">[2]</a></figcaption></figure>
+
+<p class="news-source"><a href="https://www.anthropic.com/claude-haiku-5-5">Anthropic · Haiku 5.5와 요금 변경</a><br><span class="source-published">게시: 2026-10-07 · 시각 미공개</span><a href="#source-2">[2]</a></p>
+
+<p class="news-source"><a href="https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot">GitHub · Copilot의 Haiku 5.5</a><br><span class="source-published">게시: 2026-10-08 05:12 KST</span><br><span class="source-modified">수정: 2026-10-08 05:39 KST</span><a href="#source-5">[5]</a></p>
+
+### 3. LlamaIndex, 문서 처리 모델을 바꿔 쓰는 OpenDocRouter 공개
+
+**PDF·PNG·JPEG를 Markdown으로 변환하는 여러 모델을 하나의 API로 제공한다.**<a href="#source-3">[3]</a>
+
+- 모델마다 프롬프트·처리·설정을 묶은 버전별 레시피를 사용한다.<a href="#source-3">[3]</a> `layout` 옵션을 켜면 원문 위치를 나타내는 경계 상자와 읽기 순서 정보도 받는다.<a href="#source-3">[3]</a>
+- 가입 후 API 키를 생성해 사용할 수 있다고 발표했다.<a href="#source-3">[3]</a> 모델을 바꿀 때 연결·설정을 다시 맞추는 부담을 줄이려는 접근이다.<a href="#source-3">[3]</a>
+
+**최소 충전액은 공식 자료끼리 다르다:** 출시 글은 **25달러부터**, 현재 Docs는 **10달러부터·충전액의 5% 수수료**라고 적고 있다.<a href="#source-3">[3]</a><a href="#source-6">[6]</a> 조건 변경 시점과 실제 결제 화면을 확인하지 못해 하나의 확정값으로 제시하지 않는다.
+
+<p class="news-source"><a href="https://www.llamaindex.ai/blog/introducing-opendocrouter">LlamaIndex · OpenDocRouter 출시</a><br><span class="source-published">게시: 2026-10-07 · 시각 미공개</span><a href="#source-3">[3]</a></p>
+
+<p class="news-source"><a href="https://www.opendocrouter.ai/docs">OpenDocRouter · 이용·과금 Docs</a><br><span class="source-published">게시: 확인 필요 · 현행 이용 문서</span><a href="#source-6">[6]</a></p>
 
 ## 기타 뉴스
 
-- [GlobeNewswire · Stuut raises $52.5M Series B](https://www.globenewswire.com/news-release/2026/10/07/3376511/0/en/ai-order-to-cash-platform-stuut-raises-52-5m-series-b-after-unlocking-40-more-cash-for-enterprises.html) — Stuut는 주문부터 대금 회수까지의 AI 업무 플랫폼에 Insight Partners 주도 **5,250만 달러 시리즈 B**, 누적 9,300만 달러 조달을 발표했다.<a href="#source-8">[8]</a> 기업 배포 보도자료다.<a href="#source-8">[8]</a>
-  - 출처:
-    - 원문: [GlobeNewswire · Stuut raises $52.5M Series B](https://www.globenewswire.com/news-release/2026/10/07/3376511/0/en/ai-order-to-cash-platform-stuut-raises-52-5m-series-b-after-unlocking-40-more-cash-for-enterprises.html)
-      - 게시: 게시 일시 확인 필요. 본문은 확보했으나 최초 게시·수정 메타데이터의 직접 조회가 시간 초과됐다.
-      - 사건일/주석: 2026-10-07 기업 발표로, 보도자료의 날짜와 현재형 투자 발표 문구를 확인했다.<a href="#source-8">[8]</a> 이 날짜를 최초 게시일로 대신하지 않으며 이전 보고서의 시각도 재사용하지 않았다.
+- **NVIDIA·Microsoft, Windows 로컬 에이전트 실행 기반 공개** — NVIDIA 발표 기준으로 Microsoft Execution Containers(MXC)는 일반 제공, RTX Spark 노트북은 예약 주문, DGX Station for Windows는 미리보기다.<a href="#source-7">[7]</a>
+
+  <p class="news-source"><a href="https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event">NVIDIA · Windows 로컬 에이전트 발표</a><br><span class="source-published">게시: 2026-10-08 03:45 KST</span><br><span class="source-modified">수정: 2026-10-08 06:40 KST</span><a href="#source-7">[7]</a></p>
 
 ## AI 트렌드와 변화 신호
 
-- 모델·제품 — 해석: 상호작용형 답변과 요청 조건별 비용이 서로 다른 경쟁 축으로 드러난다.<a href="#source-1">[1]</a><a href="#source-2">[2]</a>
-- 에이전트·개발 도구 — 관찰: Copilot 모델 통합·Windows 실행 기반·문서 파싱 API에서 **작업별 모델 선택·로컬 실행·통제**가 반복된다.<a href="#source-3">[3]</a><a href="#source-4">[4]</a><a href="#source-5">[5]</a>
-- 투자·파트너십 — 관찰: 범용 모델뿐 아니라 대금 회수 같은 특정 기업 업무를 수행하는 플랫폼의 투자도 확인했다.<a href="#source-8">[8]</a>
-- 규제·정책 — 조사 결과: 이번 검색에서 날짜 조건을 충족하는 신규 공식 발표를 검증·채택하지 못했다. 정책 변화가 없었다는 뜻은 아니다.
-- 전날 대비: 최신 `origin/main`에 2026-10-07 AI 전용 보고서가 없어 **전날 비교 기준 없음**. 같은 날짜의 기존 글을 갱신한 것이며, 재검증한 기존 사건을 새로운 사건으로 세지 않았다.
-- 이번 갱신의 변화: OpenDocRouter를 추가하고 이용 대상·제공 상태를 구분했다. 검색량·언급량 지표가 없어 관심도의 상승·하락은 판단하지 않는다.
-
-## 오늘의 용어
-
-- **Intelligent UI — OpenAI 제품 기능명:** ChatGPT가 텍스트와 버튼·폼·차트 같은 상호작용형 요소를 함께 구성하는 기능이다.<a href="#source-1">[1]</a> 오늘의 GPT-6 발표에서는 답변 안에서 도구를 조작할 수 있다는 점과 연결된다.<a href="#source-1">[1]</a>
-- **MXC — Microsoft Execution Containers, 제품 기술명:** 에이전트를 운영체제 통제 아래 백그라운드에서 지속 실행하도록 하는 Windows 기반이다.<a href="#source-4">[4]</a> 오늘의 발표에서는 로컬 실행의 관찰·통제와 연결된다.<a href="#source-4">[4]</a>
-- **파싱(parsing) — 일반 기술 개념, 이 기사에서의 의미:** PDF·이미지 속 문서 내용을 읽어 Markdown 같은 처리 가능한 형식으로 바꾸는 작업이다.<a href="#source-5">[5]</a> OpenDocRouter는 이 작업을 여러 모델에 공통된 API로 제공한다.<a href="#source-5">[5]</a>
+- **해석 — 단가와 실제 비용을 분리해서 볼 필요가 커졌다.** Haiku의 요청 길이별 단가와 공급자 평균 절감률은 다른 지표이고, OpenDocRouter의 최소 충전액은 현행 문서와 출시 글도 다르다.<a href="#source-2">[2]</a><a href="#source-3">[3]</a><a href="#source-6">[6]</a>
+- **관찰 — 모델 외의 사용 환경도 구체화됐다.** 대화 속 인터페이스, 개발 도구의 모델 선택, 운영체제의 에이전트 실행 기반이 각각 제품 변경으로 이어졌다.<a href="#source-1">[1]</a><a href="#source-5">[5]</a><a href="#source-7">[7]</a>
 
 ## 조사 한계
 
-- 조사 기준: 2026-10-08 14:01 KST. 최근 24시간(2026-10-07 14:01 KST 이후)을 우선하고 필요한 배경은 최대 72시간으로 제한했다. 날짜만 있는 발표는 24시간 경계의 포함 여부를 확정하지 않았다.
-- 검색 8회·후보 원문 8개를 확인했다. 채택 원문의 본문을 읽고, 확보 가능한 최초 게시·수정 메타데이터를 대조했다. 최신성 자체가 미확인인 검색 후보는 제외했다.
-- OpenAI 제품 본문은 추출 도구로 읽었지만 직접 HTML은 HTTP 403으로 제한돼 추가 시각을 확인하지 못했다. Stuut는 HTML 조회와 한 번의 재시도가 모두 시간 초과돼 발표일 근거로 제한 채택했다.
-- 기업의 성능·비용·안전성 주장을 독립 재현하거나 실제 계정의 제공 상태를 시험하지 않았다. 재게시 권한이 확인되지 않은 공식 미디어는 복제·임베드하지 않았다. 핵심 흐름·상태를 글로 설명할 수 있어 장식용 도식도 만들지 않았다.
-- 표시 검수는 생성 HTML·내부 링크·인용 앵커·고정 공통 코드 범위다. 실제 브라우저의 모바일·데스크톱 화면 테스트는 수행하지 않았다.
+- 최근 24시간을 우선하고 배경은 최대 72시간까지 확인했다. 날짜만 공개된 발표는 24시간 경계 포함 여부를 확정하지 않았다. 전날 AI 전용 보고서가 없어 **전날 비교 기준 없음**.
+- OpenAI 제품 본문은 확보했으나 직접 HTML 접근이 제한돼 게시 시각을 확인하지 못했다. OpenDocRouter Docs는 최초 게시·갱신 일시가 미공개인 현행 이용 문서로 참고했다.
+- 제품·비용·제공 상태는 기업 발표와 공식 문서 기준이다. 성능·실제 작업별 절감률, 국내 계정별 배포 완료, 실제 결제 조건은 시험하지 않았다. NVIDIA 소식은 파트너 발표로 확인했으며 Microsoft 별도 원자료와 실물 공급은 검증하지 않았다.
+- 공식 미디어는 재게시 권리가 확인되지 않아 복제하지 않았다. 설명용 도식은 공식 가격표에 근거했으며, 실제 브라우저 화면 검수는 수행하지 않았다.
 
 ## Sources
 
-[1] <span id="source-1"></span> [OpenAI · GPT-6 and Intelligent UI for everyone](https://openai.com/index/gpt-6-for-everyone)
+[1] <span id="source-1"></span> [OpenAI · GPT-6·Intelligent UI](https://openai.com/index/gpt-6-for-everyone)
 
-[2] <span id="source-2"></span> [Anthropic · Claude Haiku 5.5](https://www.anthropic.com/claude-haiku-5-5)
+[2] <span id="source-2"></span> [Anthropic · Haiku 5.5와 요금 변경](https://www.anthropic.com/claude-haiku-5-5)
 
-[3] <span id="source-3"></span> [GitHub · Claude Haiku 5.5 in GitHub Copilot](https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot)
+[3] <span id="source-3"></span> [LlamaIndex · OpenDocRouter 출시](https://www.llamaindex.ai/blog/introducing-opendocrouter)
 
-[4] <span id="source-4"></span> [NVIDIA · Windows PCs with RTX Spark and AI Agents](https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event)
+[4] <span id="source-4"></span> [OpenAI · GPT-6 10월 시스템 카드](https://cdn.openai.com/pdf/gpt-6-october.pdf)
 
-[5] <span id="source-5"></span> [LlamaIndex · Introducing OpenDocRouter](https://www.llamaindex.ai/blog/introducing-opendocrouter)
+[5] <span id="source-5"></span> [GitHub · Copilot의 Haiku 5.5](https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot)
 
-[6] <span id="source-6"></span> [OpenAI · GPT-6 Sol and Luna: October 2026 update](https://cdn.openai.com/pdf/gpt-6-october.pdf)
+[6] <span id="source-6"></span> [OpenDocRouter · 이용·과금 Docs](https://www.opendocrouter.ai/docs)
 
-[7] <span id="source-7"></span> [Unite.AI · LlamaIndex launches OpenDocRouter](https://www.unite.ai/llamaindex-launches-opendocrouter-a-unified-api-for-document-parsing)
-
-[8] <span id="source-8"></span> [GlobeNewswire · Stuut raises $52.5M Series B](https://www.globenewswire.com/news-release/2026/10/07/3376511/0/en/ai-order-to-cash-platform-stuut-raises-52-5m-series-b-after-unlocking-40-more-cash-for-enterprises.html)
+[7] <span id="source-7"></span> [NVIDIA · Windows 로컬 에이전트 발표](https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event)

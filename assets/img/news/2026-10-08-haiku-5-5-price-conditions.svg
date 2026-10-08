@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 474" role="img" aria-labelledby="title desc">
-<title id="title">Haiku 5.5 요청 크기별 일반 입력·출력 토큰 단가</title>
-<desc id="desc">단위는 미국 달러, 각 100만 토큰당 가격이다. 프롬프트 10만 토큰 이하 요청은 입력 0.10달러, 출력 0.50달러. 10만 토큰 초과 요청은 입력 0.50달러, 출력 2.50달러. 캐시 가격과 실제 작업별 총비용은 나타내지 않는다.</desc>
+<title id="title">Haiku 5.5 요청 길이별 일반 입력·출력 단가</title>
+<desc id="desc">미국 달러, 각 100만 토큰당 가격. 프롬프트 10만 토큰 이하 요청은 일반 입력 0.10달러, 출력 0.50달러. 10만 토큰 초과 요청은 일반 입력 0.50달러, 출력 2.50달러. 캐시 단가와 실제 작업별 총비용은 나타내지 않는다.</desc>
 <rect width="440" height="474" rx="16" fill="#f7f9fc"/>
 <g font-family="sans-serif" fill="#17233b">
 <text x="24" y="40" font-size="25" font-weight="700">Haiku 5.5 단가 조건</text>
-<text x="24" y="73" font-size="22">단위: USD / 100만 토큰</text>
+<text x="24" y="73" font-size="22">단위: 미국 달러 / 100만 토큰</text>
 <rect x="20" y="97" width="400" height="145" rx="12" fill="#e4eefb"/>
 <text x="40" y="132" font-size="24" font-weight="700">프롬프트 10만 토큰 이하</text>
 <text x="40" y="179" font-size="25">일반 입력</text>
@@ -17,5 +17,5 @@
 <text x="395" y="342" text-anchor="end" font-size="30" font-weight="700">$0.50</text>
 <text x="40" y="383" font-size="25">출력</text>
 <text x="395" y="383" text-anchor="end" font-size="30" font-weight="700">$2.50</text>
-<text x="24" y="443" font-size="22">캐시 가격·작업별 총비용과 별개</text>
+<text x="24" y="443" font-size="22">캐시 단가·작업별 총비용 제외</text>
 </g></svg>

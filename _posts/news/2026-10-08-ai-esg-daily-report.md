@@ -8,97 +8,111 @@ comments: false
 permalink: /posts/ai-esg-daily-report-2026-10-08/
 ---
 
+최근 24시간을 우선하고, 흐름 확인이 필요한 항목은 72시간까지 확장했다. 기업 발표는 홍보성 원자료임을 표시했으며, 성능·효과 주장은 별도 독립 검증이 없는 경우 발표 주체의 주장으로 구분했다.
+
 ## 요약 3줄
 
-- OpenAI가 GPT‑6의 대중 확대와 대화 안에서 동적 인터페이스를 만드는 Intelligent UI를 발표해, 모델 경쟁의 무게중심이 답변 생성에서 즉석 소프트웨어 경험으로 넓어졌다.[13]
-- Apollo와 Anthropic 발표에서는 에이전트의 API 권한·감사와 고위험 사이버 기능의 등급별 접근통제가 동시에 부각됐다.[12][5]
-- ESG는 최근 24시간 내 검증된 중대 변화가 부족해 72시간 범위로 확대했으며, 기후 적응의 보건 의제화와 환경영향평가 독립성 강화가 확인됐다.[6][10]
-
-> **조사 범위:** 2026-10-08 09:00 KST 기준 최근 24시간을 우선하고, 중요한 ESG 변화가 적어 2026-10-05까지 확대했다. 기업 발표는 공식 원문을 우선했으며, Apollo 항목은 회사가 배포한 **홍보성 보도자료**임을 표시했다.
+- OpenAI는 GPT-6와 대화 안에서 동적 인터페이스를 만드는 Intelligent UI를 폭넓게 배포했지만, 공개 시스템 카드에는 일부 안전성 평가의 유의미한 후퇴도 함께 기록됐다.[8][9]
+- Anthropic의 저비용 Haiku 5.5와 Mistral의 1조 파라미터급 Large 4 공개 미리보기가 겹치며, 모델 경쟁이 범용 최고성능뿐 아니라 비용·오픈웨이트·에이전트 실행력으로 분화했다.[7][10]
+- 한국은 2035년까지 1,000조 원 규모의 녹색전환 구상을 제시했고, 호주 최고법원은 해외 사용에서 생기는 Scope 3 배출을 제대로 검토하지 않은 석탄광산 확장 승인을 막았다.[11][12]
 
 ## 1. 오늘의 주요 뉴스
 
 ### AI — 최대 5개
 
-#### 1) OpenAI, GPT‑6와 Intelligent UI를 ChatGPT에 확대
+#### 1) OpenAI, GPT-6·Intelligent UI 전면 확대와 시스템 카드 공개
 
-- **한 줄 요약:** OpenAI는 10월 7일 GPT‑6를 더 넓은 사용자층에 공개하고, 답변에 그래픽·버튼·폼·차트 등 상호작용 요소를 조합하는 Intelligent UI를 발표했다.[13]
-- **왜 중요한지 — 해석:** 생성형 AI의 제품 단위가 고정된 채팅 답변에서, 질문에 맞춰 그때그때 구성되는 인터페이스로 이동하는 신호다. 유료 요금제에는 발표 당일부터, Free·Go에는 다음 날부터 확대한다고 밝혀 배포 범위도 크다.[13]
-- **원문·발표일:** [OpenAI 공식 발표](https://openai.com/index/gpt-6-for-everyone/) · 2026-10-07
+- **한 줄 요약(사실):** OpenAI는 10월 7일 GPT-6를 유료 ChatGPT 요금제에 우선 배포하고 다음 날 Free·Go로 확대한다고 발표했다. GPT-6는 답변 안에 그래픽·폼·차트 등 상호작용 요소를 구성하는 Intelligent UI를 제공하며, 이번 변경은 ChatGPT의 Chat 경험에 한정되고 Work·Codex 모델은 바뀌지 않는다.[8]
+- **안전성 확인(사실):** 시스템 카드는 10월 버전 GPT-6 Sol·Luna를 사이버보안 및 생물·화학 영역에서 `High` 역량으로 분류했다. 동시에 이전 GPT-5.6 대응 모델보다 자해·성적 콘텐츠·정서적 의존 등 일부 평가에서 통계적으로 유의미한 후퇴가 있었다고 공개했으며, 별도 시스템 수준 완화책을 적용한다고 밝혔다.[9]
+- **왜 중요한지(해석):** 경쟁의 초점이 텍스트 생성에서 “요청에 맞춰 소프트웨어 화면을 즉석 구성하는 모델”로 이동하는 신호다. 다만 기능 확대와 안전성 개선을 동일시하면 안 되며, 공개된 퇴행 지표를 함께 봐야 한다.[8][9]
+- **원문·발표일:** OpenAI 공식 제품 발표·시스템 카드(홍보성 기업 발표), 2026-10-07.[8][9]
 
-#### 2) OpenAI DevDay, 상시형 에이전트·Agents API 컴퓨터 사용·Codex 다중 작업 공개
+#### 2) Anthropic, 저비용 모델 Claude Haiku 5.5 출시
 
-- **한 줄 요약:** OpenAI는 DevDay에서 상시 업무를 맡는 Dots, 컴퓨터 사용을 지원하는 Agents API, 클라우드 Codex와 다중 에이전트 관리, 플러그인 자동화를 한꺼번에 공개했다.[1]
-- **왜 중요한지 — 해석:** 단일 모델 성능보다 에이전트의 지속 실행, 도구 사용, 협업 공간과 권한 관리까지 묶는 플랫폼 경쟁이 본격화됐다는 의미다.[1]
-- **원문·발표일:** [OpenAI DevDay 2026 Recap](https://openai.com/index/devday-2026-recap/) · 페이지 상단 발표일 미표시, 페이지 내 같은 행사 발표는 2026-10-07로 확인
+- **한 줄 요약(사실):** Anthropic은 10월 7일 Claude 5.5 제품군의 세 번째 모델인 Haiku 5.5를 출시했다. 분류·요약·추출, 실시간 지원, 음성 에이전트와 앱 내 비서용이며 이전 Haiku 4.5보다 비용이 75% 낮다고 설명했다.[10]
+- **왜 중요한지(해석):** 고성능 모델뿐 아니라 대량 호출에 적합한 소형·저비용 모델이 에이전트 제품의 경제성을 좌우하는 경쟁축으로 부상했다.[10]
+- **원문·발표일:** Reuters 보도, 사건·기사 2026-10-07. 조사 범위 안에서 동일 발표의 Anthropic 원문은 확보하지 못해 가격·성능 관련 수치는 Reuters가 인용한 회사 설명 기준이다.[10]
 
-#### 3) Apollo, 기업 API용 에이전트 거버넌스 계층 공개
+#### 3) Mistral, 1조 파라미터 오픈웨이트 모델 Large 4 공개 미리보기
 
-- **한 줄 요약:** Apollo GraphQL은 에이전트와 기업 시스템 사이에서 검색·신원·정책·감사를 제공하고, LLM 판단과 분리된 필드 단위 접근통제를 집행하는 GraphOS Agent Services를 발표했다.[12]
-- **왜 중요한지 — 해석:** 프롬프트 가드레일을 넘어 실제 API 호출 단계에서 최소권한과 감사 가능성을 강제하려는 흐름이다. 다만 Intuit의 프리뷰 파일럿 외 가격·정식 출시 일정과 독립적인 운영 성과는 공개되지 않아 **확인 필요**다.[12]
-- **원문·발표일:** [Apollo 배포 보도자료(PR Newswire)](https://www.prnewswire.com/news-releases/apollo-graphql-introduces-graphos-agent-services-giving-ai-agents-governed-access-to-enterprise-apis-and-systems-302900890.html) · 2026-10-07 · **홍보성 보도자료**
+- **한 줄 요약(사실):** Mistral은 10월 6일 Large 4 공개 미리보기를 시작했다. 회사 설명상 전체 1조·활성 520억 파라미터의 네이티브 멀티모달 모델이며, 가중치는 10월 말 공개할 예정이다.[7]
+- **왜 중요한지(해석):** 유럽 자체 인프라와 오픈웨이트·자가 배포를 결합해 “성능 경쟁”과 “AI 주권”을 하나의 제품 전략으로 묶었다.[7]
+- **원문·발표일:** Mistral 공식 블로그(홍보성 기업 발표), 2026-10-06. 벤치마크 우위는 회사 및 회사가 인용한 평가 결과로, 독립 재현은 확인 필요.[7]
 
-#### 4) Anthropic, 사이버 기능 접근을 3단계로 재편
+#### 4) OpenAI, 청소년용 College Planner·학습 기능 확대 예고
 
-- **한 줄 요약:** Anthropic은 Cyber Verification Program을 Defense·Red Team·Specialized Access로 나누고, 검증 수준과 보안통제에 따라 고급 사이버 기능의 차단 강도를 달리했다.[5]
-- **왜 중요한지 — 해석:** 고위험 AI 기능을 일괄 차단하지 않고 신원 검증·용도·감사를 결합한 차등 접근 모델로 운영하려는 대표 사례다. 공개 수치는 Anthropic 자체 평가와 파트너 보고에 기반하므로 독립 검증은 **확인 필요**다.[5]
-- **원문·발표일:** [Anthropic 공식 발표](https://www.anthropic.com/news/cyber-verification-program) · 2026-10-06
-
-#### 5) OpenAI, 수학 결과 공개와 전문 소프트웨어 에이전트 평가를 병행
-
-- **한 줄 요약:** OpenAI는 내부 프런티어 모델이 만든 수학 결과·Lean 형식화를 공개했고, 별도 Ironclad 협업에서는 계약 워크플로 11개 과제에 대한 컴퓨터 사용 에이전트 연구평가를 제시했다.[2][3]
-- **왜 중요한지 — 해석:** 과학적 결과의 검증 가능성과 실제 기업 소프트웨어에서의 장기·다단계 수행 능력이 차세대 모델 평가축으로 함께 부상하고 있다. Ironclad 결과는 제한된 11개 연구 과제와 시뮬레이션 시간에 관한 내부 평가이므로 일반화에는 주의가 필요하다.[2][3]
-- **원문·발표일:** [수학 결과 공개](https://openai.com/index/sharing-ai-progress-in-mathematics/) · 2026-10-06 / [Ironclad 연구 협업](https://openai.com/index/advancing-computer-use-with-ironclad/) · 2026-10-06
+- **한 줄 요약(사실):** OpenAI는 10월 7일 미국 고교생 대상 College Planner를 곧 추가하고, 플래시카드·퀴즈 기능과 청소년 자문 참여를 확대한다고 발표했다.[3]
+- **왜 중요한지(해석):** 생성형 AI가 단순 질의응답을 넘어 입시 일정·재정보조 절차를 관리하는 장기형 교육 도구로 확장되는 사례다. 사용량·효과 수치는 회사 자체 관찰 자료라는 한계가 있다.[3]
+- **원문·발표일:** OpenAI 공식 제품 발표(홍보성 기업 발표), 2026-10-07.[3]
 
 ### ESG — 최대 5개
 
-#### 1) UNFCCC, 폭염 대응에 임산부·신생아 건강을 명시적으로 포함 촉구
+#### 1) 한국, 2035년까지 1,000조 원 규모 K-GX 녹색전환 구상 발표
 
-- **한 줄 요약:** UN 기후변화 사무총장은 10월 5일 Pre‑COP 행사에서 국가 적응계획과 폭염·보건 계획에 임산부·신생아 보호를 포함하고 관련 데이터·재원·의료 인프라를 강화해야 한다고 밝혔다.[6]
-- **왜 중요한지 — 해석:** 기후 적응 의제가 인프라 중심에서 성별·생애주기별 건강 취약성까지 구체화되는 흐름이다. 연설이 인용한 5개국 의료진 설문은 Wellcome 의뢰 조사이므로 표본과 방법론의 추가 검토가 필요하다.[6]
-- **원문·발표일:** [UNFCCC 연설문](https://unfccc.int/news/un-climate-chief-on-new-data-as-extreme-heat-worsens-pregnancy-and-birth-are-a-new-faultline-in-the) · 발표·사건일 2026-10-05
+- **한 줄 요약(사실):** 한국 정부는 10월 7일 재정 200조 원과 기후금융 790조 원 이상 등을 포함한 2035년까지의 1,000조 원 규모 에너지전환·탈탄소 전략을 공개했다. 2030년 재생에너지 100GW, 2035년 전기·수소차의 신차 판매 비중 70% 이상을 목표로 제시했다.[11]
+- **왜 중요한지(해석):** 전력 전환만이 아니라 철강·석유화학·정유·시멘트·반도체·디스플레이를 묶은 산업정책으로, 한국형 녹색전환이 투자·금융·산업 공급망 단계로 이동했다.[11]
+- **원문·발표일:** Reuters 보도, 사건·기사 2026-10-07. 정부 발표를 인용한 보도이며 조사 예산 내 공식 원문은 확보하지 못했다.[11]
 
-#### 2) 한국, 환경영향평가 공탁제 첫 시범사업 추진
+#### 2) 호주 최고법원, Scope 3 검토 부족을 이유로 석탄광산 확장 제동
 
-- **한 줄 요약:** 기후에너지환경부는 사업자가 아닌 제3의 기관이 환경영향평가 대행업체를 선정하는 공탁제 시범사업을 추진하고, 2026년 검증·보완 뒤 2027년 제도 도입을 추진한다고 밝혔다.[10]
-- **왜 중요한지 — 해석:** 평가 비용을 부담하는 개발사업자와 평가 수행자 사이의 이해상충을 줄여 환경평가의 독립성과 신뢰성을 높이려는 제도 실험이다. 시범 결과와 최종 도입안은 아직 **확인 필요**다.[10]
-- **원문·발표일:** [정부24 정책뉴스 목록](https://www.gov.kr/portal/gvrnPolicy?policyType=G00301&pageIndex=1) · 2026-10-05
+- **한 줄 요약(사실):** 호주 최고법원은 10월 7일 Mount Pleasant 탄광의 2048년까지 연장·증산 계획에 대한 회사 측 상고를 기각했다. 판결은 승인기관이 프로젝트 배출의 98%를 차지하는 해외 사용 단계의 Scope 3 배출을 줄일 조건을 제대로 검토하지 않았다고 봤다.[12]
+- **왜 중요한지(해석):** 수출 화석연료의 소비 단계 배출까지 허가 심사의 실질 요소로 다룬 사례여서, 향후 뉴사우스웨일스주 화석연료 승인 논리에 영향을 줄 가능성이 있다. 영향 범위에 대한 업계·활동가 평가는 엇갈린다.[12]
+- **원문·발표일:** Reuters 보도, 판결·기사 2026-10-07.[12]
 
-> **확인된 변화 부족:** 최근 24시간 내 공식 원문으로 확인된 추가 ESG 중대 발표는 찾지 못했다. 카카오 및 국내 플랫폼 업계에서도 이번 조사 범위에 넣을 만한 신규 ESG 공시·정책 변화는 확인되지 않았다.
+#### 3) 태평양 국가들, COP31 앞두고 1.5℃ 목표·기후금융 우선순위 압박
+
+- **한 줄 요약(사실):** 피지에서 열린 COP31 사전 장관급 회의에서 태평양 국가들은 1.5℃ 목표, 해양 보호, 기후금융 접근성 강화를 협상 우선순위로 제시했다. 약 30개국 대표는 앞서 “깊고 신속하며 지속적인” 감축을 요구하는 선언을 채택했다.[13]
+- **왜 중요한지(해석):** COP31 의제가 단순 목표 유지보다 목표 초과 가능성, 손실과 피해, 금융 접근을 어떻게 다룰지로 이동하고 있음을 보여준다.[13]
+- **원문·발표일:** Reuters 보도, 회의·기사 2026-10-07.[13]
 
 ## 2. AI 트렌드
 
-- **주요 모델·제품 출시:** GPT‑6의 이용자 확대와 Intelligent UI가 핵심이다. 모델이 텍스트를 생성하는 데서 나아가 대화 안에 즉석 도구와 상호작용 화면을 구성하는 방향이 선명해졌다.[13]
-- **AI 에이전트·개발 도구:** OpenAI는 상시형 에이전트, Agents API의 컴퓨터 사용, Codex 클라우드·다중 작업을 묶었고, Apollo는 에이전트 호출을 위한 신원·정책·감사 계층을 내놨다.[1][12]
-- **규제·정책:** 새 정부 규제 발표보다 기업 내부의 위험기반 접근통제가 두드러졌다. Anthropic의 사이버 접근 등급제와 Apollo의 결정적 권한 집행이 같은 방향을 가리킨다.[5][12]
-- **투자·인수·파트너십:** 이번 72시간 범위에서 독립적으로 검증할 만한 대형 투자·인수 변화는 확인하지 못했다. 제품·인프라 발표의 비중이 더 컸다.
-- **전날 대비 달라진 점 — 해석:** 10월 6일에는 수학·전문 업무 평가 같은 연구 공개가 중심이었다.[2][3]
-  10월 7일에는 대중 제품, 상시형 에이전트, API 거버넌스로 발표의 중심이 이동했다.[13][12]
+- **주요 모델·제품 출시:** GPT-6는 대화형 UI 생성, Haiku 5.5는 저비용 대량 처리, Mistral Large 4는 오픈웨이트·자가배포를 전면에 내세웠다.[7][8][10]
+- **AI 에이전트·개발 도구:** OpenAI DevDay 발표는 상시 실행형 `Dots`, 컴퓨터 사용을 지원하는 Agents API, 클라우드 Codex, 다중 에이전트 관리, 이벤트 기반 플러그인 자동화를 한 묶음으로 제시했다. 모두 회사 발표 기준이며 실제 안정성·권한 통제는 운영 환경별 검증이 필요하다.[2]
+- **규제·정책:** 최근 24시간 안에 보고 우선순위를 바꿀 정도의 새로운 주요 공식 AI 규제 발표는 이번 검색 범위에서 확인되지 않았다.
+- **투자·인수·파트너십:** 최근 24시간 안에 독립적으로 검증할 만한 대형 신규 거래는 확인하지 못했다.
+- **전날 대비 달라진 점:** “더 큰 모델” 단일 축보다 ① UI를 직접 구성하는 소비자 모델, ② 저가형 에이전트 모델, ③ 오픈웨이트 주권형 모델이 동시에 부각됐다.[7][8][10]
 
 ## 3. ESG 트렌드
 
-- **국내외 정책·규제:** 한국의 환경영향평가 공탁제는 평가자 선정 구조를 바꾸려는 거버넌스 실험이다.[10]
-- **기업 공시와 주요 사례:** 최근 24시간 안에 중요도가 높은 신규 기업 ESG 공시는 확인되지 않았다. 10월 6일 공개된 Linklaters 월간 정리는 EU·영국에서 공시 부담을 줄이되 중요한 지속가능성 정보는 유지하려는 간소화 흐름이 이어지고 있다고 요약한다.[7]
-- **기후·에너지·순환경제:** 신규 에너지·순환경제 대형 발표보다 폭염 적응과 보건 회복력이 전면에 섰다.[6]
-- **소셜 임팩트와 거버넌스:** 임산부·신생아처럼 기후 위험이 불균등하게 집중되는 집단을 적응계획에 명시하자는 요구가 강화됐다.[6]
-- **카카오 및 국내 플랫폼 업계:** 오늘 확인된 신규 ESG 변화 없음.
+- **국내외 정책·규제:** 한국 K-GX는 재정·기후금융·민간투자를 산업 탈탄소 로드맵에 연결했고, 호주 판결은 Scope 3 배출 검토의 중요성을 높였다.[11][12]
+- **기업 공시와 주요 사례:** 최근 24시간 내 보고 우선순위를 바꿀 새 대형 지속가능성 공시는 확인하지 못했다.
+- **기후·에너지·순환경제:** 한국은 재생에너지·친환경차·녹색철강·수소·SMR·탄소포집을 한 전략에 포함했고, 태평양 국가들은 COP31 전 1.5℃와 기후금융을 재차 전면에 놓았다.[11][13]
+- **소셜 임팩트와 거버넌스:** 72시간 확장 범위에서 Reuters는 AI 도입·투자 전환과 연계해 발표된 글로벌 감원 사례를 정리했다. 개별 감원의 원인은 복합적이므로 이를 AI의 직접 효과로만 해석하는 것은 주의가 필요하다.[5]
+- **카카오 및 국내 플랫폼 업계:** 최근 72시간 내 카카오의 새로운 ESG 공식 발표나 국내 플랫폼 업계의 중대한 ESG 변화를 이번 검색 범위에서 확인하지 못했다.
 
 ## 4. 트렌드 신호
 
-- **반복 키워드:** `에이전트`, `상시 실행`, `컴퓨터 사용`, `신원`, `정책`, `감사`, `차등 접근`이 반복됐다.[1][5][12]
-- **상승 관심사 — 해석:** 에이전트 성능 자체보다 누가 어떤 데이터와 도구를 사용할 수 있는지 통제하고 기록하는 **에이전트 거버넌스**의 관심도가 상승하고 있다.[5][12]
-- **상승 관심사 — 해석:** 사용자 인터페이스를 AI가 상황에 맞게 생성하는 `Intelligent UI`가 챗봇 다음 단계의 제품 경쟁축으로 등장했다.[13]
-- **ESG 변화 신호 — 해석:** 공시 분야에서는 간소화, 적응 분야에서는 건강·취약계층의 구체화가 동시에 관찰된다.[7][6]
-- **관찰 필요:** Apollo의 기업 운영 성과, Anthropic 차등 접근의 오남용 방지 효과, 환경영향평가 공탁제의 독립성 개선 효과는 아직 초기 단계로 **확인 필요**다.[12][5][10]
+- **반복 키워드:** AI에서는 `Intelligent UI`, `agents`, `open weights`, `AI sovereignty`가 반복됐다.[2][7][8]
+  ESG에서는 `climate finance`, `Scope 3`, `1.5℃`가 반복됐다.[11][12][13]
+- **상승 관심사:** 모델이 답을 생성하는 단계를 넘어 인터페이스와 장기 작업을 직접 구성·실행하는 능력에 관심이 상승했다.[2][8]
+  저비용 모델 또는 자체 인프라로 이를 운영하는 방식도 함께 부각됐다.[7][10]
+- **안전 신호:** 기업이 기능 출시와 함께 시스템 카드에서 퇴행 지표를 공개하는 관행은 긍정적이지만, OpenAI가 보고한 일부 청소년·민감 콘텐츠 평가 후퇴가 실제 사용에서 어느 정도 나타나는지는 추가 관찰이 필요하다.[9]
+- **ESG 변화 신호:** 녹색전환 논의가 목표 선언에서 금융 배분·산업별 로드맵·허가 과정의 Scope 3 책임으로 구체화되고 있다.[11][12]
+- **아직 확정되지 않은 변화:** Mistral Large 4의 가중치 공개와 독립 벤치마크 재현은 10월 말 이후 확인이 필요하다.[7]
+
+## 원문 발표일
+
+- [2] 페이지에 발표일 표기 없음(2026-10-08 확인)
+- [3] 2026-10-07
+- [5] 2026-10-06
+- [7] 2026-10-06
+- [8] 2026-10-07
+- [9] 2026-10-07(제품 발표와 동시 공개)
+- [10] 2026-10-07
+- [11] 2026-10-07
+- [12] 2026-10-07
+- [13] 2026-10-07
 
 ## Sources
 
-[1] https://openai.com/index/devday-2026-recap — DevDay 2026 Recap — 발표일 미표시(행사 발표: 2026-10-07)
-[2] https://openai.com/index/sharing-ai-progress-in-mathematics — Sharing AI progress in mathematics — 2026-10-06
-[3] https://openai.com/index/advancing-computer-use-with-ironclad — Advancing computer use with Ironclad — 2026-10-06
-[5] https://www.anthropic.com/news/cyber-verification-program — Expanding the Cyber Verification Program — 2026-10-06
-[6] https://unfccc.int/news/un-climate-chief-on-new-data-as-extreme-heat-worsens-pregnancy-and-birth-are-a-new-faultline-in-the — UN Climate Chief on new data: extreme heat and pregnancy — 2026-10-05
-[7] https://sustainablefutures.linklaters.com/post/102o46p/esg-newsletter-october-2026 — ESG newsletter - October 2026 — 2026-10-06
-[10] https://www.gov.kr/portal/gvrnPolicy?policyType=G00301&pageIndex=1 — 환경영향평가 공탁제 첫 시범사업 추진(정부24 정책뉴스 목록) — 2026-10-05
-[12] https://www.prnewswire.com/news-releases/apollo-graphql-introduces-graphos-agent-services-giving-ai-agents-governed-access-to-enterprise-apis-and-systems-302900890.html — Apollo GraphQL Introduces GraphOS Agent Services — 2026-10-07
-[13] https://openai.com/index/gpt-6-for-everyone — GPT-6 and Intelligent UI for everyone — 2026-10-07
+[2] https://openai.com/index/devday-2026-recap — DevDay 2026 Recap
+[3] https://openai.com/index/teens-learn-and-plan — Helping teens learn, plan, and shape the future of AI
+[5] https://reuters.com/business/world-at-work/companies-cutting-jobs-investments-shift-toward-ai-2026-10-06 — Companies cutting jobs as investments shift toward AI
+[7] https://mistral.ai/news/mistral-large-4 — Introducing Mistral Large 4
+[8] https://openai.com/index/gpt-6-for-everyone — GPT-6 and Intelligent UI for everyone
+[9] https://deploymentsafety.openai.com/gpt-6-october — GPT-6 Sol and GPT-6 Luna: October 2026 update
+[10] https://www.reuters.com/business/anthropic-launches-third-claude-55-model-expanding-ai-lineup-before-planned-ipo-2026-10-07 — Anthropic launches third Claude 5.5 model
+[11] https://www.reuters.com/business/energy/south-korea-unveils-747-billion-energy-transition-plan-through-2035-2026-10-07 — South Korea unveils $747 billion energy transition plan through 2035
+[12] https://www.reuters.com/sustainability/cop/australias-top-court-backs-grassroots-group-landmark-climate-case-coal-mine-2026-10-07 — Australia's top court backs grassroots group in landmark climate case
+[13] https://www.reuters.com/sustainability/cop/climate-summit-warns-stronger-action-needed-curb-global-warming-2026-10-07 — Pacific nations seek to entrench 1.5-degree target in COP climate talks

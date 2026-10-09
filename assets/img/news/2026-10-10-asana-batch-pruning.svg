@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="580" viewBox="0 0 520 580" role="img" aria-labelledby="title desc">
+<title id="title">Asana 실험의 화면 기록 정리 방식 비교</title>
+<desc id="desc">이전 방식은 매 단계에서 오래된 화면을 삭제했다. 실험의 일괄 정리 방식은 화면 기록을 최대 20개까지 쌓은 뒤 최근 1개만 남긴다. 정리 사이에는 앞부분의 기록을 유지한다. 성능 수치를 나타낸 그래프가 아닌 설명용 도식이다.</desc>
+<rect width="520" height="580" rx="20" fill="#f5f7fb"/>
+<g font-family="Noto Sans CJK KR, sans-serif" fill="#172338">
+<text x="28" y="48" font-size="26" font-weight="700">화면 기록, 언제 지울까?</text>
+<text x="28" y="84" font-size="22">Asana 브라우저 에이전트 실험</text>
+<rect x="24" y="112" width="472" height="166" rx="14" fill="#ffffff" stroke="#a9b5c5"/>
+<text x="44" y="149" font-size="25" font-weight="700">이전: 매 단계 정리</text>
+<text x="44" y="190" font-size="24">화면 기록 추가 → 이전 화면 삭제</text>
+<text x="44" y="235" font-size="23">요청 앞부분이 계속 바뀜</text>
+<rect x="24" y="302" width="472" height="202" rx="14" fill="#eaf4ed" stroke="#718e79"/>
+<text x="44" y="341" font-size="25" font-weight="700">실험: 일괄 정리</text>
+<text x="44" y="385" font-size="24">화면 기록을 최대 20개까지 쌓기</text>
+<text x="44" y="428" font-size="24">↓ 최근 1개만 남기기</text>
+<text x="44" y="472" font-size="23">정리 사이에는 앞부분 기록 유지</text>
+<text x="28" y="544" font-size="21">개념 비교 · 성능 측정 그래프 아님</text>
+</g>
+</svg>

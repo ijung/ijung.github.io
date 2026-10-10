@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="590" viewBox="0 0 520 590" role="img" aria-labelledby="title desc">
+<title id="title">Decision-1의 점수와 애플리케이션의 실행 책임</title>
+<desc id="desc">상황과 질문, 고정 선택지를 넣으면 모델이 선택지별 확률 점수를 반환한다. 연결하는 애플리케이션이 기준과 후속 행동을 정하며, 불확실한 결과는 추가 검토로 넘길 수 있다.</desc>
+<rect width="520" height="590" rx="20" fill="#f5f7fb"/>
+<g font-family="Noto Sans CJK KR, sans-serif" fill="#18263c">
+<text x="30" y="46" font-size="25" font-weight="700">점수 반환 ≠ 자동 실행</text>
+<rect x="24" y="74" width="472" height="114" rx="14" fill="#e3ecfa"/>
+<text x="44" y="111" font-size="23" font-weight="700">입력</text>
+<text x="44" y="148" font-size="22">상황 · 질문 · 고정 선택지</text>
+<path d="M260 198v27m-8-8 8 8 8-8" fill="none" stroke="#45618a" stroke-width="3"/>
+<rect x="24" y="237" width="472" height="114" rx="14" fill="#e2f2ed"/>
+<text x="44" y="274" font-size="23" font-weight="700">Decision-1</text>
+<text x="44" y="311" font-size="22">선택지별 확률 점수 반환</text>
+<path d="M260 361v27m-8-8 8 8 8-8" fill="none" stroke="#45618a" stroke-width="3"/>
+<rect x="24" y="400" width="472" height="144" rx="14" fill="#fff0d9"/>
+<text x="44" y="437" font-size="23" font-weight="700">연결하는 애플리케이션</text>
+<text x="44" y="474" font-size="22">기준 · 후속 행동 · 검토 경로 설정</text>
+<text x="44" y="511" font-size="21">불확실한 결과 → 추가 검토</text>
+<text x="30" y="576" font-size="16">공식 화면이 아닌 역할 설명용 도식</text>
+</g>
+</svg>

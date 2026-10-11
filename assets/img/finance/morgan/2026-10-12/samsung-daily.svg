@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1020" height="445" viewBox="0 0 1020 445" role="img" aria-labelledby="title desc">
+<title id="title">삼성전자 005930 역사적 일봉 종가</title>
+<desc id="desc">2026-09-08~2026-10-08, 20 bars, KRW, Asia/Seoul, delayed daily series; not intraday</desc>
+<rect width="1020" height="445" fill="#ffffff"/>
+<g font-family="sans-serif" fill="#243447">
+<text x="40" y="34" font-size="22">삼성전자 005930 · 역사적 일봉 종가</text>
+<text x="40" y="60" font-size="15">2026-09-08 ~ 2026-10-08 · 20 bars · 지연/역사적 자료, 당일 분봉 아님</text>
+<line x1="95" y1="345.00" x2="980" y2="345.00" stroke="#dbe3eb"/>
+<text x="85" y="350.00" text-anchor="end" font-size="13">243,500</text>
+<line x1="95" y1="281.25" x2="980" y2="281.25" stroke="#dbe3eb"/>
+<text x="85" y="286.25" text-anchor="end" font-size="13">255,250</text>
+<line x1="95" y1="217.50" x2="980" y2="217.50" stroke="#dbe3eb"/>
+<text x="85" y="222.50" text-anchor="end" font-size="13">267,000</text>
+<line x1="95" y1="153.75" x2="980" y2="153.75" stroke="#dbe3eb"/>
+<text x="85" y="158.75" text-anchor="end" font-size="13">278,750</text>
+<line x1="95" y1="90.00" x2="980" y2="90.00" stroke="#dbe3eb"/>
+<text x="85" y="95.00" text-anchor="end" font-size="13">290,500</text>
+<text x="20" y="86" font-size="14">원 (KRW)</text>
+<polyline points="95.00,203.94 141.58,203.94 188.16,206.65 234.74,258.19 281.32,315.16 327.89,317.87 374.47,290.74 421.05,296.17 467.63,250.05 514.21,179.52 560.79,165.96 607.37,117.13 653.95,201.22 700.53,187.66 747.11,209.36 793.68,168.67 840.26,168.67 886.84,190.37 933.42,209.36 980.00,244.63" stroke="#1767b0" stroke-width="3" fill="none"/>
+<text x="95.00" y="371" text-anchor="middle" font-size="14">2026-09-08</text>
+<text x="560.79" y="371" text-anchor="middle" font-size="14">2026-09-22</text>
+<text x="980.00" y="371" text-anchor="middle" font-size="14">2026-10-08</text>
+<circle cx="980.00" cy="244.63" r="4" fill="#1767b0"/>
+<text x="972.00" y="232.63" text-anchor="end" font-size="14">262,000원</text>
+<text x="95" y="400" font-size="14">거래일 (Asia/Seoul) · source: Yahoo Finance 005930.KS · retrieved 2026-10-12 08:40 KST</text>
+<text x="95" y="425" font-size="13">KRX/NXT 통합 여부 미확인 · latest completed bar: 2026-10-08 · Morgan 자체 제작</text>
+</g></svg>

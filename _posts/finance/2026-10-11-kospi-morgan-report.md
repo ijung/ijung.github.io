@@ -69,7 +69,7 @@ Investopedia의 10월 9일 마감 기사도 S&P 500·나스닥 상승을 보도�
 | 추격·당일 청산 | 뉴스만 보고 추격하지 않음. 진입 계획이 없어 청산 가격·시각도 적용 대상 없음 |
 | 비용 전후 손익비 | 계산 대상 없음. 수수료·세금·슬리피지 가정 미정으로 비용차감 순수익 확정 불가 |
 
-![삼성전자 005930의 2026-09-08~2026-10-08 역사적 일봉 종가, 원 단위, Asia/Seoul, 지연 데이터](/assets/img/finance/morgan/2026-10-11/samsung-daily.svg)
+<img src="/assets/img/finance/morgan/2026-10-11/samsung-daily.svg" alt="삼성전자 005930의 2026-09-08~2026-10-08 역사적 일봉 종가, 원 단위, Asia/Seoul, 지연 데이터" width="1020" height="445" loading="lazy" style="max-width:100%;height:auto">
 
 **자작 차트:** Yahoo Finance 원자료의 2026년 9월 8일~10월 8일 **20개 일봉 종가**를 사용했다.[43] 가로축은 KST 거래일, 세로축은 원, 최신 bar는 **10월 8일**이다.[43] 분봉·장중 매수 확인·체결 순서를 나타내지 않는다.
 

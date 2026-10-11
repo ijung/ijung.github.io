@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 445" role="img" aria-labelledby="title desc">
+<title id="title">Samsung Electronics 005930 daily close in KRW</title>
+<desc id="desc">Historical daily closes, Asia/Seoul. Latest bar 2026-10-08. Yahoo Finance delayed data. Not intraday or a buy recommendation.</desc>
+<rect width="1020" height="445" fill="#fff"/>
+<g font-family="sans-serif" fill="#182538">
+<text x="45" y="35" font-size="22">Samsung Electronics (005930) - daily close</text>
+<text x="45" y="61" font-size="14">KRW | Asia/Seoul (KST) | Latest bar: 2026-10-08 | Delayed historical data</text>
+<line x1="90" y1="330.00" x2="920" y2="330.00" stroke="#e0e6ed"/>
+<text x="80" y="335.00" font-size="13" text-anchor="end">242,950</text>
+<line x1="90" y1="272.50" x2="920" y2="272.50" stroke="#e0e6ed"/>
+<text x="80" y="277.50" font-size="13" text-anchor="end">254,975</text>
+<line x1="90" y1="215.00" x2="920" y2="215.00" stroke="#e0e6ed"/>
+<text x="80" y="220.00" font-size="13" text-anchor="end">267,000</text>
+<line x1="90" y1="157.50" x2="920" y2="157.50" stroke="#e0e6ed"/>
+<text x="80" y="162.50" font-size="13" text-anchor="end">279,025</text>
+<line x1="90" y1="100.00" x2="920" y2="100.00" stroke="#e0e6ed"/>
+<text x="80" y="105.00" font-size="13" text-anchor="end">291,050</text>
+<polyline fill="none" stroke="#1769aa" stroke-width="3" points="90.00,203.05 133.68,203.05 177.37,205.44 221.05,250.86 264.74,301.07 308.42,303.46 352.11,279.55 395.79,284.33 439.47,243.69 483.16,181.53 526.84,169.57 570.53,126.54 614.21,200.65 657.89,188.70 701.58,207.83 745.26,171.96 788.95,171.96 832.63,191.09 876.32,207.83 920.00,238.91"/>
+<circle cx="90.00" cy="203.05" r="3" fill="#1769aa"><title>2026-09-08: 269,500 KRW</title></circle>
+<circle cx="133.68" cy="203.05" r="3" fill="#1769aa"><title>2026-09-09: 269,500 KRW</title></circle>
+<circle cx="177.37" cy="205.44" r="3" fill="#1769aa"><title>2026-09-10: 269,000 KRW</title></circle>
+<circle cx="221.05" cy="250.86" r="3" fill="#1769aa"><title>2026-09-11: 259,500 KRW</title></circle>
+<circle cx="264.74" cy="301.07" r="3" fill="#1769aa"><title>2026-09-14: 249,000 KRW</title></circle>
+<circle cx="308.42" cy="303.46" r="3" fill="#1769aa"><title>2026-09-15: 248,500 KRW</title></circle>
+<circle cx="352.11" cy="279.55" r="3" fill="#1769aa"><title>2026-09-16: 253,500 KRW</title></circle>
+<circle cx="395.79" cy="284.33" r="3" fill="#1769aa"><title>2026-09-17: 252,500 KRW</title></circle>
+<circle cx="439.47" cy="243.69" r="3" fill="#1769aa"><title>2026-09-18: 261,000 KRW</title></circle>
+<circle cx="483.16" cy="181.53" r="3" fill="#1769aa"><title>2026-09-21: 274,000 KRW</title></circle>
+<circle cx="526.84" cy="169.57" r="3" fill="#1769aa"><title>2026-09-22: 276,500 KRW</title></circle>
+<circle cx="570.53" cy="126.54" r="3" fill="#1769aa"><title>2026-09-23: 285,500 KRW</title></circle>
+<circle cx="614.21" cy="200.65" r="3" fill="#1769aa"><title>2026-09-28: 270,000 KRW</title></circle>
+<circle cx="657.89" cy="188.70" r="3" fill="#1769aa"><title>2026-09-29: 272,500 KRW</title></circle>
+<circle cx="701.58" cy="207.83" r="3" fill="#1769aa"><title>2026-09-30: 268,500 KRW</title></circle>
+<circle cx="745.26" cy="171.96" r="3" fill="#1769aa"><title>2026-10-01: 276,000 KRW</title></circle>
+<circle cx="788.95" cy="171.96" r="3" fill="#1769aa"><title>2026-10-02: 276,000 KRW</title></circle>
+<circle cx="832.63" cy="191.09" r="3" fill="#1769aa"><title>2026-10-06: 272,000 KRW</title></circle>
+<circle cx="876.32" cy="207.83" r="3" fill="#1769aa"><title>2026-10-07: 268,500 KRW</title></circle>
+<circle cx="920.00" cy="238.91" r="3" fill="#1769aa"><title>2026-10-08: 262,000 KRW</title></circle>
+<text x="90.00" y="365" font-size="14" text-anchor="middle">2026-09-08</text>
+<text x="526.84" y="365" font-size="14" text-anchor="middle">2026-09-22</text>
+<text x="920.00" y="365" font-size="14" text-anchor="middle">2026-10-08</text>
+<text x="45" y="400" font-size="13">Source: Yahoo Finance chart API, 005930.KS, interval=1d; retrieved 2026-10-11 16:14 KST.</text>
+<text x="45" y="422" font-size="13">Morgan original chart. Historical context only; no minute-bar execution inference.</text>
+</g></svg>

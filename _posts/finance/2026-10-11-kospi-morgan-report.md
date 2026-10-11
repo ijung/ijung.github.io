@@ -112,30 +112,30 @@ Investopedia의 10월 9일 마감 기사도 S&P 500·나스닥 상승을 보도�
 
 ## Sources
 
-[1] https://insightimes.com/en/articles/why-did-chip-stocks-fall-as-the-sp-500-rose-059-on-oct-9 — Why Did Chip Stocks Fall as the S&P 500 Rose 0.59% on Oct. 9? — Insight Times <span id="source-1"></span>
+[1] [Why Did Chip Stocks Fall as the S&P 500 Rose 0.59% on Oct. 9? — Insight Times](https://insightimes.com/en/articles/why-did-chip-stocks-fall-as-the-sp-500-rose-059-on-oct-9) <span id="source-1"></span>
 
-[2] https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-2026%EB%85%84-3%EB%B6%84%EA%B8%B0-%EC%9E%A0%EC%A0%95%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C — 삼성전자, 2026년 3분기 잠정실적 발표 <span id="source-2"></span>
+[2] [삼성전자, 2026년 3분기 잠정실적 발표](https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-2026%EB%85%84-3%EB%B6%84%EA%B8%B0-%EC%9E%A0%EC%A0%95%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C) <span id="source-2"></span>
 
-[3] https://www.fnnews.com/news/202610081558183035 — 삼전 '107조 실적' 역부족…코스피 2.6% 급락 6620선 마감[시황종합] - 파이낸셜뉴스 <span id="source-3"></span>
+[3] [삼전 '107조 실적' 역부족…코스피 2.6% 급락 6620선 마감\[시황종합\] - 파이낸셜뉴스](https://www.fnnews.com/news/202610081558183035) <span id="source-3"></span>
 
-[4] https://www.bls.gov/schedule/2026/10_sched.htm — Schedule of Selected Releases for October 2026 <span id="source-4"></span>
+[4] [Schedule of Selected Releases for October 2026](https://www.bls.gov/schedule/2026/10_sched.htm) <span id="source-4"></span>
 
-[5] https://finance.yahoo.com/markets/stocks/articles/markets-news-oct-9-2026-105547352.html — Markets News, Oct. 9, 2026: Stocks Rise as Oil Prices, Treasury Yields Stabilize; Major Indexes Post Weekly Gains <span id="source-5"></span>
+[5] [Markets News, Oct. 9, 2026: Stocks Rise as Oil Prices, Treasury Yields Stabilize; Major Indexes Post Weekly Gains](https://finance.yahoo.com/markets/stocks/articles/markets-news-oct-9-2026-105547352.html) <span id="source-5"></span>
 
-[6] https://query1.finance.yahoo.com/v8/finance/chart/%5ESOX?range=1mo&interval=1d — yahoo-sox <span id="source-6"></span>
+[6] [yahoo-sox](https://query1.finance.yahoo.com/v8/finance/chart/%5ESOX?range=1mo&interval=1d) <span id="source-6"></span>
 
-[7] https://query1.finance.yahoo.com/v8/finance/chart/005930.KS?range=1mo&interval=1d — yahoo-samsung <span id="source-7"></span>
+[7] [yahoo-samsung](https://query1.finance.yahoo.com/v8/finance/chart/005930.KS?range=1mo&interval=1d) <span id="source-7"></span>
 
-[8] https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=1mo&interval=1d — yahoo-sp500 <span id="source-8"></span>
+[8] [yahoo-sp500](https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=1mo&interval=1d) <span id="source-8"></span>
 
-[9] https://global.krx.co.kr/contents/GLB/06/0602/0602010201/GLB0602010201T1.jsp — Global KRX \| <span id="source-9"></span>
+[9] [Global KRX \|](https://global.krx.co.kr/contents/GLB/06/0602/0602010201/GLB0602010201T1.jsp) <span id="source-9"></span>
 
-[10] https://global.krx.co.kr/contents/GLB/06/0602/0602010201/GLB0602010201T3.jsp — Global KRX \| <span id="source-10"></span>
+[10] [Global KRX \|](https://global.krx.co.kr/contents/GLB/06/0602/0602010201/GLB0602010201T3.jsp) <span id="source-10"></span>
 
-[11] https://query1.finance.yahoo.com/v8/finance/chart/%5EIXIC?range=1mo&interval=1d — yahoo-nasdaq <span id="source-11"></span>
+[11] [yahoo-nasdaq](https://query1.finance.yahoo.com/v8/finance/chart/%5EIXIC?range=1mo&interval=1d) <span id="source-11"></span>
 
-[12] https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX?range=1mo&interval=1d — yahoo-tnx <span id="source-12"></span>
+[12] [yahoo-tnx](https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX?range=1mo&interval=1d) <span id="source-12"></span>
 
-[13] https://query1.finance.yahoo.com/v8/finance/chart/CL=F?range=1mo&interval=1d — yahoo-wti <span id="source-13"></span>
+[13] [yahoo-wti](https://query1.finance.yahoo.com/v8/finance/chart/CL=F?range=1mo&interval=1d) <span id="source-13"></span>
 
-[14] https://www.samsung.com/global/ir/stock-information/listing-Info — Listing Information │ Stock Information │ Investor Relations │ Samsung Global \| <span id="source-14"></span>
+[14] [Listing Information │ Stock Information │ Investor Relations │ Samsung Global \|](https://www.samsung.com/global/ir/stock-information/listing-Info) <span id="source-14"></span>

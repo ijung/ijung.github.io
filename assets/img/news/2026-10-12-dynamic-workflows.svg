@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="560" viewBox="0 0 520 560" role="img" aria-labelledby="title desc">
+<title id="title">동적 워크플로의 실행 흐름</title>
+<desc id="desc">에이전트가 프로그램을 작성하면 서버가 여러 에이전트를 단계별로 실행하고 결과를 결합한다. Claude Managed Agents의 베타 기능을 설명하는 도식이다.</desc>
+<rect width="520" height="560" fill="#f5f7fb" rx="20"/>
+<g font-family="sans-serif" text-anchor="middle" fill="#14243a">
+<text x="260" y="46" font-size="27" font-weight="bold">동적 워크플로</text>
+<text x="260" y="78" font-size="20">Claude Managed Agents · 베타</text>
+<rect x="40" y="110" width="440" height="100" rx="14" fill="#e4edf9" stroke="#55769a"/>
+<text x="260" y="151" font-size="24" font-weight="bold">에이전트가 작성</text>
+<text x="260" y="183" font-size="22">작업을 나누는 프로그램</text>
+<rect x="40" y="260" width="440" height="110" rx="14" fill="#e4edf9" stroke="#55769a"/>
+<text x="260" y="304" font-size="24" font-weight="bold">서버가 백그라운드 실행</text>
+<text x="260" y="339" font-size="22">여러 에이전트를 단계별로 실행</text>
+<rect x="40" y="420" width="440" height="90" rx="14" fill="#dcefe7" stroke="#49836a"/>
+<text x="260" y="473" font-size="24" font-weight="bold">결과 결합</text>
+<text x="260" y="540" font-size="17">공식 화면이 아닌 설명용 도식</text>
+</g>
+<g stroke="#55769a" stroke-width="3" fill="#55769a">
+<path d="M260 216 V246" fill="none"/><path d="M254 240 L260 250 L266 240 Z"/>
+<path d="M260 377 V406" fill="none"/><path d="M254 400 L260 410 L266 400 Z"/>
+</g>
+</svg>

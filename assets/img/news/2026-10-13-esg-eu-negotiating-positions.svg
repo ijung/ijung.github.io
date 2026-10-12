@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="430" viewBox="0 0 520 430" role="img" aria-labelledby="title desc">
+<title id="title">EU 협상 입장 승인과 두 회의 일정</title><desc id="desc">2026년 10월 12일 협상 입장 승인. 생물다양성 COP17은 10월 19일부터 30일, 기후 COP31은 11월 9일부터 20일 예정. 최종 합의나 규제 발효가 아니다.</desc>
+<rect width="520" height="430" rx="20" fill="#f4f7fb"/>
+<g font-family="sans-serif" fill="#172b4d">
+<text x="30" y="48" font-size="26" font-weight="bold">EU의 두 협상 입장</text>
+<text x="30" y="85" font-size="22">2026.10.12 승인</text>
+<rect x="25" y="115" width="470" height="105" rx="12" fill="#dcefe4"/>
+<text x="45" y="150" font-size="24" font-weight="bold">생물다양성 COP17</text>
+<text x="45" y="190" font-size="23">2026.10.19~10.30 예정</text>
+<rect x="25" y="240" width="470" height="105" rx="12" fill="#dde9fa"/>
+<text x="45" y="275" font-size="24" font-weight="bold">기후 COP31</text>
+<text x="45" y="315" font-size="23">2026.11.09~11.20 예정</text>
+<text x="30" y="392" font-size="21">최종 합의·새 규제 발효와는 구분</text>
+</g></svg>

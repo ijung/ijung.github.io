@@ -1,0 +1,10 @@
+<!-- Use the site's original favicon assets, not the theme's defaults. -->
+{% capture favicon_path %}{{ '/assets/img/favicons' | relative_url }}{% endcapture %}
+
+<link rel="icon" type="image/png" sizes="32x32" href="{{ favicon_path }}/favicon-32x32.png?v=e6f329f3">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ favicon_path }}/favicon-16x16.png?v=e6f329f3">
+<link rel="shortcut icon" href="{{ favicon_path }}/favicon.ico?v=e6f329f3">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ favicon_path }}/apple-touch-icon.png?v=e6f329f3">
+{% if site.pwa.enabled %}
+  <link rel="manifest" href="{{ favicon_path }}/site.webmanifest">
+{% endif %}

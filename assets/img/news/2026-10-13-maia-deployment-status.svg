@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="390" viewBox="0 0 680 390" role="img" aria-labelledby="title desc">
+<title id="title">Maia의 현재 운영과 차세대 배포 계획</title><desc id="desc">Maia 200은 Microsoft Copilot 등 운영 작업에 사용된다. Maia 300의 생산 배포는 2027년 계획이다.</desc>
+<rect width="680" height="390" rx="20" fill="#f4f7fb"/>
+<g font-family="sans-serif" fill="#132338">
+<text x="34" y="48" font-size="27" font-weight="bold">Maia: 현재 운영과 발표된 계획</text>
+<rect x="30" y="74" width="620" height="125" rx="12" fill="#dfeee6"/>
+<text x="52" y="113" font-size="26" font-weight="bold">현재 운영 · Maia 200</text>
+<text x="52" y="158" font-size="24">Microsoft Copilot 등 운영 작업 처리</text>
+<rect x="30" y="219" width="620" height="125" rx="12" fill="#e2eafb"/>
+<text x="52" y="259" font-size="26" font-weight="bold">발표된 계획 · Maia 300</text>
+<text x="52" y="303" font-size="24">2027년 생산 배포 시작</text>
+<text x="34" y="372" font-size="18">공식 화면이 아닌 설명용 도식 · Microsoft 발표 기준</text>
+</g></svg>

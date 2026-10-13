@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1020" height="445" viewBox="0 0 1020 445">
+<rect width="1020" height="445" fill="#ffffff"/>
+<g font-family="Arial,sans-serif" fill="#162235">
+<text x="25" y="32" font-size="23">Philadelphia Semiconductor Index (SOX) — Daily Close</text>
+<text x="25" y="57" font-size="15">2026-09-15 to 2026-10-12 | New York trading dates | points | historical, not live</text>
+<line x1="90" x2="980" y1="345.00" y2="345.00" stroke="#dce2e8"/>
+<text x="12" y="350.00" font-size="14">11,026</text>
+<line x1="90" x2="980" y1="278.75" y2="278.75" stroke="#dce2e8"/>
+<text x="12" y="283.75" font-size="14">11,611</text>
+<line x1="90" x2="980" y1="212.50" y2="212.50" stroke="#dce2e8"/>
+<text x="12" y="217.50" font-size="14">12,197</text>
+<line x1="90" x2="980" y1="146.25" y2="146.25" stroke="#dce2e8"/>
+<text x="12" y="151.25" font-size="14">12,782</text>
+<line x1="90" x2="980" y1="80.00" y2="80.00" stroke="#dce2e8"/>
+<text x="12" y="85.00" font-size="14">13,368</text>
+<polyline fill="none" stroke="#1c5b99" stroke-width="3" points="90.00,328.03 136.84,320.05 183.68,280.07 230.53,243.61 277.37,185.74 324.21,156.71 371.05,174.31 417.89,179.03 464.74,159.07 511.58,182.12 558.42,163.57 605.26,163.63 652.11,140.96 698.95,106.15 745.79,102.07 792.63,96.97 839.47,114.13 886.32,164.19 933.16,169.99 980.00,207.96"/>
+<text x="90.00" y="372" text-anchor="middle" font-size="13">2026-09-15</text>
+<text x="371.05" y="372" text-anchor="middle" font-size="13">2026-09-23</text>
+<text x="652.11" y="372" text-anchor="middle" font-size="13">2026-10-01</text>
+<text x="980.00" y="372" text-anchor="middle" font-size="13">2026-10-12</text>
+<circle cx="980.00" cy="207.96" r="5" fill="#ac2939"/>
+<text x="25" y="410" font-size="15">Latest bar: 2026-10-12 / 12,236.79 points. Source: Yahoo Finance ^SOX daily JSON.</text>
+<text x="25" y="432" font-size="13">Morgan original chart. Retrieved 2026-10-13 09:03 KST. No intraday or execution inference.</text>
+</g></svg>

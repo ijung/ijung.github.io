@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="450" viewBox="0 0 720 450" role="img" aria-labelledby="title desc">
+<title id="title">카나나 스페이스의 사전 신청과 비공개 시험 계획</title>
+<desc id="desc">2026년 10월 13일 사전 신청 시작. 2026년 12월부터 신청자 일부를 선정해 비공개 베타 테스트를 진행할 계획. 현재 일반 출시를 뜻하지 않습니다.</desc>
+<rect width="720" height="450" rx="22" fill="#f4f7fb"/>
+<g font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" fill="#17263c">
+<text x="38" y="56" font-size="28" font-weight="700">카나나 스페이스: 지금과 다음 단계</text>
+<rect x="36" y="84" width="648" height="130" rx="16" fill="#ffffff" stroke="#ccd6e6"/>
+<text x="62" y="121" font-size="23" font-weight="700">2026-10-13 · 사전 신청 시작</text>
+<text x="62" y="165" font-size="24">웹사이트에서 신청을 받습니다.</text>
+<path d="M360 224 V250 M350 240 L360 250 L370 240" fill="none" stroke="#516d94" stroke-width="4"/>
+<rect x="36" y="264" width="648" height="130" rx="16" fill="#e7eefb" stroke="#bbcce8"/>
+<text x="62" y="304" font-size="23" font-weight="700">2026년 12월부터 · 비공개 시험 계획</text>
+<text x="62" y="348" font-size="24">신청자 중 일부만 선정합니다.</text>
+<text x="38" y="427" font-size="21">사전 신청 시작 ≠ 일반 출시</text>
+</g></svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="420" viewBox="0 0 560 420" role="img" aria-labelledby="title description">
+<title id="title">가져가 시범 서비스의 세 가지 기능</title>
+<desc id="description">은평구 주민 대상 정부 발표 기능입니다. 사진으로 폐기물 품목을 식별하고, 위치에 맞춘 배출 안내와 대형폐기물 신고 및 수수료 결제를 지원합니다. 정확도와 안정성은 검증 예정입니다.</desc>
+<rect width="560" height="420" rx="20" fill="#102a35"/>
+<g font-family="sans-serif" fill="#ffffff">
+<text x="28" y="48" font-size="27" font-weight="bold">‘가져가’ 시범 서비스</text>
+<text x="28" y="82" font-size="21">은평구 주민 대상 · 정부 발표 기준</text>
+<rect x="24" y="110" width="512" height="66" rx="12" fill="#244653"/>
+<text x="42" y="152" font-size="23">사진 → 폐기물 품목 식별</text>
+<rect x="24" y="190" width="512" height="66" rx="12" fill="#244653"/>
+<text x="42" y="232" font-size="23">위치 → 지역별 배출 안내</text>
+<rect x="24" y="270" width="512" height="66" rx="12" fill="#244653"/>
+<text x="42" y="312" font-size="23">대형폐기물 → 신고·수수료 결제</text>
+<text x="28" y="377" font-size="20" fill="#aee1dc">식별 정확도·편의성·안정성 검증 예정</text>
+</g></svg>

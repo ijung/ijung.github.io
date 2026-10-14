@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" width="720" height="380" role="img" aria-labelledby="title desc">
+<title id="title">일부 GPT-4 API 모델의 종료 일정</title>
+<desc id="desc">2026년 10월 14일 종료 예고, 2027년 1월 14일 API 종료 예정입니다. 명시된 모델 스냅샷과 추가 학습 버전에 적용됩니다.</desc>
+<rect width="720" height="380" rx="20" fill="#102033"/>
+<g font-family="sans-serif" text-anchor="middle" fill="#ffffff">
+<text x="360" y="48" font-size="28" font-weight="700">종료 예고와 실제 종료는 다릅니다</text>
+<rect x="35" y="85" width="280" height="160" rx="15" fill="#25415e"/>
+<rect x="405" y="85" width="280" height="160" rx="15" fill="#25415e"/>
+<text x="175" y="131" font-size="26">2026-10-14</text>
+<text x="175" y="177" font-size="30" font-weight="700">종료 예고</text>
+<text x="175" y="215" font-size="22">공지일에 즉시 종료 아님</text>
+<text x="545" y="131" font-size="26">2027-01-14</text>
+<text x="545" y="177" font-size="30" font-weight="700">API 종료 예정</text>
+<text x="545" y="215" font-size="22">대상 모델 접근 종료</text>
+<text x="360" y="297" font-size="24">명시된 모델 스냅샷만 대상입니다</text>
+<text x="360" y="335" font-size="22">해당 모델의 추가 학습 버전도 포함됩니다</text>
+</g>
+<path d="M330 165H387M376 154L387 165L376 176" fill="none" stroke="#71cfca" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

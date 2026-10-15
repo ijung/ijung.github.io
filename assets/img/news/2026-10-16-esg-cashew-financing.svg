@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="400" viewBox="0 0 560 400" role="img" aria-labelledby="title description">
+<title id="title">Valency 녹색채권의 규모와 자금 용도</title>
+<desc id="description">전체 1억 5,000만 달러 투자계획 중 녹색채권 6,000만 달러는 캐슈 부산물 활용 단지와 저장시설에 투입될 예정입니다. 인증 발표이며 실제 가동 실적을 나타내지 않습니다.</desc>
+<rect width="560" height="400" rx="20" fill="#102a35"/>
+<g font-family="sans-serif" fill="#ffffff">
+<text x="28" y="46" font-size="26" font-weight="bold">캐슈 부산물 활용 사업</text>
+<text x="28" y="82" font-size="21">전체 투자계획: 1억 5,000만 달러</text>
+<rect x="24" y="106" width="512" height="74" rx="12" fill="#244653"/>
+<text x="42" y="137" font-size="24" font-weight="bold">녹색채권 6,000만 달러</text>
+<text x="42" y="164" font-size="20">전체 투자계획의 일부</text>
+<path d="M280 190 L280 220 M270 210 L280 220 L290 210" stroke="#aee1dc" stroke-width="4" fill="none"/>
+<text x="308" y="211" font-size="20">투입 예정</text>
+<rect x="24" y="238" width="512" height="90" rx="12" fill="#244653"/>
+<text x="42" y="274" font-size="24">캐슈 부산물 활용 단지</text>
+<text x="42" y="307" font-size="22">에너지·바이오 제품 + 저장시설</text>
+<text x="28" y="372" font-size="20" fill="#aee1dc">인증 발표 · 가동 실적을 뜻하지 않습니다.</text>
+</g>
+</svg>

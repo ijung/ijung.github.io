@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="510" viewBox="0 0 720 510" role="img" aria-labelledby="title desc">
+<title id="title">Claude Code Review의 관리자 준비와 자동 검토 흐름</title>
+<desc id="desc">관리자가 Code Review 설정을 켜고 GitHub 앱과 저장소를 연결한 뒤, 새 코드 변경 요청이 생기면 자동 검토가 실행됩니다.</desc>
+<rect width="720" height="510" rx="20" fill="#f3f6fb"/>
+<g font-family="sans-serif" text-anchor="middle" fill="#17273f">
+<text x="360" y="45" font-size="28" font-weight="bold">Code Review 이용 흐름</text>
+<rect x="35" y="72" width="650" height="150" rx="16" fill="#dbe8ff"/>
+<text x="360" y="108" font-size="27" font-weight="bold">관리자 준비</text>
+<text x="360" y="146" font-size="25">설정 활성화 · GitHub 앱 설치 · 저장소 선택</text>
+<text x="360" y="184" font-size="25">저장소별 Quick / Standard / Deep 선택</text>
+<path d="M360 230 L360 265 M348 252 L360 265 L372 252" fill="none" stroke="#355d95" stroke-width="5"/>
+<rect x="80" y="279" width="560" height="75" rx="16" fill="#ffffff" stroke="#9eb2cc" stroke-width="2"/>
+<text x="360" y="327" font-size="29">새 코드 변경 요청</text>
+<path d="M360 365 L360 400 M348 387 L360 400 L372 387" fill="none" stroke="#355d95" stroke-width="5"/>
+<rect x="80" y="413" width="560" height="65" rx="16" fill="#dcefe6"/>
+<text x="360" y="455" font-size="29" font-weight="bold">자동 코드 검토 실행</text>
+</g></svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="340" viewBox="0 0 560 340" role="img" aria-labelledby="title desc">
+<title id="title">지역 소상공인 기획전 참여 구성</title>
+<desc id="desc">카카오의 2026년 10월 16일 발표 기준, 강원 12곳과 공주·목포 8곳 등 총 20개 업체가 참여합니다.</desc>
+<rect width="560" height="340" rx="18" fill="#f3f6fa"/>
+<g font-family="sans-serif" text-anchor="middle" fill="#172b42">
+<text x="280" y="48" font-size="25" font-weight="bold">이번 기획전 참여 업체</text>
+<rect x="25" y="78" width="245" height="135" rx="14" fill="#dcecf5"/>
+<rect x="290" y="78" width="245" height="135" rx="14" fill="#e3eee2"/>
+<text x="147" y="124" font-size="25">강원</text>
+<text x="147" y="177" font-size="38" font-weight="bold">12곳</text>
+<text x="412" y="124" font-size="25">공주·목포</text>
+<text x="412" y="177" font-size="38" font-weight="bold">8곳</text>
+<text x="280" y="268" font-size="29" font-weight="bold">총 20개 업체 · 50여 종 상품</text>
+<text x="280" y="312" font-size="17">2026-10-16 카카오 발표 기준 · 설명용 도식</text>
+</g>
+</svg>

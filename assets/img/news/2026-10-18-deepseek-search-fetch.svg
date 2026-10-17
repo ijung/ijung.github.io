@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" role="img" aria-labelledby="title desc">
+<title id="title">DeepSeek Search·Fetch 입력과 출력</title>
+<desc id="desc">Search API는 검색어에 맞는 웹페이지 결과를 반환하고, Fetch API는 지정한 웹페이지 내용을 Markdown으로 반환합니다. 두 API의 기능 비교이며 필수 실행 순서를 뜻하지 않습니다.</desc>
+<rect width="900" height="360" rx="24" fill="#f3f6fb"/>
+<g font-family="sans-serif" text-anchor="middle" fill="#172b4d">
+<text x="450" y="52" font-size="28" font-weight="bold">검색과 페이지 수집은 서로 다른 기능입니다</text>
+<rect x="35" y="92" width="220" height="75" rx="14" fill="#dae8ff"/>
+<rect x="340" y="92" width="220" height="75" rx="14" fill="#bdd4fa"/>
+<rect x="645" y="92" width="220" height="75" rx="14" fill="#dae8ff"/>
+<text x="145" y="139" font-size="27">검색어</text><text x="450" y="139" font-size="27">Search API</text><text x="755" y="139" font-size="25">검색 결과</text>
+<text x="298" y="140" font-size="34">→</text><text x="603" y="140" font-size="34">→</text>
+<rect x="35" y="195" width="220" height="75" rx="14" fill="#d9f0e8"/>
+<rect x="340" y="195" width="220" height="75" rx="14" fill="#b7dfd1"/>
+<rect x="645" y="195" width="220" height="75" rx="14" fill="#d9f0e8"/>
+<text x="145" y="242" font-size="26">웹페이지 주소</text><text x="450" y="242" font-size="27">Fetch API</text><text x="755" y="227" font-size="25">페이지 내용</text><text x="755" y="255" font-size="20">Markdown</text>
+<text x="298" y="243" font-size="34">→</text><text x="603" y="243" font-size="34">→</text>
+<text x="450" y="322" font-size="22">기능 비교이며, 두 API를 반드시 차례로 호출한다는 뜻은 아닙니다</text>
+</g></svg>

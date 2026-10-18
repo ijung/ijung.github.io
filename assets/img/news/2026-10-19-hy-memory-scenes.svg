@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 410" role="img" aria-labelledby="title desc">
+  <title id="title">Hy-Memory 2.0의 세 가지 기억</title>
+  <desc id="desc">공식 발표가 구분하는 대화 기억은 사건과 후속 변화, 작업 기억은 목표와 진행 및 적용 가능한 경험, 코드 기억은 관련 결정과 과거 작업을 다룹니다. 처리 순서나 내부 구조를 나타내지 않는 역할 비교입니다.</desc>
+  <rect width="640" height="410" rx="18" fill="#101827"/>
+  <g font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" fill="#f3f6fc">
+    <text x="30" y="48" font-size="30" font-weight="700">세 가지 기억, 다른 역할</text>
+    <rect x="26" y="75" width="588" height="96" rx="12" fill="#20324c"/>
+    <text x="46" y="133" font-size="31" font-weight="700">대화 기억</text>
+    <text x="250" y="117" font-size="26">사건의 맥락과</text>
+    <text x="250" y="151" font-size="26">그 뒤의 변화</text>
+    <rect x="26" y="184" width="588" height="96" rx="12" fill="#23403c"/>
+    <text x="46" y="242" font-size="31" font-weight="700">작업 기억</text>
+    <text x="250" y="226" font-size="26">목표·진행 결과와</text>
+    <text x="250" y="260" font-size="26">조건에 맞는 경험</text>
+    <rect x="26" y="293" width="588" height="96" rx="12" fill="#3b2f4f"/>
+    <text x="46" y="351" font-size="31" font-weight="700">코드 기억</text>
+    <text x="250" y="335" font-size="26">관련 결정과</text>
+    <text x="250" y="369" font-size="26">이전 작업 과정</text>
+  </g>
+</svg>

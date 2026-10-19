@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="362" viewBox="0 0 760 362" role="img" aria-labelledby="title desc">
+  <title id="title">Browse 항의 대상과 Scarborough 점거 현장의 구분</title>
+  <desc id="desc">Greenpeace의 항의 대상은 Browse 개발 제안이며 실제 점거 현장은 Scarborough의 부유식 생산설비입니다. 공식 현장 이미지가 아닌 설명용 도식입니다.</desc>
+  <rect width="760" height="362" rx="20" fill="#f1f5f9"/>
+  <g font-family="sans-serif" fill="#0f172a">
+    <text x="32" y="50" font-size="27" font-weight="700">항의 대상과 점거 현장은 다릅니다</text>
+    <rect x="32" y="80" width="696" height="108" rx="12" fill="#ffffff" stroke="#64748b"/>
+    <text x="54" y="116" font-size="22" fill="#334155">항의 대상</text>
+    <text x="54" y="154" font-size="29" font-weight="700">Browse 개발 제안 · Scott Reef 인근</text>
+    <rect x="32" y="208" width="696" height="108" rx="12" fill="#ffffff" stroke="#64748b"/>
+    <text x="54" y="244" font-size="22" fill="#334155">실제 점거 현장</text>
+    <text x="54" y="282" font-size="29" font-weight="700">Scarborough · 부유식 생산설비(FPU)</text>
+    <text x="32" y="344" font-size="18" fill="#475569">설명용 비교 · 실제 시설의 외형이나 위치를 묘사하지 않습니다</text>
+  </g>
+</svg>

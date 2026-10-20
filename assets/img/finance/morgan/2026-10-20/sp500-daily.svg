@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1020" height="445" viewBox="0 0 1020 445">
+<rect width="1020" height="445" fill="#ffffff"/>
+<g font-family="Arial,sans-serif" fill="#162235">
+<text x="25" y="32" font-size="23">S&amp;P 500 — Daily Close</text>
+<text x="25" y="57" font-size="15">2026-09-22 to 2026-10-19 | New York trading dates | points | historical, not live</text>
+<line x1="90" x2="980" y1="345.00" y2="345.00" stroke="#dce2e8"/>
+<text x="12" y="350.00" font-size="14">7,502</text>
+<line x1="90" x2="980" y1="278.75" y2="278.75" stroke="#dce2e8"/>
+<text x="12" y="283.75" font-size="14">7,618</text>
+<line x1="90" x2="980" y1="212.50" y2="212.50" stroke="#dce2e8"/>
+<text x="12" y="217.50" font-size="14">7,735</text>
+<line x1="90" x2="980" y1="146.25" y2="146.25" stroke="#dce2e8"/>
+<text x="12" y="151.25" font-size="14">7,852</text>
+<line x1="90" x2="980" y1="80.00" y2="80.00" stroke="#dce2e8"/>
+<text x="12" y="85.00" font-size="14">7,969</text>
+<polyline fill="none" stroke="#1c5b99" stroke-width="3" points="90.00,195.83 136.84,229.06 183.68,230.14 230.53,207.86 277.37,241.72 324.21,249.01 371.05,259.95 417.89,251.50 464.74,219.60 511.58,190.55 558.42,165.05 605.26,174.78 652.11,195.42 698.95,169.24 745.79,171.67 792.63,172.69 839.47,221.74 886.32,207.50 933.16,255.47 980.00,237.73"/>
+<text x="90.00" y="372" text-anchor="middle" font-size="13">2026-09-22</text>
+<text x="371.05" y="372" text-anchor="middle" font-size="13">2026-09-30</text>
+<text x="652.11" y="372" text-anchor="middle" font-size="13">2026-10-08</text>
+<text x="980.00" y="372" text-anchor="middle" font-size="13">2026-10-19</text>
+<circle cx="980.00" cy="237.73" r="5" fill="#ac2939"/>
+<text x="25" y="410" font-size="15">Latest bar: 2026-10-19 / 7,690.73 points. Source: Yahoo Finance ^GSPC daily JSON.</text>
+<text x="25" y="432" font-size="13">Morgan original chart. Retrieved 2026-10-20T22:04:14.344161+09:00. No intraday or execution inference.</text>
+</g></svg>

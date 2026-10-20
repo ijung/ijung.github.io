@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="400" viewBox="0 0 880 400" role="img" aria-labelledby="title desc">
+<title id="title">OpenAI의 Orchestra Bio 인수와 결합 목표</title>
+<desc id="desc">Orchestra Bio의 신약 개발 업무 조정 플랫폼과 OpenAI의 생명과학 모델 및 도구 Rosalind를 결합하려는 목표입니다. 통합 제품 출시 완료를 뜻하지 않습니다.</desc>
+<rect width="880" height="400" fill="#f5f7fb"/>
+<g font-family="sans-serif" text-anchor="middle" fill="#13243b">
+<text x="440" y="48" font-size="28" font-weight="bold">인수 발표와 통합 목표는 구분합니다</text>
+<rect x="40" y="82" width="360" height="125" rx="16" fill="#e1ecff"/>
+<text x="220" y="122" font-size="27" font-weight="bold">Orchestra Bio</text>
+<text x="220" y="163" font-size="23">신약 개발 업무 조정</text>
+<rect x="480" y="82" width="360" height="125" rx="16" fill="#dff2e9"/>
+<text x="660" y="122" font-size="27" font-weight="bold">Rosalind</text>
+<text x="660" y="163" font-size="23">생명과학 AI 모델·도구</text>
+<path d="M220 218V242H440V266M660 218V242H440" fill="none" stroke="#4a6080" stroke-width="4"/>
+<path d="m431 256 9 12 9-12" fill="none" stroke="#4a6080" stroke-width="4"/>
+<rect x="120" y="276" width="640" height="66" rx="14" fill="#fff" stroke="#4a6080" stroke-width="2"/>
+<text x="440" y="318" font-size="25">목표: 과학적 발견과 개발 후속 업무의 연결</text>
+<text x="440" y="378" font-size="22">제품 통합 완료·개발 기간 단축의 입증은 아닙니다</text>
+</g>
+</svg>

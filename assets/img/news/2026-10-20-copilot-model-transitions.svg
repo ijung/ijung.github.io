@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="620" viewBox="0 0 920 620" role="img" aria-labelledby="title desc">
+<title id="title">Copilot 지원 종료 모델과 GitHub 권장 대안</title>
+<desc id="desc">2026년 10월 19일 공식 공지의 권장 대안을 비교합니다. 자동 전환을 뜻하지 않습니다.</desc>
+<rect width="920" height="620" rx="22" fill="#f5f7fb"/>
+<g font-family="sans-serif" fill="#172238">
+<text x="38" y="55" font-size="30" font-weight="700">Copilot 모델 지원 종료 · 권장 대안</text>
+<text x="38" y="96" font-size="24">시행 기준: 2026-10-19 · GitHub 공식 공지</text>
+<text x="38" y="145" font-size="25" font-weight="700">지원 종료 모델</text>
+<text x="580" y="145" font-size="25" font-weight="700">권장 대안</text>
+<rect x="28" y="168" width="864" height="78" rx="12" fill="white"/>
+<text x="46" y="215" font-size="25">Gemini 3.7 Flash</text>
+<path d="M 505 207 H 545 l -10 -9 M 545 207 l -10 9" fill="none" stroke="#3165aa" stroke-width="3"/>
+<text x="580" y="215" font-size="26" font-weight="700">Gemini 3.8 Flash</text>
+<rect x="28" y="262" width="864" height="78" rx="12" fill="white"/>
+<text x="46" y="309" font-size="25">GPT-5.5 · GPT-5.4</text>
+<path d="M 505 301 H 545 l -10 -9 M 545 301 l -10 9" fill="none" stroke="#3165aa" stroke-width="3"/>
+<text x="580" y="309" font-size="26" font-weight="700">GPT-6.1 Sol</text>
+<rect x="28" y="356" width="864" height="78" rx="12" fill="white"/>
+<text x="46" y="403" font-size="25">GPT-5.4 mini · GPT-5 mini</text>
+<path d="M 505 395 H 545 l -10 -9 M 545 395 l -10 9" fill="none" stroke="#3165aa" stroke-width="3"/>
+<text x="580" y="403" font-size="26" font-weight="700">GPT-6 Luna</text>
+<rect x="28" y="450" width="864" height="78" rx="12" fill="white"/>
+<text x="46" y="497" font-size="25">Grok 4.5</text>
+<path d="M 505 489 H 545 l -10 -9 M 545 489 l -10 9" fill="none" stroke="#3165aa" stroke-width="3"/>
+<text x="580" y="497" font-size="26" font-weight="700">Grok 4.7</text>
+<text x="38" y="580" font-size="23">자동 전환이 아닙니다. 기업 정책에 따라 활성화가 필요할 수 있습니다.</text>
+</g></svg>

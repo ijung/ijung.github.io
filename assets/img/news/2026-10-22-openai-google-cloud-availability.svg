@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="470" viewBox="0 0 900 470" role="img" aria-labelledby="title desc">
+<title id="title">OpenAI 모델의 Google Cloud 제공 단계</title>
+<desc id="desc">2026년 10월 21일 발표 기준, 현재는 일부 기업 대상 비공개 사전 제공입니다. 정식 제공은 향후 수주 내 계획이며 날짜는 확정되지 않았습니다.</desc>
+<rect width="900" height="470" rx="24" fill="#f4f6fa"/>
+<g font-family="sans-serif" fill="#172536">
+<text x="46" y="62" font-size="30" font-weight="700">OpenAI 모델 × Google Cloud</text>
+<text x="46" y="101" font-size="23">2026-10-21 발표 기준 · 제공 단계 비교</text>
+<rect x="45" y="138" width="355" height="215" rx="18" fill="#e0f0ec" stroke="#16745b" stroke-width="2"/>
+<text x="72" y="184" font-size="28" font-weight="700">현재</text>
+<text x="72" y="232" font-size="26">비공개 사전 제공</text>
+<text x="72" y="276" font-size="25">선정된 일부 기업 대상</text>
+<text x="72" y="319" font-size="23">Google Cloud에서 이용</text>
+<path d="M 422 246 H 469 M 455 232 L 469 246 L 455 260" fill="none" stroke="#536475" stroke-width="4"/>
+<rect x="491" y="138" width="364" height="215" rx="18" fill="#e8edf9" stroke="#3d5a99" stroke-width="2"/>
+<text x="518" y="184" font-size="28" font-weight="700">향후 계획</text>
+<text x="518" y="232" font-size="26">정식 제공</text>
+<text x="518" y="276" font-size="25">향후 수주 내 예정</text>
+<text x="518" y="319" font-size="23">확정 날짜 미공개</text>
+<text x="46" y="402" font-size="23">화살표는 제공 단계의 계획이며, 전환 완료를 뜻하지 않습니다.</text>
+<text x="46" y="440" font-size="20">Clark 설명용 도식 · AI 생성 활용 · 공식 제품 화면이 아닙니다.</text>
+</g>
+</svg>

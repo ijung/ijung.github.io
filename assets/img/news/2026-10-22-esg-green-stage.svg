@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430" role="img" aria-labelledby="title desc">
+<title id="title">친환경대전 그린 스테이지 날짜별 주제</title>
+<desc id="desc">2026년 10월 21일 에너지 전환·효율화, 22일 탄소감축·ESG 대응, 23일 AI·로보틱스 기반 환경혁신입니다. 발표 계획을 정리한 설명용 도식입니다.</desc>
+<rect width="900" height="430" rx="20" fill="#f2f7f5"/>
+<g font-family="sans-serif" fill="#193c32">
+<text x="40" y="58" font-size="30" font-weight="bold">그린 스테이지 · 날짜별 주제</text>
+<text x="40" y="94" font-size="22">2026 대한민국 ESG 친환경대전 · 보도된 계획</text>
+<rect x="35" y="122" width="830" height="72" rx="12" fill="#ffffff"/>
+<text x="60" y="167" font-size="28">10월 21일</text><text x="260" y="167" font-size="28">에너지 전환·효율화</text>
+<rect x="35" y="210" width="830" height="72" rx="12" fill="#ffffff"/>
+<text x="60" y="255" font-size="28">10월 22일</text><text x="260" y="255" font-size="28">탄소감축·ESG 대응</text>
+<rect x="35" y="298" width="830" height="72" rx="12" fill="#ffffff"/>
+<text x="60" y="343" font-size="28">10월 23일</text><text x="260" y="343" font-size="27">AI·로보틱스 기반 환경혁신</text>
+<text x="40" y="407" font-size="20">Clark 제작 설명용 도식 · AI 생성 활용 · 공식 화면이 아닙니다.</text>
+</g></svg>

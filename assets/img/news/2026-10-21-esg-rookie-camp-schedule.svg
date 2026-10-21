@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 600" role="img" aria-labelledby="title description">
+<title id="title">카카오 AI 루키 캠프 3기 모집·교육 일정</title>
+<desc id="description">2026년 11월 18일 신청 마감, 12월 18일 최종 합격 발표, 2027년 1월 12일부터 15일까지 1회차, 19일부터 22일까지 2회차 교육 예정입니다. 각 회차는 50명, 3박 4일입니다.</desc>
+<rect width="760" height="600" rx="20" fill="#f3f6fa"/>
+<g font-family="sans-serif" fill="#172b4d">
+<text x="40" y="60" font-size="30" font-weight="700">AI 루키 캠프 3기 · 발표된 일정</text>
+<text x="40" y="100" font-size="23">모집과 교육은 서로 다른 시점입니다.</text>
+<rect x="40" y="135" width="680" height="90" rx="12" fill="#fff"/>
+<text x="65" y="173" font-size="25" font-weight="700">2026년 11월 18일</text>
+<text x="65" y="208" font-size="24">신청 마감</text>
+<path d="M380 230v20m-8-8 8 8 8-8" fill="none" stroke="#486581" stroke-width="3"/>
+<rect x="40" y="265" width="680" height="90" rx="12" fill="#fff"/>
+<text x="65" y="303" font-size="25" font-weight="700">2026년 12월 18일</text>
+<text x="65" y="338" font-size="24">최종 합격 발표 예정</text>
+<path d="M380 360v20m-8-8 8 8 8-8" fill="none" stroke="#486581" stroke-width="3"/>
+<rect x="40" y="395" width="680" height="125" rx="12" fill="#e0efff"/>
+<text x="65" y="435" font-size="25" font-weight="700">2027년 1월 · 교육 예정</text>
+<text x="65" y="473" font-size="24">1회차 12~15일 / 2회차 19~22일</text>
+<text x="65" y="506" font-size="22">회차별 50명 · 각각 3박 4일</text>
+<text x="40" y="560" font-size="20">근거: 카카오 2026.10.20 보도자료</text>
+</g>
+</svg>

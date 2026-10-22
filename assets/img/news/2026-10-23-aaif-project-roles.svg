@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="570" viewBox="0 0 720 570" role="img" aria-labelledby="title desc">
+<title id="title">AAIF 신규 합류 프로젝트의 네 가지 역할</title>
+<desc id="desc">Agent Skills는 업무 지식, Open Responses는 모델 호출 규격, OpenEnv는 학습 환경, OpenSandbox는 실행 환경에 해당합니다. 실행 순서를 뜻하지 않습니다.</desc>
+<rect width="720" height="570" rx="20" fill="#f3f6fb"/>
+<g font-family="sans-serif" fill="#172b45">
+<text x="36" y="55" font-size="29" font-weight="700">AAIF에 합류한 4개 프로젝트</text>
+<text x="36" y="88" font-size="19">2026-10-22 발표 · 역할 구분이며 실행 순서가 아닙니다</text>
+<rect x="28" y="112" width="664" height="91" rx="13" fill="#ffffff" stroke="#b9cbe0"/>
+<text x="50" y="148" font-size="26" font-weight="700">Agent Skills</text>
+<text x="50" y="181" font-size="23">업무 지침·스크립트·참고자료 묶음</text>
+<rect x="28" y="218" width="664" height="91" rx="13" fill="#ffffff" stroke="#b9cbe0"/>
+<text x="50" y="254" font-size="26" font-weight="700">Open Responses</text>
+<text x="50" y="287" font-size="23">여러 모델 제공자를 위한 공통 호출 규격</text>
+<rect x="28" y="324" width="664" height="91" rx="13" fill="#ffffff" stroke="#b9cbe0"/>
+<text x="50" y="360" font-size="26" font-weight="700">OpenEnv</text>
+<text x="50" y="393" font-size="23">에이전트 학습 환경 제작·공유</text>
+<rect x="28" y="430" width="664" height="91" rx="13" fill="#ffffff" stroke="#b9cbe0"/>
+<text x="50" y="466" font-size="26" font-weight="700">OpenSandbox</text>
+<text x="50" y="499" font-size="23">AI 코드 실행·평가용 환경 관리</text>
+<text x="36" y="550" font-size="18">Clark 설명용 도식 · AI 생성 활용 · 근거: AAIF 공식 발표</text>
+</g>
+</svg>

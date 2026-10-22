@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="630" viewBox="0 0 800 630" role="img" aria-labelledby="title desc">
+  <title id="title">고속도로 위험정보 공유 협약의 예정된 흐름</title>
+  <desc id="desc">내비게이션 운영사의 사고 추정 데이터 제공, 한국도로공사의 CCTV 확인, 확정 위험정보의 내비게이션 운영사 제공 순서입니다. 협약에서 제시한 계획이며 실제 운영 개시를 뜻하지 않습니다.</desc>
+  <rect width="800" height="630" rx="24" fill="#f3f6fa"/>
+  <g font-family="sans-serif" text-anchor="middle" fill="#182a3d">
+    <text x="400" y="57" font-size="30" font-weight="bold">고속도로 위험정보 공유</text>
+    <text x="400" y="96" font-size="23">협약상 예정된 흐름 · 2026-10-22 발표</text>
+    <rect x="70" y="130" width="660" height="102" rx="16" fill="#e0eafe" stroke="#517cc0" stroke-width="2"/>
+    <text x="400" y="171" font-size="28" font-weight="bold">내비게이션 운영사</text>
+    <text x="400" y="209" font-size="25">사고로 추정되는 데이터 제공</text>
+    <path d="M400 242V270M390 260L400 270L410 260" fill="none" stroke="#517cc0" stroke-width="4"/>
+    <rect x="70" y="285" width="660" height="102" rx="16" fill="#dff1eb" stroke="#377c66" stroke-width="2"/>
+    <text x="400" y="326" font-size="28" font-weight="bold">한국도로공사</text>
+    <text x="400" y="364" font-size="25">CCTV로 실제 사고·돌발 여부 확인</text>
+    <path d="M400 397V425M390 415L400 425L410 415" fill="none" stroke="#377c66" stroke-width="4"/>
+    <rect x="70" y="440" width="660" height="102" rx="16" fill="#e0eafe" stroke="#517cc0" stroke-width="2"/>
+    <text x="400" y="481" font-size="28" font-weight="bold">내비게이션 운영사에 제공</text>
+    <text x="400" y="519" font-size="25">확정된 위험상황 정보</text>
+    <text x="400" y="588" font-size="22">운영 개시·사고 감소 실적을 뜻하지 않습니다.</text>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="370" viewBox="0 0 800 370" role="img" aria-labelledby="title desc">
+<title id="title">Kimi K3.1 Pro의 두 가지 제공 상태</title>
+<desc id="desc">Kimi 공식 발표 기준입니다. Kimi 서비스에서는 제공하며, 전체 모델 파일은 2026년 11월 4일까지 공개할 예정입니다. 기업 조직은 관리자 활성화가 필요합니다.</desc>
+<rect width="800" height="370" rx="22" fill="#f3f6fb"/>
+<g font-family="sans-serif" fill="#142238">
+<text x="38" y="51" font-size="29" font-weight="700">Kimi K3.1 Pro · 제공 상태 구분</text>
+<rect x="30" y="79" width="740" height="99" rx="15" fill="#deefe8"/>
+<text x="52" y="116" font-size="27" font-weight="700">Kimi 서비스: 제공 발표</text>
+<text x="52" y="152" font-size="23">Kimi.ai · Work · Code · API</text>
+<rect x="30" y="192" width="740" height="99" rx="15" fill="#e5eafa"/>
+<text x="52" y="229" font-size="27" font-weight="700">전체 모델 파일: 공개 예정</text>
+<text x="52" y="266" font-size="25">2026년 11월 4일까지</text>
+<text x="38" y="335" font-size="22">기업 조직: 관리자가 활성화해야 이용할 수 있습니다.</text>
+</g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="400" viewBox="0 0 900 400" role="img" aria-labelledby="title desc">
+<title id="title">33개 행정서비스 제출서류 간소화 계획</title>
+<desc id="desc">기후에너지환경부의 2026년 10월 23일 발표 기준입니다. 대상 서비스의 제출서류 합계는 기존 395개에서 계획 196개, 서류 분량 합계는 1626장에서 1014장으로 줄어들 예정입니다. 한 기업의 제출량이나 완료 실적이 아닙니다.</desc>
+<rect width="900" height="400" rx="20" fill="#f2f6fa"/>
+<g font-family="sans-serif" fill="#142b41" text-anchor="middle">
+<text x="450" y="54" font-size="30" font-weight="700">33개 행정서비스 · 제출서류 간소화 계획</text>
+<rect x="45" y="90" width="345" height="205" rx="16" fill="#e0e8f0"/>
+<rect x="510" y="90" width="345" height="205" rx="16" fill="#d3eee5"/>
+<text x="217" y="132" font-size="25">기존</text>
+<text x="217" y="198" font-size="43" font-weight="700">395개</text>
+<text x="217" y="252" font-size="25">분량 1,626장</text>
+<text x="683" y="132" font-size="25">간소화 계획</text>
+<text x="683" y="198" font-size="43" font-weight="700">196개</text>
+<text x="683" y="252" font-size="25">분량 1,014장</text>
+<path d="M413 193 H478 M464 179 L478 193 L464 207" stroke="#142b41" stroke-width="5" fill="none"/>
+<text x="450" y="340" font-size="23">대상 서비스 합계 · 기업당 제출량이 아닙니다.</text>
+<text x="450" y="375" font-size="22">2026-10-23 공식 발표 · 완료 실적이 아닌 추진 계획입니다.</text>
+</g>
+</svg>

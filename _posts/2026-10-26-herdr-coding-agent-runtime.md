@@ -20,6 +20,11 @@ Herdr의 기본 단위는 작업 공간, 탭, pane이다. 에이전트는 실제
 
 예를 들어 한 프로젝트에서는 구현을 맡기고, 다른 프로젝트에서는 테스트나 문서 작업을 진행하는 상황을 생각할 수 있다. 이때 관심사는 단순히 창을 나누는 것이 아니라 **어느 작업이 진행 중이고, 어디에 사람의 판단이 필요한가**다. Herdr의 상태 표시와 작업 공간 구성을 이런 관리 문제에 활용할 수 있다는 것이 이 글의 해석이다.[3]
 
+<figure>
+  <img src="/assets/img/posts/herdr-coding-agent-runtime/herdr-runtime-overview.png" alt="Herdr 클라이언트와 로컬 서버, 터미널 pane 및 별도 원격 머신의 관계를 보여주는 설명용 구조도" width="800" height="1060" loading="lazy" style="max-width:100%;height:auto;">
+  <figcaption>그림 1. 클라이언트는 화면과 입력을 제공하고, 각 머신의 Herdr 서버는 자체 pane과 프로세스를 관리한다. 원격 머신은 SSH로 연결한다. 공식 문서를 바탕으로 직접 제작한 설명용 개념도이며 실제 제품 화면이 아니다. [1][3][5] <a href="/assets/img/posts/herdr-coding-agent-runtime/herdr-runtime-overview.png">원본 이미지 보기</a></figcaption>
+</figure>
+
 ## 핵심 기능 1: 화면을 닫아도 서버 쪽 작업은 유지
 
 Herdr는 클라이언트와 서버를 구분한다. 정상적으로 클라이언트를 detach해도 Herdr 서버가 계속 실행 중이면 pane 안의 셸, 에이전트, 테스트 등 프로세스가 유지된다. 공식 문서는 detach 후 다시 접속하는 경로를 원래 프로세스가 멈추지 않는 가장 강한 지속 방식으로 설명한다.[2]
@@ -30,6 +35,11 @@ Herdr는 클라이언트와 서버를 구분한다. 정상적으로 클라이언
 
 원격 머신의 Herdr 서버가 살아 있다면 접속한 노트북의 네트워크가 끊어져도 원격 작업을 유지할 수 있다. 반면 작업이 실행되는 머신 자체의 종료까지 같은 방식으로 견딘다고 볼 수는 없다.[2][5]
 
+<figure>
+  <img src="/assets/img/posts/herdr-coding-agent-runtime/herdr-persistence.png" alt="클라이언트 접속 종료 시 프로세스 유지와 서버 재시작 뒤 레이아웃 및 지원 대화 복원의 차이" width="800" height="1060" loading="lazy" style="max-width:100%;height:auto;">
+  <figcaption>그림 2. 접속만 끊으면 살아 있는 서버의 프로세스는 유지되지만, 서버가 종료되면 기존 프로세스는 사라진다. 레이아웃 복원과 지원되는 대화 재개는 실행 상태 보존과 다르다. 설명용 개념도. [2] <a href="/assets/img/posts/herdr-coding-agent-runtime/herdr-persistence.png">원본 이미지 보기</a></figcaption>
+</figure>
+
 ## 핵심 기능 2: 일하는 에이전트와 기다리는 에이전트 구분
 
 Herdr는 `working`, `blocked`, `idle` 같은 상태를 표시한다. 지원 방식에 따라 에이전트 프로세스와 터미널 하단 화면을 감지 규칙으로 해석하거나, integration·에이전트가 직접 보고한 상태를 이용한다.[3]
@@ -39,6 +49,11 @@ Herdr는 `working`, `blocked`, `idle` 같은 상태를 표시한다. 지원 방�
 또한 일부 에이전트는 백그라운드 작업이나 하위 에이전트가 남아 있어도 프롬프트로 돌아오면 idle로 판단된다. 상태 대기는 에이전트의 의미상 상태를 관찰하는 기능이지, 모든 테스트와 백그라운드 작업의 완료 증명은 아니다.[3][4]
 
 실무에서는 상태 표시를 “어디를 먼저 확인할까”를 정하는 신호로 쓰고, 완료 판단은 테스트 결과·산출물·실제 서비스 상태로 따로 확인하는 편이 적절하다.
+
+<figure>
+  <img src="/assets/img/posts/herdr-coding-agent-runtime/herdr-agent-states.png" alt="working, blocked, idle 상태의 의미와 완료 및 승인을 별도로 확인해야 한다는 주의사항" width="800" height="1060" loading="lazy" style="max-width:100%;height:auto;">
+  <figcaption>그림 3. 상태 표시는 확인할 작업을 찾는 신호다. idle을 승인이나 모든 작업의 완료로 간주하지 말고 질문·테스트·산출물을 확인해야 한다. 설명용 개념도. [3][4] <a href="/assets/img/posts/herdr-coding-agent-runtime/herdr-agent-states.png">원본 이미지 보기</a></figcaption>
+</figure>
 
 ## 핵심 기능 3: CLI와 소켓 API로 자동화
 

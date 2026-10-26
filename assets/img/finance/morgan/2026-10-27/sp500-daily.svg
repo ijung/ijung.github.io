@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1020" height="460" viewBox="0 0 1020 460" role="img" aria-labelledby="title desc">
+<title id="title">S&amp;P 500 — 20 completed-session daily closes</title>
+<desc id="desc">2026-09-29 to 2026-10-26. America/New_York trading dates. Index points. Yahoo Finance dated daily Close; not real-time or intraday. Nonzero-origin vertical axis.</desc>
+<rect width="1020" height="460" fill="#f8fafc"/>
+<g font-family="sans-serif" fill="#0f172a">
+<text x="36" y="35" font-size="23" font-weight="bold">S&amp;P 500 | Daily Close</text>
+<text x="36" y="62" font-size="14">2026-09-29 to 2026-10-26 | 20 completed regular sessions | Index points</text>
+<line x1="94" y1="342.00" x2="958" y2="342.00" stroke="#cbd5e1"/>
+<text x="82" y="347.00" text-anchor="end" font-size="13">7,600.0</text>
+<line x1="94" y1="280.00" x2="958" y2="280.00" stroke="#cbd5e1"/>
+<text x="82" y="285.00" text-anchor="end" font-size="13">7,662.5</text>
+<line x1="94" y1="218.00" x2="958" y2="218.00" stroke="#cbd5e1"/>
+<text x="82" y="223.00" text-anchor="end" font-size="13">7,725.0</text>
+<line x1="94" y1="156.00" x2="958" y2="156.00" stroke="#cbd5e1"/>
+<text x="82" y="161.00" text-anchor="end" font-size="13">7,787.5</text>
+<line x1="94" y1="94.00" x2="958" y2="94.00" stroke="#cbd5e1"/>
+<text x="82" y="99.00" text-anchor="end" font-size="13">7,850.0</text>
+<text x="94.00" y="369" text-anchor="middle" font-size="13">09-29</text>
+<text x="275.89" y="369" text-anchor="middle" font-size="13">10-05</text>
+<text x="457.79" y="369" text-anchor="middle" font-size="13">10-09</text>
+<text x="639.68" y="369" text-anchor="middle" font-size="13">10-15</text>
+<text x="821.58" y="369" text-anchor="middle" font-size="13">10-21</text>
+<text x="958.00" y="369" text-anchor="middle" font-size="13">10-26</text>
+<polyline fill="none" stroke="#2563eb" stroke-width="3" points="94.00,271.73 139.47,290.87 184.95,276.08 230.42,220.26 275.89,169.44 321.37,124.82 366.84,141.84 412.32,177.96 457.79,132.15 503.26,136.42 548.74,138.19 594.21,224.01 639.68,199.09 685.16,283.04 730.63,252.00 776.11,230.33 821.58,186.09 867.05,279.08 912.53,318.51 958.00,265.84"/>
+<circle cx="94.00" cy="271.73" r="2.5" fill="#2563eb"/>
+<circle cx="139.47" cy="290.87" r="2.5" fill="#2563eb"/>
+<circle cx="184.95" cy="276.08" r="2.5" fill="#2563eb"/>
+<circle cx="230.42" cy="220.26" r="2.5" fill="#2563eb"/>
+<circle cx="275.89" cy="169.44" r="2.5" fill="#2563eb"/>
+<circle cx="321.37" cy="124.82" r="2.5" fill="#2563eb"/>
+<circle cx="366.84" cy="141.84" r="2.5" fill="#2563eb"/>
+<circle cx="412.32" cy="177.96" r="2.5" fill="#2563eb"/>
+<circle cx="457.79" cy="132.15" r="2.5" fill="#2563eb"/>
+<circle cx="503.26" cy="136.42" r="2.5" fill="#2563eb"/>
+<circle cx="548.74" cy="138.19" r="2.5" fill="#2563eb"/>
+<circle cx="594.21" cy="224.01" r="2.5" fill="#2563eb"/>
+<circle cx="639.68" cy="199.09" r="2.5" fill="#2563eb"/>
+<circle cx="685.16" cy="283.04" r="2.5" fill="#2563eb"/>
+<circle cx="730.63" cy="252.00" r="2.5" fill="#2563eb"/>
+<circle cx="776.11" cy="230.33" r="2.5" fill="#2563eb"/>
+<circle cx="821.58" cy="186.09" r="2.5" fill="#2563eb"/>
+<circle cx="867.05" cy="279.08" r="2.5" fill="#2563eb"/>
+<circle cx="912.53" cy="318.51" r="2.5" fill="#2563eb"/>
+<circle cx="958.00" cy="265.84" r="2.5" fill="#2563eb"/>
+<text x="958" y="88" text-anchor="end" font-size="14" font-weight="bold">Latest: 7,676.77</text>
+<text x="36" y="407" font-size="14">Trading date: America/New_York | Source: Yahoo Finance ^GSPC history</text>
+<text x="36" y="431" font-size="13">Provider Close, split-adjusted label. Not official settlement. Y-axis does not start at zero.</text>
+</g></svg>

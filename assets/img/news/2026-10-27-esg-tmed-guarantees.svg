@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="600" viewBox="0 0 480 600" role="img" aria-labelledby="title desc">
+  <title id="title">T-MED의 보증 지원과 투자 유치 목표 구분</title>
+  <desc id="desc">EU는 최대 45억 유로의 보증 여력으로 투자 위험을 줄이고, T-MED 투자 플랫폼은 사업과 금융기관을 연결합니다. 2035년까지 최대 250억 유로 투자 유치는 별도 목표이며 집행 실적이 아닙니다.</desc>
+  <rect width="480" height="600" rx="20" fill="#f3f6fa"/>
+  <g font-family="sans-serif" text-anchor="middle" fill="#172b42">
+    <text x="240" y="48" font-size="26" font-weight="700">T-MED: 지원 수단 ≠ 투자 실적</text>
+    <rect x="28" y="78" width="424" height="126" rx="16" fill="#dcecf7"/>
+    <text x="240" y="116" font-size="23">EU 보증 여력</text>
+    <text x="240" y="155" font-size="32" font-weight="700">최대 45억 유로</text>
+    <text x="240" y="186" font-size="21">투자 위험을 줄이기 위한 지원</text>
+    <path d="M240 214v28m-9-9 9 9 9-9" fill="none" stroke="#365c82" stroke-width="4"/>
+    <rect x="28" y="254" width="424" height="114" rx="16" fill="#ffffff" stroke="#365c82" stroke-width="2"/>
+    <text x="240" y="293" font-size="25" font-weight="700">T-MED 투자 플랫폼</text>
+    <text x="240" y="333" font-size="23">프로젝트 ↔ 금융기관·투자자</text>
+    <path d="M36 393H444" stroke="#748294" stroke-dasharray="7 6" stroke-width="2"/>
+    <text x="240" y="432" font-size="23">별도 투자 유치 목표 · 2035년까지</text>
+    <text x="240" y="478" font-size="32" font-weight="700">최대 250억 유로</text>
+    <text x="240" y="518" font-size="22">보증액·집행액과 다른 수치입니다</text>
+    <text x="240" y="565" font-size="18" fill="#4a5969">근거: 유럽연합 집행위원회 · 2026-10-26</text>
+  </g>
+</svg>

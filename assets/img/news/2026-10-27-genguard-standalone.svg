@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="330" viewBox="0 0 640 330" role="img" aria-labelledby="title desc">
+  <title id="title">젠가드의 독립 제품화</title>
+  <desc id="desc">기존에는 제노스 플랫폼 내 가드레일 기능이었으며, 이번에는 제노스 도입과 무관하게 활용할 수 있는 독립 솔루션 젠가드로 출시됐습니다.</desc>
+  <rect width="640" height="330" rx="18" fill="#f3f5f8"/>
+  <g font-family="sans-serif" fill="#172b45">
+    <text x="32" y="48" font-size="30" font-weight="700">달라진 것은 도입 범위입니다</text>
+    <rect x="28" y="72" width="584" height="100" rx="12" fill="#e0e6ee"/>
+    <text x="48" y="111" font-size="28" font-weight="700">기존 · 제노스 내 기능</text>
+    <text x="48" y="148" font-size="26">플랫폼에 포함된 가드레일</text>
+    <rect x="28" y="190" width="584" height="110" rx="12" fill="#dcefe5"/>
+    <text x="48" y="232" font-size="28" font-weight="700">이번 · 독립 솔루션 젠가드</text>
+    <text x="48" y="273" font-size="26">제노스 도입 여부와 무관하게 활용</text>
+  </g>
+</svg>

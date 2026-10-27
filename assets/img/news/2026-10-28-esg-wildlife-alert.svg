@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="560" viewBox="0 0 480 560" role="img" aria-labelledby="title desc">
+<title id="title">야생동물 감지와 운전자 알림</title>
+<desc id="desc">도로 영상에서 AI가 야생동물을 감지하면 전광판과 경광등으로 운전자에게 알리는 과정입니다. 사고 예방 효과를 입증한 도식은 아닙니다.</desc>
+<rect width="480" height="560" rx="24" fill="#f1f5f9"/>
+<g font-family="sans-serif" text-anchor="middle" fill="#102a43">
+<text x="240" y="53" font-size="27" font-weight="700">야생동물 사전 알림 과정</text>
+<rect x="36" y="85" width="408" height="90" rx="16" fill="#dbeafe"/>
+<text x="240" y="141" font-size="29" font-weight="700">도로 영상 입력</text>
+<path d="M240 188V220 M229 209L240 220L251 209" fill="none" stroke="#334155" stroke-width="5"/>
+<rect x="36" y="234" width="408" height="90" rx="16" fill="#dcfce7"/>
+<text x="240" y="290" font-size="29" font-weight="700">AI로 야생동물 감지</text>
+<path d="M240 337V369 M229 358L240 369L251 358" fill="none" stroke="#334155" stroke-width="5"/>
+<rect x="36" y="383" width="408" height="90" rx="16" fill="#fef3c7"/>
+<text x="240" y="439" font-size="28" font-weight="700">전광판·경광등 알림</text>
+<text x="240" y="517" font-size="22">목적: 운전자 감속 유도</text>
+</g>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1020" height="460" viewBox="0 0 1020 460" role="img" aria-labelledby="title desc">
+<title id="title">S&amp;P 500 daily Close, October 1–27, 2026</title>
+<desc id="desc">19 completed regular-session date-labeled provider daily closes. America/New_York trading dates; index points. Not intraday or real-time. Source: Yahoo Finance ^GSPC, NYSE calendar. Latest close 7722.60. Truncated vertical axis.</desc>
+<rect width="1020" height="460" fill="#f8fafc"/>
+<g font-family="sans-serif" fill="#172554">
+<text x="82" y="34" font-size="23" font-weight="bold">S&amp;P 500 — daily Close</text>
+<text x="82" y="58" font-size="14">2026-10-01 to 2026-10-27 · 19 sessions · latest 7,722.60 points</text>
+<line x1="82" x2="976" y1="355.00" y2="355.00" stroke="#cbd5e1"/>
+<text x="70" y="360.00" text-anchor="end" font-size="13">7,575</text>
+<line x1="82" x2="976" y1="285.75" y2="285.75" stroke="#cbd5e1"/>
+<text x="70" y="290.75" text-anchor="end" font-size="13">7,644</text>
+<line x1="82" x2="976" y1="216.50" y2="216.50" stroke="#cbd5e1"/>
+<text x="70" y="221.50" text-anchor="end" font-size="13">7,712</text>
+<line x1="82" x2="976" y1="147.25" y2="147.25" stroke="#cbd5e1"/>
+<text x="70" y="152.25" text-anchor="end" font-size="13">7,781</text>
+<line x1="82" x2="976" y1="78.00" y2="78.00" stroke="#cbd5e1"/>
+<text x="70" y="83.00" text-anchor="end" font-size="13">7,850</text>
+<text x="82.00" y="383" text-anchor="middle" font-size="13">10-01</text>
+<text x="280.67" y="383" text-anchor="middle" font-size="13">10-07</text>
+<text x="529.00" y="383" text-anchor="middle" font-size="13">10-14</text>
+<text x="777.33" y="383" text-anchor="middle" font-size="13">10-21</text>
+<text x="976.00" y="383" text-anchor="middle" font-size="13">10-27</text>
+<polyline fill="none" stroke="#1d4ed8" stroke-width="3" points="82.00,262.88 131.67,206.21 181.33,154.60 231.00,109.30 280.67,126.58 330.33,163.26 380.00,116.74 429.67,121.07 479.33,122.87 529.00,210.01 578.67,184.71 628.33,269.95 678.00,238.43 727.67,216.43 777.33,171.51 827.00,265.93 876.67,305.97 926.33,252.49 976.00,206.33"/>
+<circle cx="82.00" cy="262.88" r="3.3" fill="#1d4ed8"/>
+<circle cx="131.67" cy="206.21" r="3.3" fill="#1d4ed8"/>
+<circle cx="181.33" cy="154.60" r="3.3" fill="#1d4ed8"/>
+<circle cx="231.00" cy="109.30" r="3.3" fill="#1d4ed8"/>
+<circle cx="280.67" cy="126.58" r="3.3" fill="#1d4ed8"/>
+<circle cx="330.33" cy="163.26" r="3.3" fill="#1d4ed8"/>
+<circle cx="380.00" cy="116.74" r="3.3" fill="#1d4ed8"/>
+<circle cx="429.67" cy="121.07" r="3.3" fill="#1d4ed8"/>
+<circle cx="479.33" cy="122.87" r="3.3" fill="#1d4ed8"/>
+<circle cx="529.00" cy="210.01" r="3.3" fill="#1d4ed8"/>
+<circle cx="578.67" cy="184.71" r="3.3" fill="#1d4ed8"/>
+<circle cx="628.33" cy="269.95" r="3.3" fill="#1d4ed8"/>
+<circle cx="678.00" cy="238.43" r="3.3" fill="#1d4ed8"/>
+<circle cx="727.67" cy="216.43" r="3.3" fill="#1d4ed8"/>
+<circle cx="777.33" cy="171.51" r="3.3" fill="#1d4ed8"/>
+<circle cx="827.00" cy="265.93" r="3.3" fill="#1d4ed8"/>
+<circle cx="876.67" cy="305.97" r="3.3" fill="#1d4ed8"/>
+<circle cx="926.33" cy="252.49" r="3.3" fill="#1d4ed8"/>
+<circle cx="976.00" cy="206.33" r="3.3" fill="#1d4ed8"/>
+<text x="82" y="411" font-size="13">X: America/New_York trading date · Y: index points (axis not from zero)</text>
+<text x="82" y="436" font-size="12">Source: Yahoo Finance ^GSPC historical daily table / NYSE calendar · Retrieved 2026-10-28 KST · Not real-time</text>
+</g></svg>

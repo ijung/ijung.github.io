@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="680" viewBox="0 0 800 680" role="img" aria-labelledby="title desc">
+  <title id="title">Mac에서 Colima 전용 VM으로 Dokploy를 사용하는 구조</title>
+  <desc id="desc">Mac 브라우저는 Colima 전용 Linux VM 주소의 3000번 포트로 Dokploy에 접속합니다. VM 안의 Docker에서 Dokploy와 Postgres, 앱 트래픽용 Traefik이 실행됩니다. 실제 설치 화면이 아닌 개념도입니다.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#22d3ee"/>
+    </marker>
+  </defs>
+  <rect width="800" height="680" rx="20" fill="#020617"/>
+  <g font-family="sans-serif" fill="#e2e8f0">
+    <text x="40" y="55" font-size="28" font-weight="700">Dokploy on Mac</text>
+    <text x="40" y="86" font-size="17" fill="#cbd5e1">Colima 전용 Linux VM · 로컬 학습용</text>
+    <rect x="35" y="115" width="730" height="500" rx="16" fill="#0f172a" stroke="#94a3b8"/>
+    <text x="58" y="150" font-size="22">Mac</text>
+    <rect id="browser" x="65" y="175" width="670" height="75" rx="10" fill="#083344" stroke="#22d3ee"/>
+    <text x="90" y="205" font-size="21">브라우저</text>
+    <text x="90" y="233" font-size="18">http://&lt;VM ADDRESS&gt;:3000</text>
+    <rect x="65" y="310" width="670" height="275" rx="12" fill="#111827" stroke="#fbbf24" stroke-dasharray="8 4"/>
+    <text x="90" y="345" font-size="22" fill="#fbbf24">Colima 프로필: dokploy</text>
+    <text x="90" y="375" font-size="18">Linux VM / Docker runtime</text>
+    <path id="management-arrow" d="M665 250V395H235V410" fill="none" stroke="#22d3ee" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="420" y="286" font-size="16" fill="#22d3ee">관리 화면 · 3000</text>
+    <rect id="dokploy" x="90" y="410" width="290" height="70" rx="8" fill="#064e3b" stroke="#34d399"/>
+    <text x="115" y="450" font-size="22">Dokploy</text>
+    <rect x="420" y="410" width="290" height="70" rx="8" fill="#4c1d95" stroke="#a78bfa"/>
+    <text x="445" y="450" font-size="22">Postgres</text>
+    <rect x="90" y="505" width="620" height="55" rx="8" fill="#083344" stroke="#22d3ee"/>
+    <text x="115" y="540" font-size="20">Traefik · 앱 트래픽 80 / 443</text>
+    <text x="40" y="650" font-size="16" fill="#cbd5e1">직접 제작한 개념도 · 실제 설치 화면이 아닙니다</text>
+  </g>
+</svg>

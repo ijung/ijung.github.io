@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1050" viewBox="0 0 720 1050" role="img" aria-labelledby="title desc">
+<title id="title">업무별 모델 평가 시작점</title><desc id="desc">단순 대량 업무는 Luna, 시각·앱 업무는 Terra, 복잡한 업무는 Sol, 가장 까다로운 추론·코딩은 Astra를 평가해 보는 편집 제안입니다. 측정 순위가 아닙니다.</desc>
+<rect width="720" height="1050" fill="#071221"/>
+<defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#183049" stroke-width="0.6"/></pattern></defs>
+<rect width="720" height="1050" fill="url(#grid)"/>
+<text x="36" y="65" font-family="DejaVu Sans" font-size="38" font-weight="700" fill="#f1f5f9">Match the task, then test</text>
+<text x="36" y="110" font-family="DejaVu Sans" font-size="26" font-weight="400" fill="#b8c8df">Editorial starting points, not a model ranking</text>
+<rect x="36" y="155" width="648" height="165" rx="20" fill="#112239" stroke="#67e8f9" stroke-width="2"/>
+<circle cx="69" cy="201" r="9" fill="#67e8f9"/>
+<text x="94" y="214" font-family="DejaVu Sans" font-size="36" font-weight="700" fill="#67e8f9">GPT-6 Luna</text>
+<text x="60" y="273" font-family="DejaVu Sans" font-size="30" font-weight="400" fill="#f1f5f9">Focused, high-volume tasks</text>
+<rect x="36" y="350" width="648" height="165" rx="20" fill="#112239" stroke="#6ee7b7" stroke-width="2"/>
+<circle cx="69" cy="396" r="9" fill="#6ee7b7"/>
+<text x="94" y="409" font-family="DejaVu Sans" font-size="36" font-weight="700" fill="#6ee7b7">GPT-6.1 Terra</text>
+<text x="60" y="468" font-family="DejaVu Sans" font-size="30" font-weight="400" fill="#f1f5f9">Visual and app workflows</text>
+<rect x="36" y="545" width="648" height="165" rx="20" fill="#112239" stroke="#c4b5fd" stroke-width="2"/>
+<circle cx="69" cy="591" r="9" fill="#c4b5fd"/>
+<text x="94" y="604" font-family="DejaVu Sans" font-size="36" font-weight="700" fill="#c4b5fd">GPT-6.1 Sol</text>
+<text x="60" y="663" font-family="DejaVu Sans" font-size="30" font-weight="400" fill="#f1f5f9">Complex professional work</text>
+<rect x="36" y="740" width="648" height="165" rx="20" fill="#112239" stroke="#fcd34d" stroke-width="2"/>
+<circle cx="69" cy="786" r="9" fill="#fcd34d"/>
+<text x="94" y="799" font-family="DejaVu Sans" font-size="36" font-weight="700" fill="#fcd34d">GPT-6 Astra</text>
+<text x="60" y="858" font-family="DejaVu Sans" font-size="30" font-weight="400" fill="#f1f5f9">Hardest reasoning and coding</text>
+<text x="36" y="985" font-family="DejaVu Sans" font-size="27" font-weight="400" fill="#b8c8df">Compare quality, latency and total cost.</text>
+<text x="36" y="1025" font-family="DejaVu Sans" font-size="24" font-weight="400" fill="#b8c8df">Clark illustration / no measured scores</text>
+</svg>

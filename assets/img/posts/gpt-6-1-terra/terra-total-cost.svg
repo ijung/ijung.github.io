@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1010" viewBox="0 0 720 1010" role="img" aria-labelledby="title desc">
+<title id="title">토큰 단가와 검수 통과 업무의 비용</title><desc id="desc">토큰 요금, 도구 사용, 재시도, 사람의 검수 시간을 함께 고려하는 비용 점검 개념도입니다. 실측 비용 분포나 비율이 아닙니다.</desc>
+<rect width="720" height="1010" fill="#071221"/>
+<defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#183049" stroke-width="0.6"/></pattern></defs>
+<rect width="720" height="1010" fill="url(#grid)"/>
+<text x="36" y="65" font-family="DejaVu Sans" font-size="38" font-weight="700" fill="#f1f5f9">The token bill is one part</text>
+<text x="36" y="110" font-family="DejaVu Sans" font-size="26" font-weight="400" fill="#b8c8df">Conceptual checklist, not a measured breakdown</text>
+<rect x="36" y="150" width="648" height="125" rx="20" fill="#112239" stroke="#67e8f9" stroke-width="2"/>
+<text x="60" y="196" font-family="DejaVu Sans" font-size="31" font-weight="700" fill="#67e8f9">TOKEN BILL</text>
+<text x="60" y="243" font-family="DejaVu Sans" font-size="27" font-weight="400" fill="#f1f5f9">Input, output and cache conditions</text>
+<rect x="36" y="305" width="648" height="125" rx="20" fill="#112239" stroke="#6ee7b7" stroke-width="2"/>
+<text x="60" y="351" font-family="DejaVu Sans" font-size="31" font-weight="700" fill="#6ee7b7">TOOL USAGE</text>
+<text x="60" y="398" font-family="DejaVu Sans" font-size="27" font-weight="400" fill="#f1f5f9">Charges for the tools you use</text>
+<rect x="36" y="460" width="648" height="125" rx="20" fill="#112239" stroke="#c4b5fd" stroke-width="2"/>
+<text x="60" y="506" font-family="DejaVu Sans" font-size="31" font-weight="700" fill="#c4b5fd">RETRIES</text>
+<text x="60" y="553" font-family="DejaVu Sans" font-size="27" font-weight="400" fill="#f1f5f9">Repeated calls and rework</text>
+<rect x="36" y="615" width="648" height="125" rx="20" fill="#112239" stroke="#fcd34d" stroke-width="2"/>
+<text x="60" y="661" font-family="DejaVu Sans" font-size="31" font-weight="700" fill="#fcd34d">HUMAN REVIEW</text>
+<text x="60" y="708" font-family="DejaVu Sans" font-size="27" font-weight="400" fill="#f1f5f9">Time to verify and correct</text>
+<path d="M360 750v24m-10-10 10 10 10-10" fill="none" stroke="#fcd34d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="36" y="805" width="648" height="115" rx="20" fill="#183630" stroke="#6ee7b7" stroke-width="2"/>
+<text x="60" y="852" font-family="DejaVu Sans" font-size="32" font-weight="700" fill="#6ee7b7">COST PER ACCEPTED TASK</text>
+<text x="60" y="895" font-family="DejaVu Sans" font-size="27" font-weight="400" fill="#f1f5f9">Evaluate the complete workflow.</text>
+<text x="36" y="977" font-family="DejaVu Sans" font-size="24" font-weight="400" fill="#b8c8df">Clark illustration / editorial evaluation lens</text>
+</svg>

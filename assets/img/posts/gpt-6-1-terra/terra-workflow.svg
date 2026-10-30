@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1080" viewBox="0 0 720 1080" role="img" aria-labelledby="title desc">
+<title id="title">시각 입력에서 검수된 결과까지</title><desc id="desc">문서·화면 입력, 정보 이해, 권한 내 도구 실행, 결과 검수의 설명용 흐름입니다. 공식 내부 구조나 실제 UI가 아닙니다.</desc>
+<rect width="720" height="1080" fill="#071221"/>
+<defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#183049" stroke-width="0.6"/></pattern></defs>
+<rect width="720" height="1080" fill="url(#grid)"/>
+<text x="36" y="65" font-family="DejaVu Sans" font-size="38" font-weight="700" fill="#f1f5f9">From input to verified work</text>
+<text x="36" y="110" font-family="DejaVu Sans" font-size="26" font-weight="400" fill="#b8c8df">Illustrative workflow, not product architecture</text>
+<path d="M360 320v24m-10-10 10 10 10-10" fill="none" stroke="#67e8f9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="36" y="150" width="648" height="170" rx="20" fill="#112239" stroke="#67e8f9" stroke-width="2"/>
+<text x="60" y="200" font-family="DejaVu Sans" font-size="32" font-weight="700" fill="#67e8f9">01</text>
+<text x="126" y="200" font-family="DejaVu Sans" font-size="30" font-weight="700" fill="#f1f5f9">VISUAL INPUT</text>
+<text x="60" y="252" font-family="DejaVu Sans" font-size="27" font-weight="400" fill="#b8c8df">Images, documents, screens</text>
+<path d="M360 530v24m-10-10 10 10 10-10" fill="none" stroke="#67e8f9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="36" y="360" width="648" height="170" rx="20" fill="#112239" stroke="#6ee7b7" stroke-width="2"/>
+<text x="60" y="410" font-family="DejaVu Sans" font-size="32" font-weight="700" fill="#6ee7b7">02</text>
+<text x="126" y="410" font-family="DejaVu Sans" font-size="30" font-weight="700" fill="#f1f5f9">UNDERSTAND</text>
+<text x="60" y="462" font-family="DejaVu Sans" font-size="27" font-weight="400" fill="#b8c8df">Extract details and task context</text>
+<path d="M360 740v24m-10-10 10 10 10-10" fill="none" stroke="#67e8f9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="36" y="570" width="648" height="170" rx="20" fill="#112239" stroke="#c4b5fd" stroke-width="2"/>
+<text x="60" y="620" font-family="DejaVu Sans" font-size="32" font-weight="700" fill="#c4b5fd">03</text>
+<text x="126" y="620" font-family="DejaVu Sans" font-size="30" font-weight="700" fill="#f1f5f9">ACT WITH TOOLS</text>
+<text x="60" y="672" font-family="DejaVu Sans" font-size="27" font-weight="400" fill="#b8c8df">Use permitted app actions</text>
+<rect x="36" y="780" width="648" height="170" rx="20" fill="#112239" stroke="#fcd34d" stroke-width="2"/>
+<text x="60" y="830" font-family="DejaVu Sans" font-size="32" font-weight="700" fill="#fcd34d">04</text>
+<text x="126" y="830" font-family="DejaVu Sans" font-size="30" font-weight="700" fill="#f1f5f9">REVIEW THE RESULT</text>
+<text x="60" y="882" font-family="DejaVu Sans" font-size="27" font-weight="400" fill="#b8c8df">Check saved output and mistakes</text>
+<text x="60" y="920" font-family="DejaVu Sans" font-size="27" font-weight="400" fill="#b8c8df">Keep approvals for sensitive actions</text>
+<text x="36" y="1015" font-family="DejaVu Sans" font-size="26" font-weight="400" fill="#fcd34d">Tool access is configured separately.</text>
+<text x="36" y="1055" font-family="DejaVu Sans" font-size="24" font-weight="400" fill="#b8c8df">Clark illustration / not official UI</text>
+</svg>

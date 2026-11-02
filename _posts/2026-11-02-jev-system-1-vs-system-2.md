@@ -140,16 +140,16 @@ System 1 vs System 2라는 제목으로 시작했지만, 실제로 설계해야 
 
 ## Sources
 
-[1] <span id="source-1"></span> <a href="https://docs.typesafe.ai/concepts/system-one">TypeSafe · System One</a>
+[1] <span id="source-1" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://docs.typesafe.ai/concepts/system-one">TypeSafe · System One</a>
 
-[2] <span id="source-2"></span> <a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev">TypeSafe · Introducing System One Models &amp; Jev</a>
+[2] <span id="source-2" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev">TypeSafe · Introducing System One Models &amp; Jev</a>
 
-[3] <span id="source-3"></span> <a href="https://docs.typesafe.ai/primitives">TypeSafe · Primitives (Questions)</a>
+[3] <span id="source-3" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://docs.typesafe.ai/primitives">TypeSafe · Primitives (Questions)</a>
 
-[4] <span id="source-4"></span> <a href="https://docs.typesafe.ai/models">TypeSafe · Models</a>
+[4] <span id="source-4" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://docs.typesafe.ai/models">TypeSafe · Models</a>
 
-[5] <span id="source-5"></span> <a href="https://scottbarrykaufman.com/wp-content/uploads/2014/04/dual-process-theory-Evans_Stanovich_PoPS13.pdf">Evans &amp; Stanovich · Dual-Process Theories of Higher Cognition: Advancing the Debate</a>
+[5] <span id="source-5" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://scottbarrykaufman.com/wp-content/uploads/2014/04/dual-process-theory-Evans_Stanovich_PoPS13.pdf">Evans &amp; Stanovich · Dual-Process Theories of Higher Cognition: Advancing the Debate</a>
 
-[6] <span id="source-6"></span> <a href="https://openai.com/index/introducing-structured-outputs-in-the-api">OpenAI · Introducing Structured Outputs in the API</a>
+[6] <span id="source-6" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://openai.com/index/introducing-structured-outputs-in-the-api">OpenAI · Introducing Structured Outputs in the API</a>
 
-[7] <span id="source-7"></span> <a href="https://docs.typesafe.ai/confidence">TypeSafe · Confidence</a>
+[7] <span id="source-7" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://docs.typesafe.ai/confidence">TypeSafe · Confidence</a>

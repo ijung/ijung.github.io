@@ -7,6 +7,21 @@ toc: true
 comments: false
 permalink: /posts/jev-system-1-vs-system-2/
 ---
+
+<nav id="jev-series-nav" aria-label="JEV 탐구 연재 nav">
+  <p><strong>JEV 탐구 · 7편 읽는 순서</strong></p>
+  <ol>
+    <li><strong aria-current="page">JEV 탐구 ① — System 1 vs System 2: AI는 언제 깊이 생각해야 할까?</strong></li>
+    <li><a href="/posts/jev-structure-vs-llm/">JEV 탐구 ② — 문장 대신 판단을 반환하는 AI: JEV는 LLM과 무엇이 다를까?</a></li>
+    <li><a href="/posts/jev-designing-small-questions/">JEV 탐구 ③ — ‘알아서 처리해줘’를 작은 질문으로 바꾸는 법</a></li>
+    <li><a href="/posts/jev-strengths-limits-trust/">JEV 탐구 ④ — 빠른 판단은 어디까지 믿어도 될까?</a></li>
+    <li><a href="/posts/jev-alternatives-comparison/">JEV 탐구 ⑤ — 꼭 JEV여야 할까? 같은 문제를 푸는 다른 선택지들</a></li>
+    <li><a href="/posts/jev-public-performance-evidence/">JEV 탐구 ⑥ — 정말 빠르고 경제적일까? 공개 성능 주장의 근거를 따져보다</a></li>
+    <li><a href="/posts/jev-adoption-system-design/">JEV 탐구 ⑦ — 그래서, 우리 서비스에 JEV를 넣어야 할까?</a></li>
+  </ol>
+  <p><span>첫 편</span> · <a href="/posts/jev-structure-vs-llm/">다음 편 →</a></p>
+</nav>
+
 > 모든 판단에 긴 추론이 필요한 것은 아니다. 그렇다고 빠른 판단만으로 모든 문제를 해결할 수도 없다.
 
 고객센터에 이런 메시지가 도착했다고 해보자.
@@ -19,7 +34,9 @@ permalink: /posts/jev-system-1-vs-system-2/
 
 TypeSafe가 개발한 Jev는 이 질문을 던지기에 흥미로운 모델이다. 회사는 Jev를 **빠르고 구조화된 판단을 소프트웨어에 전달하는 ‘System One 모델’**로 소개한다.<a href="#source-1">[1]</a> 자연어를 이해하지만, 답변 문장을 쓰는 대신 정해진 형태의 판단과 확률을 반환한다.<a href="#source-1">[1]</a>
 
-이번 글은 JEV를 살펴보는 연재의 첫 편이다. 세부 API나 성능 수치에 앞서, 이름의 출발점인 **System 1과 System 2**부터 짚어보자.
+이번 글은 JEV를 살펴보는 **7편 연재의 첫 편**이다. 세부 API나 성능 수치에 앞서, 이름의 출발점인 **System 1과 System 2**부터 짚어보자. 이후에는 공개된 인터페이스와 기존 LLM의 차이, 질문을 나누는 방법, 신뢰의 한계, 대안, 공개 성능 주장의 근거, 조건부 도입 설계로 범위를 넓힌다.
+
+이 연재는 **공개 문헌을 읽고 판단의 조건을 정리하는 해설**이다. 회사의 제품 설명과 독립적으로 확인된 사실, 필자의 설계 예시를 구분한다. 유료 API 호출이나 성능 실험은 수행하지 않으며, 6편에서도 새 벤치마크를 만드는 대신 공개된 성능 주장이 어떤 조건과 근거 위에 있는지 검토한다.
 
 ## 1. System 1과 System 2: 속도보다 중요한 차이
 
@@ -158,11 +175,30 @@ Jev를 System 1과 System 2의 관점에서 읽으며 얻는 가장 유용한 �
 
 System 1 vs System 2라는 제목으로 시작했지만, 실제로 설계해야 할 것은 둘의 경쟁보다 역할 분담일지 모른다.
 
-다음 편에서는 이 역할 분담의 재료인 **Choice·Score·Noul**을 살펴보려 한다. 자연어로 된 업무를 어떤 작은 질문들로 나누면 좋은지, 또 나누면 안 되는 의존성은 무엇인지가 주제다.
+<section id="jev-series-next" aria-label="JEV 탐구 다음 편 예고">
+  <p><strong>다음 편 · 문장 대신 판단을 반환하는 AI: JEV는 LLM과 무엇이 다를까?</strong></p>
+  <p>2편에서는 Jev가 무엇을 입력받고 어떤 판단을 반환하는지, 기존 LLM의 구조화된 출력과 비교할 때 무엇이 같고 다른지 살펴본다. 공개 인터페이스로 확인되는 내용과 회사가 설명한 처리·학습 방식을 구분하고, 공개되지 않은 내부 구조를 추정해 채우지 않는다.</p>
+  <p>Choice·Score·Noul로 업무를 작은 질문으로 나누는 구체적인 방법과 질문 사이의 의존성은 3편에서 이어간다. 처음의 중복 결제 문의를 공통 예시로 삼되, 고객의 요청을 알아보는 일과 실제 결제 기록·환불 권한을 확인하는 일의 경계는 계속 유지한다.</p>
+
+</section>
 
 ---
 
 자료 확인일: 2026년 11월 2일(KST). 공개 문헌을 바탕으로 한 해설이며, 실제 Jev 호출이나 독립 성능 재현은 수행하지 않았다. TypeSafe 자료는 제품 제공자의 설명이며 독립 성능 검증과 구분한다.
+
+<nav id="jev-series-bottom" aria-label="JEV 탐구 연재 bottom">
+  <p><strong>JEV 탐구 · 7편 읽는 순서</strong></p>
+  <ol>
+    <li><strong aria-current="page">JEV 탐구 ① — System 1 vs System 2: AI는 언제 깊이 생각해야 할까?</strong></li>
+    <li><a href="/posts/jev-structure-vs-llm/">JEV 탐구 ② — 문장 대신 판단을 반환하는 AI: JEV는 LLM과 무엇이 다를까?</a></li>
+    <li><a href="/posts/jev-designing-small-questions/">JEV 탐구 ③ — ‘알아서 처리해줘’를 작은 질문으로 바꾸는 법</a></li>
+    <li><a href="/posts/jev-strengths-limits-trust/">JEV 탐구 ④ — 빠른 판단은 어디까지 믿어도 될까?</a></li>
+    <li><a href="/posts/jev-alternatives-comparison/">JEV 탐구 ⑤ — 꼭 JEV여야 할까? 같은 문제를 푸는 다른 선택지들</a></li>
+    <li><a href="/posts/jev-public-performance-evidence/">JEV 탐구 ⑥ — 정말 빠르고 경제적일까? 공개 성능 주장의 근거를 따져보다</a></li>
+    <li><a href="/posts/jev-adoption-system-design/">JEV 탐구 ⑦ — 그래서, 우리 서비스에 JEV를 넣어야 할까?</a></li>
+  </ol>
+  <p><span>첫 편</span> · <a href="/posts/jev-structure-vs-llm/">다음 편 →</a></p>
+</nav>
 
 ## Sources
 
@@ -179,7 +215,6 @@ System 1 vs System 2라는 제목으로 시작했지만, 실제로 설계해야 
 [6] <span id="source-6" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://openai.com/index/introducing-structured-outputs-in-the-api">OpenAI · Introducing Structured Outputs in the API</a>
 
 [7] <span id="source-7" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://docs.typesafe.ai/confidence">TypeSafe · Confidence</a>
-
 
 [8] <span id="source-8" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://www.nobelprize.org/prizes/economic-sciences/2002/kahneman/facts">NobelPrize.org · Daniel Kahneman – Facts</a>
 

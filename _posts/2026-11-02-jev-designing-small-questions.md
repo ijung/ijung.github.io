@@ -40,7 +40,7 @@ JEV를 써서 이 업무를 설계한다면 첫 작업은 프롬프트를 길게
 
 <figure>
   <img src="/assets/img/posts/jev-designing-small-questions/01-state-questions.png" alt="고객 메시지와 결제 기록을 State로 묶고, 질문과 코드의 역할을 분리한 도식" width="960" height="1100" loading="lazy" style="display:block;max-width:100%;height:auto;margin:auto;">
-  <figcaption>그림 1. 고객의 말, 판단 질문, 실행 권한을 분리한다. 자체 제작, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. <a href="/assets/img/posts/jev-designing-small-questions/01-state-questions.png">원본</a></figcaption>
+  <figcaption>그림 1. 고객의 말, 판단 질문, 실행 권한을 분리한다. 자체 제작, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. <a href="/assets/img/posts/jev-designing-small-questions/01-state-questions.svg">SVG 원본</a> · <a href="/assets/img/posts/jev-designing-small-questions/01-state-questions.png">원본</a></figcaption>
 </figure>
 
 질문은 필드까지 가리키면 더 분명해진다. "환불 요청인가?"보다 "`ticket.message`에서 고객이 금액 반환을 명시적으로 요청하는가?"가 낫다. 공식 문서도 백틱으로 감싼 경로를 사용해 특정 필드를 지목하는 방법을 안내한다.<a href="#source-1">[1]</a> 질문 ID를 `refund_requested`라고 잘 지었다고 설명을 생략해서는 안 된다. ID는 응답을 찾는 코드용 키이고 모델에는 전달되지 않는다고 문서에 명시돼 있다.<a href="#source-1">[1]</a>
@@ -57,7 +57,7 @@ Noul은 "금액 반환을 명시적으로 요청했는가?"처럼 예·아니요
 
 <figure>
   <img src="/assets/img/posts/jev-designing-small-questions/02-three-types.png" alt="Choice의 선택지, Score의 순서 있는 단계, Noul의 예일 확률을 비교한 도식" width="960" height="1100" loading="lazy" style="display:block;max-width:100%;height:auto;margin:auto;">
-  <figcaption>그림 2. 선택지·척도·조건을 먼저 정하면 질문 타입을 고르기 쉽다. 자체 제작, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. <a href="/assets/img/posts/jev-designing-small-questions/02-three-types.png">원본</a></figcaption>
+  <figcaption>그림 2. 선택지·척도·조건을 먼저 정하면 질문 타입을 고르기 쉽다. 자체 제작, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. <a href="/assets/img/posts/jev-designing-small-questions/02-three-types.svg">SVG 원본</a> · <a href="/assets/img/posts/jev-designing-small-questions/02-three-types.png">원본</a></figcaption>
 </figure>
 
 Score의 숫자도 단독으로 보면 놓치는 것이 있다. 세 단계의 확률이 합성 예시 A에서는 `[0, 1, 0]`, B에서는 `[0.5, 0, 0.5]`라고 하자. 단계 번호에 확률을 곱해 더하는 문서의 계산법으로는 둘 다 점수가 1이다.<a href="#source-4">[4]</a> A는 가운데 단계에 몰려 있지만 B는 양끝으로 갈렸다. 두 분포의 가중합이 모두 1이라는 계산은 로컬 Python으로 확인했다. 실제 모델 출력이 아니라, 같은 평균이 서로 다른 분포를 숨길 수 있다는 산술 예다. 점수만 저장하지 않고 단계 정의와 분포도 함께 남기자는 이유다.
@@ -110,7 +110,7 @@ questions = {
 
 <figure>
   <img src="/assets/img/posts/jev-designing-small-questions/03-independent-dependent.png" alt="같은 자료를 보는 독립 질문 묶음과 새 정책 조회가 필요한 순차 요청을 비교한 도식" width="960" height="1100" loading="lazy" style="display:block;max-width:100%;height:auto;margin:auto;">
-  <figcaption>그림 3. 순서는 질문 개수가 아니라 새 정보에 대한 의존성으로 정한다. 자체 제작, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. <a href="/assets/img/posts/jev-designing-small-questions/03-independent-dependent.png">원본</a></figcaption>
+  <figcaption>그림 3. 순서는 질문 개수가 아니라 새 정보에 대한 의존성으로 정한다. 자체 제작, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. <a href="/assets/img/posts/jev-designing-small-questions/03-independent-dependent.svg">SVG 원본</a> · <a href="/assets/img/posts/jev-designing-small-questions/03-independent-dependent.png">원본</a></figcaption>
 </figure>
 
 ## 애매한 문의를 넣어 보면 질문의 빈틈이 보인다
@@ -125,7 +125,7 @@ questions = {
 
 <figure>
   <img src="/assets/img/posts/jev-designing-small-questions/04-small-question-humor.png" alt="만능 처리 도장을 든 로봇에게 담당자가 먼저 어떤 질문인지 묻는 부드러운 유머 그림" width="960" height="1100" loading="lazy" style="display:block;max-width:100%;height:auto;margin:auto;">
-  <figcaption>그림 4. "알아서 처리" 도장은 잠시 내려놓고 질문부터 정한다. 자체 제작, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. <a href="/assets/img/posts/jev-designing-small-questions/04-small-question-humor.png">원본</a></figcaption>
+  <figcaption>그림 4. "알아서 처리" 도장은 잠시 내려놓고 질문부터 정한다. 자체 제작, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. <a href="/assets/img/posts/jev-designing-small-questions/04-small-question-humor.svg">SVG 원본</a> · <a href="/assets/img/posts/jev-designing-small-questions/04-small-question-humor.png">원본</a></figcaption>
 </figure>
 
 검토할 때는 정상 문의 하나만 보지 않는다. "환불하지 말고 이유만 알려주세요", "지난번 환불은 받았고 이번엔 배송이 늦어요"도 넣어 본다. 부정 표현과 과거 사건을 현재 요청으로 오독하는지 확인하는 데 쓸 수 있는 합성 테스트 문장이다. 문서가 한국어 입력을 허용한다고 해서 이 예시의 품질까지 검증된 것은 아니다. 직접 확인한 Models 문서는 주된 학습 언어가 영어이고 CJK를 포함한 다른 언어는 같은 수준이 아니라고 안내한다.<a href="#source-7">[7]</a> 실제 도입 전에는 팀이 사용하는 한국어 문의와 경계 사례로 별도 평가해야 한다.

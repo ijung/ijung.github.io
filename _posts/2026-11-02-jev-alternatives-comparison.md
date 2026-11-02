@@ -37,8 +37,8 @@ Clef 역시 상태와 타입이 정해진 질문을 받아 각 허용 선택지�
 Figure Helix는 다른 경우다. 공식 설명에서 System 1은 로봇의 연속적인 동작을 만드는 시각·운동 정책이다.<a href="#source-5">[5]</a> 같은 어휘를 쓴다는 이유로 로보틱스나 월드모델을 고객 문의 판단 API의 직접 경쟁자로 묶을 수는 없다. 이 글의 목록은 시장 전체의 전수조사도 아니다. 직접 대안의 존재를 확인하고, 작업 범위가 다른 사례를 구분한 결과다.
 
 <figure>
-  <img src="/assets/img/posts/jev-alternatives-comparison/01-alternative-map.png" alt="직접 대안 Laya·Clef, 좁은 영역의 Cua-S1, 기능대안 네 갈래와 범위 밖 Helix를 나눈 지도" width="1200" height="1000" loading="lazy" style="display:block;max-width:100%;height:auto;margin:auto;">
-  <figcaption>그림 1. 이름보다 입출력 계약으로 나눈 대안 지도. 성능 순위가 아니다. 자작, 근거 <a href="#source-2">[2]</a>–<a href="#source-13">[13]</a>. · 직접 제작, 이 연재 게시 허용 · <a href="/assets/img/posts/jev-alternatives-comparison/01-alternative-map.png">원본 PNG 보기</a></figcaption>
+  <img src="/assets/img/posts/jev-alternatives-comparison/01-alternative-map.png" alt="직접 대안 Laya·Clef, 좁은 영역의 Cua-S1, 기능대안 네 갈래와 범위 밖 Helix를 나눈 지도" width="1200" height="1400" loading="lazy" style="display:block;max-width:100%;height:auto;margin:auto;">
+  <figcaption>그림 1. 이름보다 입출력 계약으로 나눈 대안 지도. 성능 순위가 아니다. 자작, 근거 <a href="#source-2">[2]</a>–<a href="#source-13">[13]</a>. · 직접 제작, 이 연재 게시 허용 · <a href="/assets/img/posts/jev-alternatives-comparison/01-alternative-map.svg">SVG 원본</a> · <a href="/assets/img/posts/jev-alternatives-comparison/01-alternative-map.png">원본 PNG 보기</a></figcaption>
 </figure>
 
 ## 작은 LLM에 출력 형식을 지정하기
@@ -72,8 +72,8 @@ Python `re`는 문자열의 정규식 패턴을 찾는 표준 도구다.<a href=
 반대로 결제 원장에 동일 거래가 실제로 중복 기록되어 있는지, 이미 환불했는지, 처리 권한이 있는지는 가능한 한 확인 가능한 데이터와 코드로 다룰 일이다. 의도 분류와 환불 승인을 분리하자는 설계 원칙이다. 규칙은 학습 라벨을 요구하지 않지만, 예외와 우선순위, 변경 이력에 대한 테스트를 요구한다.
 
 <figure>
-  <img src="/assets/img/posts/jev-alternatives-comparison/02-selection-tree.png" alt="명확한 데이터 규칙, 유사 사례 검색, 고정 라벨 분류, 가변 질문과 문장 생성 요구에 따라 후보를 나누는 선택 분기" width="1200" height="1000" loading="lazy" style="display:block;max-width:100%;height:auto;margin:auto;">
-  <figcaption>그림 2. 먼저 필요한 일을 나눈 뒤 후보를 고른다. 여러 경로를 함께 써도 된다. 자작 설계 제안. · 직접 제작, 이 연재 게시 허용 · <a href="/assets/img/posts/jev-alternatives-comparison/02-selection-tree.png">원본 PNG 보기</a></figcaption>
+  <img src="/assets/img/posts/jev-alternatives-comparison/02-selection-tree.png" alt="명확한 데이터 규칙, 유사 사례 검색, 고정 라벨 분류, 가변 질문과 문장 생성 요구에 따라 후보를 나누는 선택 분기" width="1200" height="1400" loading="lazy" style="display:block;max-width:100%;height:auto;margin:auto;">
+  <figcaption>그림 2. 먼저 필요한 일을 나눈 뒤 후보를 고른다. 여러 경로를 함께 써도 된다. 자작 설계 제안. · 직접 제작, 이 연재 게시 허용 · <a href="/assets/img/posts/jev-alternatives-comparison/02-selection-tree.svg">SVG 원본</a> · <a href="/assets/img/posts/jev-alternatives-comparison/02-selection-tree.png">원본 PNG 보기</a></figcaption>
 </figure>
 
 ## 배포를 바꾸면 맡아야 할 일도 바뀐다
@@ -92,15 +92,15 @@ Python `re`는 문자열의 정규식 패턴을 찾는 표준 도구다.<a href=
 로컬 실행은 외부 추론 API로 문의를 보내지 않는 구성을 가능하게 한다. 그렇다고 자동으로 개인정보 보호가 끝나는 것은 아니다. 로그, 백업, 모델 다운로드 경로와 접근 권한도 점검해야 한다. 반대로 호스팅을 고르면 모델 서버 관리를 덜 수 있지만 데이터 처리 조건과 서비스 장애에 대한 책임은 남는다. "오픈 모델"과 "운영이 쉬운 모델"은 별개다.
 
 <figure>
-  <img src="/assets/img/posts/jev-alternatives-comparison/03-comparison-controls.png" alt="동일한 한국어 문의, 허용 출력, 보류 규칙을 고정하고 데이터 보관·배포·운영 조건을 확인하는 비교 체크리스트" width="1200" height="1000" loading="lazy" style="display:block;max-width:100%;height:auto;margin:auto;">
-  <figcaption>그림 3. 비교 전에 고정할 조건. 측정 결과나 성능 차트가 아니다. 자작 설계 제안. · 직접 제작, 이 연재 게시 허용 · <a href="/assets/img/posts/jev-alternatives-comparison/03-comparison-controls.png">원본 PNG 보기</a></figcaption>
+  <img src="/assets/img/posts/jev-alternatives-comparison/03-comparison-controls.png" alt="동일한 한국어 문의, 허용 출력, 보류 규칙을 고정하고 데이터 보관·배포·운영 조건을 확인하는 비교 체크리스트" width="1200" height="1400" loading="lazy" style="display:block;max-width:100%;height:auto;margin:auto;">
+  <figcaption>그림 3. 비교 전에 고정할 조건. 측정 결과나 성능 차트가 아니다. 자작 설계 제안. · 직접 제작, 이 연재 게시 허용 · <a href="/assets/img/posts/jev-alternatives-comparison/03-comparison-controls.svg">SVG 원본</a> · <a href="/assets/img/posts/jev-alternatives-comparison/03-comparison-controls.png">원본 PNG 보기</a></figcaption>
 </figure>
 
 실제 검토에서는 모두에게 같은 한국어 문의와 같은 선택지를 주자. 명확한 중복 청구 요청뿐 아니라 승인 대기, 부정 표현, 정보 누락도 포함해야 한다. "두 건이 보이는데 하나가 취소된 건지는 모르겠습니다"라는 문의에서 필요한 결과는 성급한 환불 승인이 아니라 결제 확인 또는 보류다. 같은 보류 규칙을 적용하지 않으면 자동 처리 범위를 넓힌 모델과 조심스럽게 멈추는 모델을 공정하게 비교하기 어렵다.
 
 <figure>
-  <img src="/assets/img/posts/jev-alternatives-comparison/04-toolbox.png" alt="규칙 자, 검색 돋보기, 분류 도장, 판단 카드가 든 도구상자와 사람 확인 표지" width="1200" height="1000" loading="lazy" style="display:block;max-width:100%;height:auto;margin:auto;">
-  <figcaption>그림 4. 모든 문의에 가장 큰 도구가 필요한 것은 아니다. 도구를 골라도 환불 권한은 별도로 둔다. 자작 일러스트. · 직접 제작, 이 연재 게시 허용 · <a href="/assets/img/posts/jev-alternatives-comparison/04-toolbox.png">원본 PNG 보기</a></figcaption>
+  <img src="/assets/img/posts/jev-alternatives-comparison/04-toolbox.png" alt="규칙 자, 검색 돋보기, 분류 도장, 판단 카드가 든 도구상자와 사람 확인 표지" width="1200" height="1400" loading="lazy" style="display:block;max-width:100%;height:auto;margin:auto;">
+  <figcaption>그림 4. 모든 문의에 가장 큰 도구가 필요한 것은 아니다. 도구를 골라도 환불 권한은 별도로 둔다. 자작 일러스트. · 직접 제작, 이 연재 게시 허용 · <a href="/assets/img/posts/jev-alternatives-comparison/04-toolbox.svg">SVG 원본</a> · <a href="/assets/img/posts/jev-alternatives-comparison/04-toolbox.png">원본 PNG 보기</a></figcaption>
 </figure>
 
 Jev를 고를 이유는 다른 방법이 없어서가 아니다. 반복되는 판단을 어떤 인터페이스로 표현하고, 데이터와 운영 책임을 어디까지 맡을지에 달려 있다. 같은 문의도 검색으로 사례를 찾고 분류기로 부서를 정한 뒤 코드가 거래를 확인하는 식으로 나눌 수 있다. 다음 편에서는 이 구조적 차이를 염두에 두고, 공개된 속도·비용·성능 주장에 실제로 어떤 근거가 붙어 있는지 살펴본다.

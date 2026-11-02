@@ -7,6 +7,8 @@ toc: true
 comments: false
 permalink: /posts/jev-strengths-limits-trust/
 ---
+<p><strong>예상 읽기: 약 9분 · 난이도: 중급</strong> — 출력 계약과 확률 개념을 다룹니다.</p>
+
 
 <nav id="jev-series-nav" aria-label="JEV 탐구 연재 nav">
   <p><strong>JEV 탐구 · 7편 읽는 순서</strong></p>
@@ -60,6 +62,46 @@ TypeSafe는 System One 모델을 결과에 맞춰 확률을 최적화하는, 보
 
 실무에서는 정답을 확인할 수 있는 과거 문의를 따로 남겨 두고, 비슷한 확률을 받은 사례들을 모아 예측과 정답 빈도를 비교해야 한다. 단순히 "정확도가 높았다"만으로 끝내지 말고, 잘못 자동 처리한 건과 검토로 보낸 건을 나누어 볼 필요가 있다. 문의 전체에서 그럴듯해 보여도 한국어의 완곡한 요청이나 드문 이중 결제 사례에서 어긋날 수 있기 때문이다. 여기서는 측정 데이터가 없어서 신뢰도 곡선을 그리지 않았다. 보기 좋은 대각선은 검증 기록을 대신하지 못한다.
 
+### 유창한 말투, 자기보고 숫자, 토큰 확률은 다르다
+
+“확실합니다”라는 말투는 언어적 자신감 표현이고, “정답일 확률 90%”는 수치로 생성한 자기보고입니다. 모델이 다음 토큰에 부여하는 조건부 확률은 또 다른 값입니다. 이 셋을 곧바로 ‘업무 정답률’로 바꾸어 읽으면 안 됩니다.<a href="#source-9">[9]</a>
+Tian 등의 2023년 연구는 당시 ChatGPT·GPT-4·Claude와 TriviaQA·SciQ·TruthfulQA에서 자기보고 방식과 조건부 확률의 보정 품질을 비교했습니다. 자기보고가 더 나은 결과도 있었으므로 ‘모든 LLM은 필연적으로 과신한다’는 일반화 역시 피해야 합니다.<a href="#source-9">[9]</a>
+Kadavath 등의 연구도 적절한 형식의 선택형·참거짓 질문에서 보정 가능성을 보고했지만, 새로운 과업으로 옮길 때의 어려움을 함께 다룹니다. 문장이 유창하거나 숫자를 출력할 수 있다는 사실만으로 새 업무의 신뢰성을 확정할 수는 없습니다.<a href="#source-10">[10]</a>
+
+### 같은 90%라도 실제 결과를 모아 보아야 한다
+
+**다음은 서로 다른 세 가상 평가 상황입니다. 모델 호출·관측 데이터·성능 실측이 아닙니다.** 각 상황에서 모델이 선택한 답 100개에 모두 정답 가능성 90%를 붙였다고 가정합니다.
+
+- 실제로 90개가 맞았다면, 이 집단에서는 예측 90%와 관측 정답률 90%가 일치합니다.
+- 60개만 맞았다면, 이 집단에서는 예측이 실제 정답률보다 높아 **과신**한 셈입니다.
+- 99개가 맞았다면, 이 집단에서는 예측이 실제 정답률보다 낮아 **과소신**한 셈입니다.
+
+이는 보정의 뜻을 설명하는 산술 예시입니다. 개별 답의 성공 보증도, 표본 100개로 전체 보정을 증명했다는 주장도 아닙니다. Guo 등의 정의 역시 예측 확률을 조건으로 한 집단의 정답 가능성을 다룹니다.<a href="#source-2">[2]</a>
+
+<figure>
+  <img src="/assets/img/posts/jev-strengths-limits-trust/05-calibration-groups.png" alt="서로 다른 가상 상황에서 정답 가능성 90%를 붙인 100건 중 90건, 60건, 99건이 맞은 경우를 비교하며 실측이 아니라고 명시한 보정 설명도" width="900" height="1200" loading="lazy" style="display:block;max-width:100%;height:auto;margin:auto;">
+  <figcaption>추가 그림. <strong>가상 산술 예시 — 실측 결과가 아닙니다.</strong> 각 행은 서로 다른 평가 상황이며 합쳐서 한 모델의 성능표로 읽지 않습니다. 개별 답이나 전체 분포의 보정을 보장하지 않습니다. 개념 근거는 Guo 등입니다.<a href="#source-2">[2]</a> 그림: Clark, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. <a href="/assets/img/posts/jev-strengths-limits-trust/05-calibration-groups.svg">SVG 원본</a> · <a href="/assets/img/posts/jev-strengths-limits-trust/05-calibration-groups.png">원본 PNG 보기</a></figcaption>
+</figure>
+
+**정확도는 얼마나 맞혔는지, 보정은 붙인 확률이 관측 빈도와 얼마나 맞는지**를 묻습니다. 둘은 같은 지표가 아닙니다. Guo 등의 연구에서도 더 정확한 모델의 확신이 실제 정확도와 잘 맞지 않는 사례가 나옵니다.<a href="#source-2">[2]</a>
+
+### ECE와 Brier도 한 줄 성적표로 끝내지 않는다
+
+Guo 등의 ECE는 예측을 확률 구간(bin)으로 나누고, 각 구간의 **평균 예측 확률과 관측 정답률 차이의 절댓값**을 표본 비중으로 가중평균합니다. `ECE = Σ (구간 표본 수 / 전체 표본 수) × |구간 정답률 − 구간 평균 확률|`입니다.<a href="#source-2">[2]</a>
+구간 수·경계와 표본 수를 같이 적어야 해석할 수 있으며, 한 구간의 평균이 맞더라도 그 안의 특정 고객군까지 안전하다는 뜻은 아닙니다. 낮은 ECE만으로 오답을 잘 가려내는 능력까지 보장하지도 않습니다.<a href="#source-2">[2]</a><a href="#source-9">[9]</a>
+
+이진 사건의 Brier score는 `평균[(p − y)²]`로, 예측 확률 `p`와 실제 결과 `y∈{0,1}` 사이의 제곱 오차 평균입니다. 여기서는 이진형 정의를 쓰며, 다중분류의 클래스 합산·정규화와 섞어 비교하지 않습니다.<a href="#source-11">[11]</a>
+Brier는 확률 예측의 전체 품질 지표이지 보정 오차만 분리한 값이 아닙니다. 보정뿐 아니라 사례를 구분하는 능력과 사건 빈도도 함께 보아야 합니다.<a href="#source-13">[13]</a>
+
+### 숫자가 자동화의 분기 조건이 될 때
+
+필자의 설계상 주의점은 과신을 잘못된 자동 실행으로 연결하지 않는 것입니다. “90% 이상이면 자동 환불”을 검증 없이 적용하면, 위의 가상 60% 상황에서는 생각보다 많은 오답이 통과합니다. 반대로 과소신은 불필요한 보류를 늘릴 수 있습니다. 먼저 분류·정보 조회와 환불 실행의 권한을 분리하고, 잘못 통과시킨 건수·검토량·손실을 함께 기록하는 편이 낫습니다.
+
+TypeSafe는 RLCD를 **보정된 판단을 위한 강화학습 목표**로 설명하지만, 그 명칭이 우리 한국어 문의의 보정 완료를 뜻하지는 않습니다.<a href="#source-12">[12]</a>
+또한 Jev의 `confidence`는 반환 분포에서 계산한 요약값이며, 실제 정답을 수집해 계산한 보정 지표가 아닙니다.<a href="#source-3">[3]</a>
+필자는 정답 라벨이 있는 별도 평가 자료에서 업무·언어·모델 버전별로 정확도와 보정을 확인하고, 임계값을 맞춘 자료와 최종 평가 자료를 분리할 것을 권합니다. 입력 분포가 바뀌면 과거의 확률 해석을 그대로 유지할 근거도 다시 점검해야 합니다. 이는 새 과업에서의 보정 어려움과도 연결되는 한계입니다.<a href="#source-10">[10]</a>
+
+
 ## 한국어, 업무 용어, 긴 입력은 별도 조건이다
 
 현재 Models 문서는 영어가 주된 학습 언어이고 정확도가 가장 좋으며, CJK를 포함한 다른 언어도 처리하지만 동등한 수준은 아니라고 명시한다.<a href="#source-4">[4]</a> 한국어를 입력할 수 있다는 것과 우리 상담 문장의 정확도가 확인됐다는 것은 다르다. "취소는 됐는데 아직 찍혀 있네요"처럼 결제 승인, 매입, 승인 취소가 섞이는 문장은 한국어 능력과 업무 지식 모두를 시험한다. 같은 문의를 영어로 번역해서 성공했다고 한국어 원문에도 성공했다고 기록해서는 안 된다.
@@ -104,6 +146,8 @@ JEV의 강점은 좁은 자연어 판단을 코드가 쓰기 좋은 값으로 �
   <p><a href="/posts/jev-designing-small-questions/">← 이전 편</a> · <a href="/posts/jev-alternatives-comparison/">다음 편 →</a></p>
 </nav>
 
+보강 자료 확인: 2026년 11월 3일(KST). 논문·공식 공개 문서에 근거한 해설이며 새 모델 실측은 수행하지 않았습니다.
+
 ## Sources
 
 [1] <span id="source-1" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://docs.typesafe.ai/concepts/system-one.md">System One</a>
@@ -121,3 +165,13 @@ JEV의 강점은 좁은 자연어 판단을 코드가 쓰기 좋은 값으로 �
 [7] <span id="source-7" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://docs.typesafe.ai/primitives/score.md">Score</a>
 
 [8] <span id="source-8" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://docs.typesafe.ai/primitives/choice.md">Choice</a>
+
+[9] <span id="source-9" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://aclanthology.org/2023.emnlp-main.330">Tian et al. · Just Ask for Calibration</a>
+
+[10] <span id="source-10" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://arxiv.org/html/2207.05221v4">Kadavath et al. · Language Models (Mostly) Know What They Know</a>
+
+[11] <span id="source-11" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.brier_score_loss.html">scikit-learn · brier_score_loss</a>
+
+[12] <span id="source-12" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://docs.typesafe.ai/introduction/machine-learning-primer.md">TypeSafe · AI primer</a>
+
+[13] <span id="source-13" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://scikit-learn.org/stable/modules/calibration.html">scikit-learn · Probability calibration</a>

@@ -7,6 +7,8 @@ toc: true
 comments: false
 permalink: /posts/jev-structure-vs-llm/
 ---
+<p><strong>예상 읽기: 약 8분 · 난이도: 중급</strong> — 출력 계약과 확률 개념을 다룹니다.</p>
+
 
 <nav id="jev-series-nav" aria-label="JEV 탐구 연재 nav">
   <p><strong>JEV 탐구 · 7편 읽는 순서</strong></p>
@@ -93,6 +95,26 @@ OpenAI도 Structured Outputs가 내용상의 실수를 없애지는 않는다고
 그림: Clark, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. <a href="/assets/img/posts/jev-structure-vs-llm/02-structured-outputs.png">원본 이미지 보기</a></figcaption>
 </figure>
 
+## 3-1. 판단 업무에 생성형 LLM을 연결할 때 남는 제약
+
+GPT-3처럼 **자기회귀 방식**으로 문장을 생성하는 LLM은 앞선 토큰을 조건으로 다음 토큰을 이어 갑니다.<a href="#source-7">[7]</a> 여기서 다루는 것은 이런 생성 경로이지, 이름에 LLM이 붙은 모든 시스템의 구현을 하나로 단정하는 설명이 아닙니다.<a href="#source-7">[7]</a>
+출력 토큰을 생성하는 시간은 지연의 중요한 구성 요소입니다. OpenAI의 지연 최적화 문서도 출력 길이, 모델 크기, 추론 최적화와 요청 횟수를 함께 다룹니다.<a href="#source-8">[8]</a>
+따라서 긴 설명 대신 짧은 분류값만 받으면 생성 부담을 줄일 수 있지만, **모든 LLM이 반드시 느리다거나 Jev가 언제나 빠르다는 결론은 아닙니다.** 실제 비교에는 입력 길이, 출력 길이, 모델·서빙 조건, 통신 지연과 재시도까지 맞춰야 합니다.<a href="#source-8">[8]</a>
+
+더 중요한 경계는 생성된 값과 의미의 정확성입니다. 스키마를 통과한 `billing`도 오분류일 수 있고, 문법이 완벽한 설명에 잘못된 사실이나 추론이 들어갈 수 있습니다. Structured Outputs 공식 문서도 내용상의 실수 가능성을 남겨 둡니다.<a href="#source-6">[6]</a>
+LLM 불확실성 연구 역시 틀린 사실이나 추론을 자신 있게 말하는 문제를 다룹니다. 그러나 그 연구가 모든 모델·과업의 환각 빈도를 하나의 숫자로 정해 주지는 않습니다.<a href="#source-9">[9]</a>
+
+`confidence: 0.9`를 JSON에 쓰게 하는 것도 우선은 **모델이 생성한 자기보고**입니다.<a href="#source-9">[9]</a> 다음 토큰의 확률, 답 전체가 맞을 가능성, 문장에 적힌 자신감은 구분해서 검증해야 합니다.<a href="#source-9">[9]</a>
+그렇다고 자기보고 확률이 늘 무용하거나 LLM이 반드시 과신한다는 뜻도 아닙니다. Tian 등의 2023년 연구는 당시의 특정 RLHF 모델·질의응답 벤치마크에서 말로 보고한 확률이 모델 조건부 확률보다 잘 보정되는 결과를 보고했고, Kadavath 등도 적절한 질문 형식에서 보정 가능성을 보였습니다. 우리 한국어 문의까지 검증됐다는 뜻은 아닙니다.<a href="#source-9">[9]</a><a href="#source-10">[10]</a>
+
+<figure>
+  <img src="/assets/img/posts/jev-structure-vs-llm/05-generation-checks.png" alt="자기회귀 생성, 스키마 검사, 의미 정확성과 권한 검사를 별도 단계로 표시한 가상 개념도이며 실측 결과가 아님" width="900" height="1200" loading="lazy" style="display:block;max-width:100%;height:auto;margin:auto;">
+  <figcaption>추가 그림. 생성·형식·의미 검사는 서로 다른 단계입니다. <strong>가상 설명도이며 API 실측·속도 순위·Jev 내부 구조가 아닙니다.</strong> 본문에서 확인한 개념을 직접 도식화했습니다.<a href="#source-6">[6]</a><a href="#source-7">[7]</a><a href="#source-8">[8]</a> 그림: Clark, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. <a href="/assets/img/posts/jev-structure-vs-llm/05-generation-checks.svg">SVG 원본</a> · <a href="/assets/img/posts/jev-structure-vs-llm/05-generation-checks.png">원본 PNG 보기</a></figcaption>
+</figure>
+
+이 비교의 실무적 결론은 출력 형식·지연·업무 정답·확률 품질을 따로 평가하자는 것입니다. Jev도 반환 형식이 제한됐다는 이유만으로 무오판·무환각을 보장하지 않으며, 보정 학습 목표를 우리 데이터의 검증 결과로 바꿔 읽어서는 안 됩니다.<a href="#source-1">[1]</a><a href="#source-4">[4]</a>
+
+
 ## 4. 병렬 출력이라는 설명은 어디까지 확인됐을까요?
 
 TypeSafe의 소개글은 Jev가 문자열을 토큰 단위로 차례로 생성하는 대신 확률들을 병렬로 출력한다고 설명합니다.<a href="#source-5">[5]</a>
@@ -161,6 +183,8 @@ RLCD는 **Reinforcement Learning for Calibrated Decisions**, 즉 보정된 판�
   <p><a href="/posts/jev-system-1-vs-system-2/">← 이전 편</a> · <a href="/posts/jev-designing-small-questions/">다음 편 →</a></p>
 </nav>
 
+보강 자료 확인: 2026년 11월 3일(KST). 논문·공식 공개 문서에 근거한 해설이며 새 모델 실측은 수행하지 않았습니다.
+
 ## Sources
 
 [1] <span id="source-1" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://docs.typesafe.ai/concepts/system-one.md">TypeSafe · System One</a>
@@ -174,3 +198,11 @@ RLCD는 **Reinforcement Learning for Calibrated Decisions**, 즉 보정된 판�
 [5] <span id="source-5" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev">TypeSafe · Introducing System One Models &amp; Jev</a>
 
 [6] <span id="source-6" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://developers.openai.com/api/docs/guides/structured-outputs">OpenAI · Structured model outputs</a>
+
+[7] <span id="source-7" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://arxiv.org/abs/2005.14165v4">Brown et al. · Language Models are Few-Shot Learners</a>
+
+[8] <span id="source-8" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://developers.openai.com/api/docs/guides/latency-optimization">OpenAI · Latency optimization</a>
+
+[9] <span id="source-9" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://aclanthology.org/2023.emnlp-main.330">Tian et al. · Just Ask for Calibration</a>
+
+[10] <span id="source-10" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://arxiv.org/html/2207.05221v4">Kadavath et al. · Language Models (Mostly) Know What They Know</a>

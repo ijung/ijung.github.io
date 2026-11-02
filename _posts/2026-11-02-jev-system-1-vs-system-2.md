@@ -25,10 +25,36 @@ TypeSafe가 개발한 Jev는 이 질문을 던지기에 흥미로운 모델이�
 
 다니엘 카너먼의 《Thinking, Fast and Slow》를 통해 널리 알려진 구분에서 System 1은 빠르고 직관적인 사고, System 2는 느리고 숙고하는 사고를 가리킨다.<a href="#source-1">[1]</a> TypeSafe도 이 구분에서 System One이라는 이름을 가져왔다고 설명한다.<a href="#source-1">[1]</a><a href="#source-2">[2]</a>
 
-일상적인 장면으로 옮겨보면 이렇다.
+### 인물과 책부터 짧게
 
-- **System 1에 가까운 장면:** 익숙한 표정을 보고 상대의 기분을 짐작한다. 짧은 문의를 읽고 어떤 부서의 일인지 알아챈다.
-- **System 2에 가까운 장면:** 서로 충돌하는 계약 조건을 비교한다. 여러 가정을 세워 문제를 검토하고 처음 판단을 수정한다.
+**다니엘 카너먼(Daniel Kahneman, 1934–2024)**은 심리학자로, 에이머스 트버스키(Amos Tversky)와 판단·의사결정을 연구했다.<a href="#source-8">[8]</a><a href="#source-9">[9]</a>
+불확실성 아래 인간의 판단·의사결정에 관한 심리학 연구를 경제학에 접목한 공로로 2002년 노벨경제학상을 받았다.<a href="#source-8">[8]</a>
+이중과정 이론 전체를 혼자 만든 인물이라기보다, 《Thinking, Fast and Slow》를 통해 System 1·2를 대중에게 널리 알린 인물로 이해하는 편이 정확하다.<a href="#source-1">[1]</a><a href="#source-11">[11]</a>
+
+<figure>
+  <img src="/assets/img/posts/jev-system-1-vs-system-2/daniel-kahneman.jpg" alt="다니엘 카너먼의 인물 사진. Eirik Solheim·NRKbeta 촬영 자료" width="720" height="480" loading="lazy" style="display:block;width:320px;max-width:100%;height:auto;margin:auto;">
+  <figcaption>다니엘 카너먼. 사진: Eirik Solheim / NRKbeta, <a href="https://commons.wikimedia.org/wiki/File:Daniel_Kahneman_(3283955327).jpg">Wikimedia Commons 원본·파일별 권리 정보</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>. 원본의 비율을 유지해 크기를 줄이고 카메라 메타데이터를 제거·재압축했다. 이 사진에는 본문 라이선스가 아닌 별도 CC BY-SA 2.0 조건이 적용된다.<a href="#source-13">[13]</a></figcaption>
+</figure>
+
+<aside aria-label="Thinking, Fast and Slow 텍스트 북카드" style="box-sizing:border-box;max-width:100%;border:1px solid currentColor;border-radius:12px;padding:16px;margin:20px 0;">
+  <p><strong>Thinking, Fast and Slow — Daniel Kahneman</strong><br>2011년 처음 출간된 일반 독자용 책이다.<a href="#source-11">[11]</a></p>
+  <p>직관의 능력과 편향, 숙고가 일상적인 선택에 미치는 영향을 살펴보는 입문 안내다.<a href="#source-10">[10]</a><a href="#source-11">[11]</a> ‘System 1은 나쁘고 System 2는 좋다’는 이분법으로 읽지는 말자.<a href="#source-5">[5]</a></p>
+  <p><a href="https://www.penguin.co.uk/books/56314/thinking-fast-and-slow-by-kahneman-daniel/9780141033570">Penguin 공식 Paperback 판본 안내 · ISBN 9780141033570</a>.<a href="#source-10">[10]</a> 이 카드는 실제 표지가 아닌 텍스트 서지 안내이며, 재사용 허가를 확인하지 못한 표지 이미지는 복제하지 않았다.</p>
+</aside>
+
+### 표정의 인상과 곱셈의 단계
+
+찌푸린 표정을 보자마자 ‘화가 난 것 같다’는 인상이 떠오르는 일과, 익숙하지 않은 두 자리 곱셈의 중간 결과를 기억하며 계산하는 일을 비교해보자. 이 대비는 UX DAYS SEOUL 해설과 카너먼 책의 공개 견본에서도 소개된다.<a href="#source-12">[12]</a><a href="#source-11">[11]</a>
+아래는 얼굴과 계산 과정을 새로 그린 설명용 예시다. 얼굴에서 떠오른 인상은 상대의 실제 감정이 확인됐다는 뜻이 아니다.
+
+<figure>
+  <img src="/assets/img/posts/jev-system-1-vs-system-2/face-and-multiplication.png" alt="왼쪽에는 직접 그린 찌푸린 얼굴과 자동으로 떠오르는 인상, 오른쪽에는 23 곱하기 17을 230과 161로 나누어 계산하는 메모를 배치한 비교 개념도" width="720" height="720" loading="lazy" style="max-width:100%;height:auto;">
+  <figcaption>표정의 자동적인 인상과 주의·작업기억을 쓰는 단계 계산을 대비한 직접 제작 개념도다. 책의 얼굴 사진이나 그림을 복제한 것이 아니며 실험 결과·뇌 구조·실제 감정 판정도 아니다. 빠름·느림만으로 두 처리 유형을 정의하지 않는다.<a href="#source-5">[5]</a><a href="#source-11">[11]</a> 그림: Clark, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. <a href="/assets/img/posts/jev-system-1-vs-system-2/face-and-multiplication.png">원본 이미지 보기</a></figcaption>
+</figure>
+
+자동으로 떠오른 판단이 **항상** 숙고의 검사를 거치는 것은 아니다. Evans·Stanovich는 기본 반응에 Type 2 처리가 개입할 수도, 개입하지 않을 수도 있다고 설명한다.<a href="#source-5">[5]</a>
+직관만으로 풀기 어려운 문제에서는 더 의도적이고 노력하는 사고가 동원될 수 있으며, 반대로 오랜 훈련을 거친 일부 복잡한 기술은 빠르고 자동적으로 처리될 수 있다.<a href="#source-11">[11]</a><a href="#source-5">[5]</a>
+따라서 매번 ‘System 1 → System 2 최종심판’이라는 고정된 직렬 모델을 가정하지 않는다. 아래에서 AI의 검토 조건을 명시적으로 설계하자는 이야기는 이 구분을 참고한 **필자의 소프트웨어 설계 해석**이지, 인간 사고의 필수 단계를 그대로 구현한다는 주장이 아니다.
 
 다만 ‘빠르면 System 1, 느리면 System 2’라는 설명만으로는 부족하다. Evans와 Stanovich의 이중과정 이론 논문은 Type 1의 자율적인 처리와 Type 2의 작업기억 의존성·가설적 사고를 중요한 구분으로 제시한다.<a href="#source-5">[5]</a>
 
@@ -153,3 +179,16 @@ System 1 vs System 2라는 제목으로 시작했지만, 실제로 설계해야 
 [6] <span id="source-6" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://openai.com/index/introducing-structured-outputs-in-the-api">OpenAI · Introducing Structured Outputs in the API</a>
 
 [7] <span id="source-7" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://docs.typesafe.ai/confidence">TypeSafe · Confidence</a>
+
+
+[8] <span id="source-8" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://www.nobelprize.org/prizes/economic-sciences/2002/kahneman/facts">NobelPrize.org · Daniel Kahneman – Facts</a>
+
+[9] <span id="source-9" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://www.penguinrandomhouse.com/books/89308/thinking-fast-and-slow-by-daniel-kahneman">Penguin Random House · Thinking, Fast and Slow（Audiobook Download）</a>
+
+[10] <span id="source-10" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://www.penguin.co.uk/books/56314/thinking-fast-and-slow-by-kahneman-daniel/9780141033570">Penguin Books · Thinking, Fast and Slow（Paperback, ISBN 9780141033570）</a>
+
+[11] <span id="source-11" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://cdn.penguin.co.uk/dam-assets/books/9780141033570/9780141033570-sample.pdf">Daniel Kahneman · Thinking, Fast and Slow — Penguin official sample</a>
+
+[12] <span id="source-12" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://medium.com/@uxdaysseoul/2%EA%B0%80%EC%A7%80%EC%9D%98-%EC%82%AC%EA%B3%A0-%EB%AA%A8%EB%93%9C-%EC%8B%9C%EC%8A%A4%ED%85%9C-1-%EC%8B%9C%EC%8A%A4%ED%85%9C-2-b22a752163ef">UX DAYS SEOUL · 2가지의 사고 모드 (시스템 1, 시스템 2)</a>
+
+[13] <span id="source-13" style="display:inline-block;scroll-margin-top:6rem;"></span> <a href="https://commons.wikimedia.org/wiki/File:Daniel_Kahneman_%283283955327%29.jpg">Wikimedia Commons · File:Daniel Kahneman (3283955327).jpg</a>

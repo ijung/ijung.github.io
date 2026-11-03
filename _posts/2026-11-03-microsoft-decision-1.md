@@ -131,16 +131,16 @@ Decision-1의 의미는 ‘만능 AI가 하나 더 나왔다’보다 **생성�
 
 ## Sources
 
-[1] <span id="source-1"></span> <a href="https://commandline.microsoft.com/microsoft-decision-1-model-foundry">Microsoft Command Line · Introducing Microsoft-Decision-1, our model for fast decision-making</a>
+<p id="source-1" style="scroll-margin-top: 64px;">[1]  <a href="https://commandline.microsoft.com/microsoft-decision-1-model-foundry">Microsoft Command Line · Introducing Microsoft-Decision-1, our model for fast decision-making</a></p>
 
-[2] <span id="source-2"></span> <a href="https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/use-foundry-models-microsoft-decision">Microsoft Learn · Deploy and use Microsoft-Decision-1 in Microsoft Foundry</a>
+<p id="source-2" style="scroll-margin-top: 64px;">[2]  <a href="https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/use-foundry-models-microsoft-decision">Microsoft Learn · Deploy and use Microsoft-Decision-1 in Microsoft Foundry</a></p>
 
-[3] <span id="source-3"></span> <a href="https://ai.azure.com/catalog/models/Microsoft-Decision-1">Microsoft Foundry · Microsoft-Decision-1 model card</a>
+<p id="source-3" style="scroll-margin-top: 64px;">[3]  <a href="https://ai.azure.com/catalog/models/Microsoft-Decision-1">Microsoft Foundry · Microsoft-Decision-1 model card</a></p>
 
-[4] <span id="source-4"></span> <a href="https://openrouter.ai/microsoft/microsoft-decision-1">OpenRouter · Microsoft-Decision-1 — API Pricing &amp; Providers</a>
+<p id="source-4" style="scroll-margin-top: 64px;">[4]  <a href="https://openrouter.ai/microsoft/microsoft-decision-1">OpenRouter · Microsoft-Decision-1 — API Pricing &amp; Providers</a></p>
 
-[7] <span id="source-7"></span> <a href="https://publicdomainreview.org/collection/joseph-ducreux-self-portraits">The Public Domain Review · Joseph Ducreux’s Self-Portraits (ca. 1790)</a>
+<p id="source-7" style="scroll-margin-top: 64px;">[7]  <a href="https://publicdomainreview.org/collection/joseph-ducreux-self-portraits">The Public Domain Review · Joseph Ducreux’s Self-Portraits (ca. 1790)</a></p>
 
-[9] <span id="source-9"></span> <a href="https://benchmarkheaven.com/jev-models/api">Benchmark Heaven · JevBench API leaderboard: decision API benchmark</a>
+<p id="source-9" style="scroll-margin-top: 64px;">[9]  <a href="https://benchmarkheaven.com/jev-models/api">Benchmark Heaven · JevBench API leaderboard: decision API benchmark</a></p>
 
-[10] <span id="source-10"></span> <a href="https://commons.wikimedia.org/wiki/File:Joseph_ducreux,_autoritratto_dell%27artista_che_prende_il_giro,_1793,_01.jpg">Wikimedia Commons · Joseph ducreux, autoritratto dell&#x27;artista che prende il giro, 1793, 01.jpg</a>
+<p id="source-10" style="scroll-margin-top: 64px;">[10]  <a href="https://commons.wikimedia.org/wiki/File:Joseph_ducreux,_autoritratto_dell%27artista_che_prende_il_giro,_1793,_01.jpg">Wikimedia Commons · Joseph ducreux, autoritratto dell&#x27;artista che prende il giro, 1793, 01.jpg</a></p>

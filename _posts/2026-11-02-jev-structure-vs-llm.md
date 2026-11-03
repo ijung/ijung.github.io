@@ -10,15 +10,15 @@ permalink: /posts/jev-structure-vs-llm/
 <p><strong>난이도: 중급</strong></p>
 
 <nav id="jev-series-nav" aria-label="JEV 9편 연재 목차"><p><strong>JEV 탐구 · 9편 읽는 순서</strong></p><ol>
-<li><a href="/posts/jev-system-1-vs-system-2/">1. System 1과 역할 분담</a></li>
-<li><strong aria-current="page">2. 입출력과 LLM의 차이</strong></li>
-<li><a href="/posts/jev-type-safety-parallel-processing/">3. 타입 안전과 병렬 처리</a></li>
-<li><a href="/posts/jev-designing-small-questions/">4. 작은 질문 설계</a></li>
-<li><a href="/posts/jev-overconfidence-calibration/">5. 과신과 확률 보정</a></li>
-<li><a href="/posts/jev-strengths-limits-trust/">6. 강점과 한계</a></li>
-<li><a href="/posts/jev-alternatives-comparison/">7. 다른 선택지</a></li>
-<li><a href="/posts/jev-public-performance-evidence/">8. 공개 성능 근거</a></li>
-<li><a href="/posts/jev-adoption-system-design/">9. 조건부 도입</a></li>
+<li><a href="/posts/jev-system-1-vs-system-2/">System 1과 역할 분담</a></li>
+<li><strong aria-current="page">입출력과 LLM의 차이</strong></li>
+<li><a href="/posts/jev-type-safety-parallel-processing/">타입 안전과 병렬 처리</a></li>
+<li><a href="/posts/jev-designing-small-questions/">작은 질문 설계</a></li>
+<li><a href="/posts/jev-overconfidence-calibration/">과신과 확률 보정</a></li>
+<li><a href="/posts/jev-strengths-limits-trust/">강점과 한계</a></li>
+<li><a href="/posts/jev-alternatives-comparison/">다른 선택지</a></li>
+<li><a href="/posts/jev-public-performance-evidence/">공개 성능 근거</a></li>
+<li><a href="/posts/jev-adoption-system-design/">조건부 도입</a></li>
 </ol><p><a href="/posts/jev-system-1-vs-system-2/">← 1편</a> · <a href="/posts/jev-type-safety-parallel-processing/">3편 →</a></p></nav>
 
 > Jev와 LLM의 차이를 ‘문장 대 JSON’으로만 설명하면, 정작 중요한 차이를 놓치게 됩니다.<a href="#source-1">[1]</a><a href="#source-6">[6]</a>
@@ -152,15 +152,15 @@ RLCD는 **Reinforcement Learning for Calibrated Decisions**, 즉 보정된 판�
 타입 안전·병렬 처리 보강 자료 확인: 2026년 11월 3일(KST). 제공자 주장과 공개 API 계약을 구분했으며 내부 구현 재현이나 모델 호출은 하지 않았습니다.
 
 <nav id="jev-series-bottom" aria-label="JEV 9편 연재 목차"><p><strong>JEV 탐구 · 9편 읽는 순서</strong></p><ol>
-<li><a href="/posts/jev-system-1-vs-system-2/">1. System 1과 역할 분담</a></li>
-<li><strong aria-current="page">2. 입출력과 LLM의 차이</strong></li>
-<li><a href="/posts/jev-type-safety-parallel-processing/">3. 타입 안전과 병렬 처리</a></li>
-<li><a href="/posts/jev-designing-small-questions/">4. 작은 질문 설계</a></li>
-<li><a href="/posts/jev-overconfidence-calibration/">5. 과신과 확률 보정</a></li>
-<li><a href="/posts/jev-strengths-limits-trust/">6. 강점과 한계</a></li>
-<li><a href="/posts/jev-alternatives-comparison/">7. 다른 선택지</a></li>
-<li><a href="/posts/jev-public-performance-evidence/">8. 공개 성능 근거</a></li>
-<li><a href="/posts/jev-adoption-system-design/">9. 조건부 도입</a></li>
+<li><a href="/posts/jev-system-1-vs-system-2/">System 1과 역할 분담</a></li>
+<li><strong aria-current="page">입출력과 LLM의 차이</strong></li>
+<li><a href="/posts/jev-type-safety-parallel-processing/">타입 안전과 병렬 처리</a></li>
+<li><a href="/posts/jev-designing-small-questions/">작은 질문 설계</a></li>
+<li><a href="/posts/jev-overconfidence-calibration/">과신과 확률 보정</a></li>
+<li><a href="/posts/jev-strengths-limits-trust/">강점과 한계</a></li>
+<li><a href="/posts/jev-alternatives-comparison/">다른 선택지</a></li>
+<li><a href="/posts/jev-public-performance-evidence/">공개 성능 근거</a></li>
+<li><a href="/posts/jev-adoption-system-design/">조건부 도입</a></li>
 </ol><p><a href="/posts/jev-system-1-vs-system-2/">← 1편</a> · <a href="/posts/jev-type-safety-parallel-processing/">3편 →</a></p></nav>
 
 ## Sources

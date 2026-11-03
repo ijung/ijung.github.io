@@ -8,7 +8,7 @@ comments: false
 permalink: /posts/microsoft-decision-1/
 ---
 
-**예상 읽기시간: 7분 · 난이도: 중급 — API와 분류 개념을 알면 더 쉽게 읽을 수 있습니다.**
+**난이도: 중급 — API와 분류 개념을 알면 더 쉽게 읽을 수 있습니다.**
 
 ## 세 줄 요약
 

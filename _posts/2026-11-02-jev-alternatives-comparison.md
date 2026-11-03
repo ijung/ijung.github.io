@@ -1,5 +1,5 @@
 ---
-title: "JEV 탐구 ⑤ — 꼭 JEV여야 할까? 같은 문제를 푸는 다른 선택지들"
+title: "JEV 탐구 ⑦ — 다른 선택지"
 date: 2026-11-02 16:16:08 +0900
 categories: [AI, 기술]
 tags: [jev, typesafe, ai-workflow]
@@ -7,22 +7,21 @@ toc: true
 comments: false
 permalink: /posts/jev-alternatives-comparison/
 ---
+<p><strong>난이도: 중급</strong></p>
 
-<nav id="jev-series-nav" aria-label="JEV 탐구 연재 nav">
-  <p><strong>JEV 탐구 · 7편 읽는 순서</strong></p>
-  <ol>
-    <li><a href="/posts/jev-system-1-vs-system-2/">JEV 탐구 ① — System 1 vs System 2: AI는 언제 깊이 생각해야 할까?</a></li>
-    <li><a href="/posts/jev-structure-vs-llm/">JEV 탐구 ② — 문장 대신 판단을 반환하는 AI: JEV는 LLM과 무엇이 다를까?</a></li>
-    <li><a href="/posts/jev-designing-small-questions/">JEV 탐구 ③ — ‘알아서 처리해줘’를 작은 질문으로 바꾸는 법</a></li>
-    <li><a href="/posts/jev-strengths-limits-trust/">JEV 탐구 ④ — 빠른 판단은 어디까지 믿어도 될까?</a></li>
-    <li><strong aria-current="page">JEV 탐구 ⑤ — 꼭 JEV여야 할까? 같은 문제를 푸는 다른 선택지들</strong></li>
-    <li><a href="/posts/jev-public-performance-evidence/">JEV 탐구 ⑥ — 정말 빠르고 경제적일까? 공개 성능 주장의 근거를 따져보다</a></li>
-    <li><a href="/posts/jev-adoption-system-design/">JEV 탐구 ⑦ — 그래서, 우리 서비스에 JEV를 넣어야 할까?</a></li>
-  </ol>
-  <p><a href="/posts/jev-strengths-limits-trust/">← 이전 편</a> · <a href="/posts/jev-public-performance-evidence/">다음 편 →</a></p>
-</nav>
+<nav id="jev-series-nav" aria-label="JEV 9편 연재 목차"><p><strong>JEV 탐구 · 9편 읽는 순서</strong></p><ol>
+<li><a href="/posts/jev-system-1-vs-system-2/">1. System 1과 역할 분담</a></li>
+<li><a href="/posts/jev-structure-vs-llm/">2. 입출력과 LLM의 차이</a></li>
+<li><a href="/posts/jev-type-safety-parallel-processing/">3. 타입 안전과 병렬 처리</a></li>
+<li><a href="/posts/jev-designing-small-questions/">4. 작은 질문 설계</a></li>
+<li><a href="/posts/jev-overconfidence-calibration/">5. 과신과 확률 보정</a></li>
+<li><a href="/posts/jev-strengths-limits-trust/">6. 강점과 한계</a></li>
+<li><strong aria-current="page">7. 다른 선택지</strong></li>
+<li><a href="/posts/jev-public-performance-evidence/">8. 공개 성능 근거</a></li>
+<li><a href="/posts/jev-adoption-system-design/">9. 조건부 도입</a></li>
+</ol><p><a href="/posts/jev-strengths-limits-trust/">← 6편</a> · <a href="/posts/jev-public-performance-evidence/">8편 →</a></p></nav>
 
-고객이 이렇게 썼다고 하자. "이번 달 요금이 두 번 나갔어요. 중복 결제를 돌려주세요. 해결되지 않으면 해지하겠습니다." 앞선 글과 이어지는 가상 문의다. 우리가 만들려는 것은 답장을 잘 쓰는 챗봇이 아니라, 이 문의를 결제 담당에게 보내고 필요한 확인 절차를 시작하는 기능이다.
+“중복 결제를 돌려주세요”라는 가상 문의를 결제팀에 전달하고 확인 절차를 시작하려 합니다. 답장 생성이 아닌 판단의 대안을 비교합니다.
 
 TypeSafe는 Jev를 비정형 상태를 받아 타입이 정해진 확률적 판단을 돌려주는 모델로 설명한다.<a href="#source-1">[1]</a> 하지만 필요한 출력이 `billing` 하나라면 선택지는 넓어진다. 다른 판단 모델을 쓸 수도 있고, 익숙한 분류기나 검색, 코드로 풀 수도 있다. 이번 편에서는 승자를 고르지 않는다. 입력과 출력, 준비할 데이터, 운영 책임이 어떻게 달라지는지 비교한다. 속도와 비용 주장의 검증은 다음 편의 몫이다.
 
@@ -96,7 +95,7 @@ Python `re`는 문자열의 정규식 패턴을 찾는 표준 도구다.<a href=
   <figcaption>그림 3. 비교 전에 고정할 조건. 측정 결과나 성능 차트가 아니다. 자작 설계 제안. · 직접 제작, 이 연재 게시 허용 · <a href="/assets/img/posts/jev-alternatives-comparison/03-comparison-controls.svg">SVG 원본</a> · <a href="/assets/img/posts/jev-alternatives-comparison/03-comparison-controls.png">원본 PNG 보기</a></figcaption>
 </figure>
 
-실제 검토에서는 모두에게 같은 한국어 문의와 같은 선택지를 주자. 명확한 중복 청구 요청뿐 아니라 승인 대기, 부정 표현, 정보 누락도 포함해야 한다. "두 건이 보이는데 하나가 취소된 건지는 모르겠습니다"라는 문의에서 필요한 결과는 성급한 환불 승인이 아니라 결제 확인 또는 보류다. 같은 보류 규칙을 적용하지 않으면 자동 처리 범위를 넓힌 모델과 조심스럽게 멈추는 모델을 공정하게 비교하기 어렵다.
+같은 한국어 문의·선택지·보류 규칙으로 비교합니다. 승인 대기·부정·정보 누락을 포함하고, 취소 여부가 불명확한 가상 문의는 환불 승인 대신 확인·보류로 기대 결과를 정합니다.
 
 <figure>
   <img src="/assets/img/posts/jev-alternatives-comparison/04-toolbox.png" alt="규칙 자, 검색 돋보기, 분류 도장, 판단 카드가 든 도구상자와 사람 확인 표지" width="1200" height="1400" loading="lazy" style="display:block;max-width:100%;height:auto;margin:auto;">
@@ -105,19 +104,17 @@ Python `re`는 문자열의 정규식 패턴을 찾는 표준 도구다.<a href=
 
 Jev를 고를 이유는 다른 방법이 없어서가 아니다. 반복되는 판단을 어떤 인터페이스로 표현하고, 데이터와 운영 책임을 어디까지 맡을지에 달려 있다. 같은 문의도 검색으로 사례를 찾고 분류기로 부서를 정한 뒤 코드가 거래를 확인하는 식으로 나눌 수 있다. 다음 편에서는 이 구조적 차이를 염두에 두고, 공개된 속도·비용·성능 주장에 실제로 어떤 근거가 붙어 있는지 살펴본다.
 
-<nav id="jev-series-bottom" aria-label="JEV 탐구 연재 bottom">
-  <p><strong>JEV 탐구 · 7편 읽는 순서</strong></p>
-  <ol>
-    <li><a href="/posts/jev-system-1-vs-system-2/">JEV 탐구 ① — System 1 vs System 2: AI는 언제 깊이 생각해야 할까?</a></li>
-    <li><a href="/posts/jev-structure-vs-llm/">JEV 탐구 ② — 문장 대신 판단을 반환하는 AI: JEV는 LLM과 무엇이 다를까?</a></li>
-    <li><a href="/posts/jev-designing-small-questions/">JEV 탐구 ③ — ‘알아서 처리해줘’를 작은 질문으로 바꾸는 법</a></li>
-    <li><a href="/posts/jev-strengths-limits-trust/">JEV 탐구 ④ — 빠른 판단은 어디까지 믿어도 될까?</a></li>
-    <li><strong aria-current="page">JEV 탐구 ⑤ — 꼭 JEV여야 할까? 같은 문제를 푸는 다른 선택지들</strong></li>
-    <li><a href="/posts/jev-public-performance-evidence/">JEV 탐구 ⑥ — 정말 빠르고 경제적일까? 공개 성능 주장의 근거를 따져보다</a></li>
-    <li><a href="/posts/jev-adoption-system-design/">JEV 탐구 ⑦ — 그래서, 우리 서비스에 JEV를 넣어야 할까?</a></li>
-  </ol>
-  <p><a href="/posts/jev-strengths-limits-trust/">← 이전 편</a> · <a href="/posts/jev-public-performance-evidence/">다음 편 →</a></p>
-</nav>
+<nav id="jev-series-bottom" aria-label="JEV 9편 연재 목차"><p><strong>JEV 탐구 · 9편 읽는 순서</strong></p><ol>
+<li><a href="/posts/jev-system-1-vs-system-2/">1. System 1과 역할 분담</a></li>
+<li><a href="/posts/jev-structure-vs-llm/">2. 입출력과 LLM의 차이</a></li>
+<li><a href="/posts/jev-type-safety-parallel-processing/">3. 타입 안전과 병렬 처리</a></li>
+<li><a href="/posts/jev-designing-small-questions/">4. 작은 질문 설계</a></li>
+<li><a href="/posts/jev-overconfidence-calibration/">5. 과신과 확률 보정</a></li>
+<li><a href="/posts/jev-strengths-limits-trust/">6. 강점과 한계</a></li>
+<li><strong aria-current="page">7. 다른 선택지</strong></li>
+<li><a href="/posts/jev-public-performance-evidence/">8. 공개 성능 근거</a></li>
+<li><a href="/posts/jev-adoption-system-design/">9. 조건부 도입</a></li>
+</ol><p><a href="/posts/jev-strengths-limits-trust/">← 6편</a> · <a href="/posts/jev-public-performance-evidence/">8편 →</a></p></nav>
 
 ## Sources
 

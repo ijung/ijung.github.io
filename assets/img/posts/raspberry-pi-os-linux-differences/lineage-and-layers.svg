@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="920" viewBox="0 0 1000 920" role="img" aria-labelledby="title desc">
+<title id="title">Raspberry Pi OS: lineage and layers</title><desc id="desc">Debian feeds Raspbian and the 32-bit Raspberry Pi OS lineage. Debian arm64 feeds the 64-bit Raspberry Pi OS lineage. Both combine Linux, tools and Raspberry Pi integration. Arrows indicate a simplified base relationship, not every package.</desc>
+<defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1e293b" stroke-width="0.5"/></pattern><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#94a3b8" stroke-width="2"/></marker></defs>
+<rect width="1000" height="920" rx="18" fill="#020617"/><rect width="1000" height="920" fill="url(#grid)"/>
+<g font-family="sans-serif" fill="#f8fafc" text-anchor="middle">
+<text x="500" y="54" font-size="30" font-weight="700">One Linux family, two package lineages</text>
+<text x="500" y="88" font-size="19" fill="#cbd5e1">Simplified foundations of Raspberry Pi OS · checked 2026-11-06</text>
+<g stroke="#94a3b8" stroke-width="3" fill="none" marker-end="url(#arrow)"><path d="M500 197V225H265V260"/><path d="M500 225H735V260"/><path d="M265 360V415"/><path d="M735 360V415"/></g>
+<rect x="330" y="125" width="340" height="72" rx="12" fill="#1e293b" stroke="#94a3b8" stroke-width="2"/><text x="500" y="170" font-size="27">Debian</text>
+<rect x="75" y="260" width="380" height="100" rx="12" fill="#083344" stroke="#22d3ee" stroke-width="2"/><text x="265" y="302" font-size="25">Raspbian</text><text x="265" y="335" font-size="19">ARMv6 hard-float rebuild lineage</text>
+<rect x="545" y="260" width="380" height="100" rx="12" fill="#064e3b" stroke="#34d399" stroke-width="2"/><text x="735" y="302" font-size="25">Debian arm64</text><text x="735" y="335" font-size="19">64-bit base</text>
+<rect x="75" y="415" width="380" height="100" rx="12" fill="#083344" stroke="#22d3ee" stroke-width="2"/><text x="265" y="456" font-size="25">Raspberry Pi OS · 32-bit</text><text x="265" y="490" font-size="19">Raspbian + Raspberry Pi packages</text>
+<rect x="545" y="415" width="380" height="100" rx="12" fill="#064e3b" stroke="#34d399" stroke-width="2"/><text x="735" y="456" font-size="25">Raspberry Pi OS · 64-bit</text><text x="735" y="490" font-size="19">Debian + Raspberry Pi packages</text>
+<text x="500" y="568" font-size="22" font-weight="700">Shared structure · conceptual layers, not a boot sequence</text>
+<rect x="75" y="595" width="850" height="70" rx="10" fill="#4c1d95" stroke="#a78bfa" stroke-width="2"/><text x="500" y="623" font-size="22">Raspberry Pi integration and defaults</text><text x="500" y="650" font-size="18">Board support · configuration · desktop when included</text>
+<rect x="75" y="685" width="850" height="64" rx="10" fill="#1e293b" stroke="#94a3b8" stroke-width="2"/><text x="500" y="725" font-size="22">System tools · packages · APT · applications</text>
+<rect x="75" y="769" width="850" height="64" rx="10" fill="#1e293b" stroke="#94a3b8" stroke-width="2"/><text x="500" y="810" font-size="22">Linux kernel</text>
+<text x="500" y="873" font-size="18" fill="#cbd5e1">Arrows: base relationships, not complete package provenance or release history.</text><text x="500" y="900" font-size="17" fill="#cbd5e1">Original Clark diagram · No screenshots, logos or third-party image assets</text>
+</g></svg>

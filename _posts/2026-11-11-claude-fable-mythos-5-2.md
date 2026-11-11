@@ -10,6 +10,14 @@ permalink: /posts/claude-fable-mythos-5-2/
 
 **난이도: 입문 — AI 코딩 도구를 써봤다면 쉽게 읽을 수 있습니다. 벤치마크와 API 가격의 의미를 함께 설명합니다.**
 
+<style>
+.fable-mythos-figure { max-width: 100%; overflow-x: auto; }
+.fable-mythos-figure img { display: block; width: 100%; height: auto; }
+@media (max-width: 600px) {
+  .fable-mythos-figure img { width: 1100px !important; max-width: none !important; }
+}
+</style>
+
 **5.1 대비 달라진 점부터 두 모델의 차이, 실제 이용 조건까지**
 
 AI에게 코드 작성과 문제 해결을 맡기는 것은 다르다. 후자는 원인 분석부터 수정·검증까지 필요하다. Fable·Mythos 5.2의 공식 평가와 사례, 비용·접근 조건을 통해 어디까지 기대할 수 있는지 살펴본다.
@@ -22,7 +30,11 @@ AI에게 코드 작성과 문제 해결을 맡기는 것은 다르다. 후자는
 
 결제 화면의 버튼 문구를 바꿔 달란다. 문자열 하나면 끝날 줄 알았는데 다른 서비스도 공용 컴포넌트를 쓴다. 번역·모바일 화면·테스트를 확인하고, 실패가 이번 수정 때문인지 기존 문제인지도 따져야 한다.
 
-![작은 수정의 영향 범위를 표현한 가상 유머 카드](/assets/img/posts/claude-fable-mythos-5-2/01-small-change.svg)
+모바일에서는 그림을 좌우로 밀어 읽을 수 있습니다.
+
+<div class="fable-mythos-figure" role="region" aria-label="작은 수정의 영향 범위를 표현한 가상 유머 카드 — 좌우 스크롤" tabindex="0">
+<img src="/assets/img/posts/claude-fable-mythos-5-2/01-small-change.svg" alt="작은 수정의 영향 범위를 표현한 가상 유머 카드" width="1100" height="460">
+</div>
 
 [원본 SVG 보기](/assets/img/posts/claude-fable-mythos-5-2/01-small-change.svg)
 
@@ -40,7 +52,9 @@ Anthropic이 11월 9일 발표한 Fable 5.2와 Mythos 5.2도 복잡한 기술 �
 
 공식 비교표에서 Fable 5.1과 5.2의 차이가 드러나는 코딩 지표는 FrontierCode 2.0과 FrontierSWE v2다. FrontierCode 2.0 점수는 32.4%에서 49.1%로, FrontierSWE v2는 56.3%에서 69.9%로 올랐다.<a href="#source-1">[1]</a>
 
-![Fable 5.1과 5.2의 공식 코딩 평가 비교](/assets/img/posts/claude-fable-mythos-5-2/02-benchmarks.svg)
+<div class="fable-mythos-figure" role="region" aria-label="Fable 5.1과 5.2의 공식 코딩 평가 비교 — 좌우 스크롤" tabindex="0">
+<img src="/assets/img/posts/claude-fable-mythos-5-2/02-benchmarks.svg" alt="Fable 5.1과 5.2의 공식 코딩 평가 비교" width="1100" height="460">
+</div>
 
 [원본 SVG 보기](/assets/img/posts/claude-fable-mythos-5-2/02-benchmarks.svg)
 
@@ -64,7 +78,9 @@ Anthropic은 Fable 5.2가 기존 판단을 의심하고, 스스로 테스트하�
 
 이름만 보면 “Fable보다 더 강한 모델이 Mythos인가?” 싶다. 공식 설명은 다르다. **Fable 5.2와 Mythos 5.2는 같은 기반 모델을 공유한다.** Fable에는 사이버보안·생물학 분야의 오용을 막기 위한 강한 안전장치가 있고, Mythos는 검증 프로그램을 거친 기관에 제공된다.<a href="#source-2">[2]</a><a href="#source-3">[3]</a>
 
-![같은 기반 모델과 서로 다른 이용 조건을 보여주는 개념도](/assets/img/posts/claude-fable-mythos-5-2/03-models.svg)
+<div class="fable-mythos-figure" role="region" aria-label="같은 기반 모델과 서로 다른 이용 조건을 보여주는 개념도 — 좌우 스크롤" tabindex="0">
+<img src="/assets/img/posts/claude-fable-mythos-5-2/03-models.svg" alt="같은 기반 모델과 서로 다른 이용 조건을 보여주는 개념도" width="1100" height="460">
+</div>
 
 [원본 SVG 보기](/assets/img/posts/claude-fable-mythos-5-2/03-models.svg)
 
@@ -97,7 +113,9 @@ Anthropic은 Fable 5.2가 기존 판단을 의심하고, 스스로 테스트하�
 
 Fast mode는 토큰 생성 속도를 최대 2.5배 높인다는 설명이다.<a href="#source-3">[3]</a> 테스트 실행이나 외부 도구의 응답을 기다리는 시간까지 같은 비율로 줄어드는 것은 아니다. 빠르게 답을 받는 가치가 큰 작업과, 밤새 돌아가도 되는 작업을 나눠 선택하는 편이 낫다.
 
-![단가와 전체 작업 비용의 차이를 표현한 가상 유머 카드](/assets/img/posts/claude-fable-mythos-5-2/04-cost.svg)
+<div class="fable-mythos-figure" role="region" aria-label="단가와 전체 작업 비용의 차이를 표현한 가상 유머 카드 — 좌우 스크롤" tabindex="0">
+<img src="/assets/img/posts/claude-fable-mythos-5-2/04-cost.svg" alt="단가와 전체 작업 비용의 차이를 표현한 가상 유머 카드" width="1100" height="460">
+</div>
 
 [원본 SVG 보기](/assets/img/posts/claude-fable-mythos-5-2/04-cost.svg)
 
@@ -139,8 +157,8 @@ Fable·Mythos 5.2의 공식 평가는 그런 복잡한 작업을 더 잘 다룰 
 
 ## Sources
 
-<p id="source-1">[1] <a href="https://www.anthropic.com/claude/fable">Anthropic · Claude Fable</a> · 제품 페이지, 개별 게시일 미표시</p>
+<p id="source-1" style="scroll-margin-top: 80px;">[1] <a href="https://www.anthropic.com/claude/fable">Anthropic · Claude Fable</a> · 제품 페이지, 개별 게시일 미표시</p>
 
-<p id="source-2">[2] <a href="https://www.anthropic.com/claude/mythos">Anthropic · Claude Mythos</a> · 제품 페이지, 개별 게시일 미표시</p>
+<p id="source-2" style="scroll-margin-top: 80px;">[2] <a href="https://www.anthropic.com/claude/mythos">Anthropic · Claude Mythos</a> · 제품 페이지, 개별 게시일 미표시</p>
 
-<p id="source-3">[3] <a href="https://www.anthropic.com/claude-fable-and-mythos-5-2">Anthropic · Introducing Claude Fable 5.2 and Claude Mythos 5.2</a> · 발표: 2026년 11월 9일</p>
+<p id="source-3" style="scroll-margin-top: 80px;">[3] <a href="https://www.anthropic.com/claude-fable-and-mythos-5-2">Anthropic · Introducing Claude Fable 5.2 and Claude Mythos 5.2</a> · 발표: 2026년 11월 9일</p>
